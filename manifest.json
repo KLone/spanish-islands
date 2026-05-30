@@ -1,7 +1,7 @@
 {
   "name": "Island Player",
   "short_name": "Islands",
-  "start_url": "/player.html",
+  "start_url": "/spanish-islands/player.html",
   "display": "standalone",
   "background_color": "#0f0f0f",
   "theme_color": "#0f0f0f",
