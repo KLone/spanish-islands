@@ -39,7 +39,7 @@ import subprocess
 # ── Config ───────────────────────────────────────────────────────────────────
 INPUT_FILE       = "sentences.json"
 ISLANDS_DIR      = "../islands"
-TMP_DIR          = "audio/tmp"
+TMP_DIR          = "audio/segments"
 BATCH_SIZE       = 20
 TTS_URL          = "https://texttospeech.googleapis.com/v1/text:synthesize"
 

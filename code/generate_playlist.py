@@ -23,7 +23,7 @@ import re
 
 INPUT_FILE  = "sentences.json"
 OUTPUT_FILE = "../playlist.json"
-TMP_DIR     = "code/audio/tmp"   # relative to spanish/ (where player is served from)
+TMP_DIR     = "code/audio/segments"   # relative to spanish/ (where player is served from)
 
 
 def split_sentences(text):
