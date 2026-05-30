@@ -1,0 +1,62 @@
+[
+  {
+    "island_num": 1,
+    "island_slug": "work",
+    "card_type": "core",
+    "card_num": 1,
+    "q_en": "What do you do for work?",
+    "q_es": "¿A qué te dedicas?",
+    "a_en": "I work as a software sales engineer. Our company writes software and I have to know it in and out and show it off to customers.",
+    "a_es": "Trabajo como ingeniero de ventas de software. Nuestra empresa desarrolla software y yo tengo que conocerlo a fondo y presentárselo a los clientes."
+  },
+  {
+    "island_num": 1,
+    "island_slug": "work",
+    "card_type": "core",
+    "card_num": 2,
+    "q_en": "How long have you been with your company?",
+    "q_es": "¿Cuánto tiempo llevas en tu empresa?",
+    "a_en": "I've been with my current company for a while now. Just about 10 years.",
+    "a_es": "Llevo bastante tiempo en mi empresa actual. Ya casi diez años."
+  },
+  {
+    "island_num": 1,
+    "island_slug": "work",
+    "card_type": "core",
+    "card_num": 3,
+    "q_en": "How did you get into tech?",
+    "q_es": "¿Cómo llegaste al mundo de la tecnología?",
+    "a_en": "I was in the military and we used a lot of cutting edge technology. I really liked the tech part but the military pay wasn't great, so I got a job in tech and the pay was much better.",
+    "a_es": "Estuve en el ejército y usábamos mucha tecnología de punta. Me gustaba mucho la parte tecnológica, pero el sueldo militar no era gran cosa, así que conseguí un trabajo en tecnología y el sueldo era mucho mejor."
+  },
+  {
+    "island_num": 1,
+    "island_slug": "work",
+    "card_type": "core",
+    "card_num": 4,
+    "q_en": "What does your day to day look like?",
+    "q_es": "¿Cómo es tu día a día?",
+    "a_en": "Most days I'm on calls with customers, doing demos, helping people test the software, and helping build the technical case for why they should buy and use our software to solve their problems.",
+    "a_es": "La mayoría de los días estoy en llamadas con clientes, haciendo demos, ayudando a la gente a probar el software, y ayudando a construir el argumento técnico de por qué deberían comprarlo y usarlo para resolver sus problemas."
+  },
+  {
+    "island_num": 1,
+    "island_slug": "work",
+    "card_type": "deeper",
+    "card_num": 1,
+    "q_en": "What makes a good sales engineer?",
+    "q_es": "¿Qué hace a un buen ingeniero de ventas?",
+    "a_en": "A good listener and communicator. Anyone can learn the technology, but landing in a room and really understanding what people need — and communicating in a way that resonates — that's the hard part. A lot of people get nervous or talk too much or not enough. It's really all about communication.",
+    "a_es": "Saber escuchar y comunicarse bien. Cualquiera puede aprender la tecnología, pero llegar a una sala y entender de verdad lo que necesita la gente — y comunicarlo de una manera que les llegue — eso es lo difícil. Mucha gente se pone nerviosa o habla demasiado o muy poco. Al final todo se trata de la comunicación."
+  },
+  {
+    "island_num": 1,
+    "island_slug": "work",
+    "card_type": "deeper",
+    "card_num": 2,
+    "q_en": "What do you think about AI's impact on your field?",
+    "q_es": "¿Qué piensas del impacto de la IA en tu campo?",
+    "a_en": "It's made my job easier for tedious tasks, but at the end of the day I'm a technical storyteller. The story still has to be something I craft and tell. AI can help with the data but I have to tell the story.",
+    "a_es": "Me ha facilitado el trabajo en las tareas tediosas, pero al final del día soy un narrador técnico. La historia sigue siendo algo que yo construyo y cuento. La IA puede ayudar con los datos, pero la historia la tengo que contar yo."
+  }
+]

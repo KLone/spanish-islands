@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Island Player</title>
+<link rel="manifest" href="manifest.json">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0f0f0f;
+    color: #e8e8e8;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* ── Header ── */
+  #header {
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid #222;
+  }
+
+  #island-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #666;
+    margin-bottom: 4px;
+  }
+
+  #card-label {
+    font-size: 15px;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #mode-badge {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  #mode-badge.recall { background: #1a3a2a; color: #4ade80; }
+  #mode-badge.shadow { background: #1a2a3a; color: #60a5fa; }
+
+  /* ── Main content ── */
+  #main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 24px 16px;
+    gap: 20px;
+  }
+
+  .segment-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .lang-tag {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  .lang-tag.en { color: #555; }
+  .lang-tag.es { color: #3a6b4a; }
+
+  .segment-text {
+    font-size: 22px;
+    line-height: 1.45;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  .segment-text.active {
+    color: #f0f0f0;
+  }
+  .segment-text.revealed {
+    color: #888;
+  }
+
+  /* ── Progress bar ── */
+  #progress-bar {
+    height: 2px;
+    background: #222;
+    margin: 0 24px;
+  }
+  #progress-fill {
+    height: 100%;
+    background: #4ade80;
+    transition: width 0.1s linear;
+    width: 0%;
+  }
+
+  /* ── Controls ── */
+  #controls {
+    padding: 16px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #transport {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .nav-btn {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #aaa;
+    border-radius: 12px;
+    padding: 14px 22px;
+    font-size: 14px;
+    cursor: pointer;
+    flex: 1;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-btn:active { background: #252525; color: #fff; }
+  .nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+  #play-btn {
+    background: #1a3a2a;
+    border: none;
+    color: #4ade80;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    font-size: 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.15s, transform 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #play-btn:active { transform: scale(0.94); }
+
+  #mode-controls {
+    display: flex;
+    gap: 8px;
+  }
+
+  .mode-btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2a2a2a;
+    background: #1a1a1a;
+    color: #555;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .mode-btn.active.recall { background: #1a3a2a; color: #4ade80; border-color: #2a5a3a; }
+  .mode-btn.active.shadow { background: #1a2a3a; color: #60a5fa; border-color: #2a3a5a; }
+
+  #card-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .card-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #2a2a2a;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .card-dot.active { background: #4ade80; }
+  .card-dot.done { background: #3a5a4a; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <div id="island-label">Island</div>
+  <div id="card-label">
+    <span id="card-name">—</span>
+    <span id="mode-badge" class="recall">Recall</span>
+  </div>
+</div>
+
+<div id="main">
+  <!-- segments injected here -->
+</div>
+
+<div id="progress-bar"><div id="progress-fill"></div></div>
+
+<div id="controls">
+  <div id="transport">
+    <button class="nav-btn" id="prev-btn" onclick="prevCard()">← Prev</button>
+    <button id="play-btn" onclick="togglePlay()">▶</button>
+    <button class="nav-btn" id="next-btn" onclick="nextCard()">Next →</button>
+  </div>
+  <div id="mode-controls">
+    <button class="mode-btn active recall" id="btn-recall" onclick="setMode('recall')">Recall</button>
+    <button class="mode-btn shadow" id="btn-shadow" onclick="setMode('shadow')">Shadow</button>
+  </div>
+  <div id="card-nav"></div>
+</div>
+
+<audio id="audio-player"></audio>
+
+<script>
+let playlist = [];
+let currentMode = 'recall';
+let currentCardIndex = 0;  // index into cards array (not playlist)
+let currentSegIndex = 0;
+let isPlaying = false;
+let pauseTimer = null;
+
+const PAUSE_MS = 5000;
+const audio = document.getElementById('audio-player');
+
+// ── Load playlist ────────────────────────────────────────────────────────────
+fetch('playlist.json')
+  .then(r => r.json())
+  .then(data => {
+    playlist = data;
+    renderCardDots();
+    loadCard(0);
+  })
+  .catch(e => {
+    document.getElementById('main').innerHTML =
+      '<p style="color:#f66;padding:20px">Could not load playlist.json.<br>Run generate_playlist.py first,<br>then serve from the spanish/ directory.</p>';
+  });
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+function cards() {
+  // Return playlist entries matching current mode
+  return playlist.filter(e => e.mode === currentMode);
+}
+
+function currentEntry() {
+  return cards()[currentCardIndex];
+}
+
+function playlistIndex() {
+  // Find index in full playlist for current card+mode
+  const entry = currentEntry();
+  return playlist.indexOf(entry);
+}
+
+// ── Render ───────────────────────────────────────────────────────────────────
+function renderCardDots() {
+  const nav = document.getElementById('card-nav');
+  nav.innerHTML = '';
+  cards().forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
+    dot.onclick = () => { stopPlayback(); loadCard(i); };
+    nav.appendChild(dot);
+  });
+}
+
+function renderSegments(entry) {
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+
+  // Group consecutive same-lang segments into visual blocks
+  // For recall: show Q pair together, then each answer pair together
+  // For shadow: show Q, then each answer sentence
+  entry.segments.forEach((seg, i) => {
+    const block = document.createElement('div');
+    block.className = 'segment-block';
+
+    const tag = document.createElement('div');
+    tag.className = `lang-tag ${seg.lang}`;
+    tag.textContent = seg.lang === 'en' ? 'English' : (seg.lang === 'es' ? 'Español' : seg.lang.toUpperCase());
+
+    const text = document.createElement('div');
+    text.className = 'segment-text';
+    text.id = `seg-${i}`;
+    text.textContent = seg.text;
+
+    block.appendChild(tag);
+    block.appendChild(text);
+    main.appendChild(block);
+  });
+}
+
+function updateHeader(entry) {
+  document.getElementById('island-label').textContent = entry.island;
+  document.getElementById('card-name').textContent = entry.card;
+  const badge = document.getElementById('mode-badge');
+  badge.textContent = entry.mode.charAt(0).toUpperCase() + entry.mode.slice(1);
+  badge.className = `mode-badge ${entry.mode}`;
+  badge.id = 'mode-badge';
+}
+
+function updateDots() {
+  document.querySelectorAll('.card-dot').forEach((dot, i) => {
+    dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
+  });
+}
+
+function updateProgress() {
+  const entry = currentEntry();
+  const pct = entry ? (currentSegIndex / entry.segments.length) * 100 : 0;
+  document.getElementById('progress-fill').style.width = pct + '%';
+}
+
+function highlightSegment(index) {
+  const entry = currentEntry();
+  if (!entry) return;
+  entry.segments.forEach((_, i) => {
+    const el = document.getElementById(`seg-${i}`);
+    if (!el) return;
+    if (i < index) el.className = 'segment-text revealed';
+    else if (i === index) el.className = 'segment-text active';
+    else el.className = 'segment-text';
+  });
+  // Scroll active segment into view
+  const active = document.getElementById(`seg-${index}`);
+  if (active) active.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// ── Playback ─────────────────────────────────────────────────────────────────
+function loadCard(index) {
+  stopPlayback();
+  currentCardIndex = index;
+  currentSegIndex = 0;
+  const entry = currentEntry();
+  if (!entry) return;
+
+  renderSegments(entry);
+  updateHeader(entry);
+  updateDots();
+  updateProgress();
+  highlightSegment(0);
+
+  document.getElementById('prev-btn').disabled = currentCardIndex === 0;
+  document.getElementById('next-btn').disabled = currentCardIndex >= cards().length - 1;
+  document.getElementById('play-btn').textContent = '▶';
+}
+
+function playSegment(index) {
+  const entry = currentEntry();
+  if (!entry || index >= entry.segments.length) {
+    finishCard();
+    return;
+  }
+
+  currentSegIndex = index;
+  updateProgress();
+  highlightSegment(index);
+
+  const seg = entry.segments[index];
+  audio.src = seg.audio;
+  audio.load();
+  audio.play().catch(() => {});
+}
+
+audio.addEventListener('ended', () => {
+  if (!isPlaying) return;
+  pauseTimer = setTimeout(() => {
+    playSegment(currentSegIndex + 1);
+  }, PAUSE_MS);
+});
+
+function finishCard() {
+  isPlaying = false;
+  document.getElementById('play-btn').textContent = '▶';
+  updateProgress();
+  // Mark all revealed
+  const entry = currentEntry();
+  if (entry) {
+    entry.segments.forEach((_, i) => {
+      const el = document.getElementById(`seg-${i}`);
+      if (el) el.className = 'segment-text revealed';
+    });
+  }
+}
+
+function togglePlay() {
+  if (isPlaying) {
+    pausePlayback();
+  } else {
+    startPlayback();
+  }
+}
+
+function startPlayback() {
+  isPlaying = true;
+  document.getElementById('play-btn').textContent = '⏸';
+  playSegment(currentSegIndex);
+}
+
+function pausePlayback() {
+  isPlaying = false;
+  document.getElementById('play-btn').textContent = '▶';
+  audio.pause();
+  if (pauseTimer) { clearTimeout(pauseTimer); pauseTimer = null; }
+}
+
+function stopPlayback() {
+  pausePlayback();
+  audio.src = '';
+  currentSegIndex = 0;
+}
+
+function prevCard() {
+  if (currentCardIndex > 0) loadCard(currentCardIndex - 1);
+}
+
+function nextCard() {
+  if (currentCardIndex < cards().length - 1) loadCard(currentCardIndex + 1);
+}
+
+function setMode(mode) {
+  if (mode === currentMode) return;
+  stopPlayback();
+  currentMode = mode;
+  currentCardIndex = 0;
+
+  document.getElementById('btn-recall').className = 'mode-btn' + (mode === 'recall' ? ' active recall' : '');
+  document.getElementById('btn-shadow').className = 'mode-btn' + (mode === 'shadow' ? ' active shadow' : '');
+
+  renderCardDots();
+  loadCard(0);
+}
+
+// ── Service worker ───────────────────────────────────────────────────────────
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+
+// ── Keyboard (desktop) ───────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === ' ') { e.preventDefault(); togglePlay(); }
+  if (e.key === 'ArrowRight') nextCard();
+  if (e.key === 'ArrowLeft') prevCard();
+});
+</script>
+</body>
+</html>

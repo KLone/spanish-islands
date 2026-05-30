@@ -1,0 +1,458 @@
+[
+  {
+    "island": "Work",
+    "card": "Core 1",
+    "mode": "recall",
+    "stem": "island-01-work-core-1",
+    "segments": [
+      {
+        "text": "What do you do for work?",
+        "audio": "code/audio/tmp/island-01-work-core-1-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿A qué te dedicas?",
+        "audio": "code/audio/tmp/island-01-work-core-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "I work as a software sales engineer.",
+        "audio": "code/audio/tmp/island-01-work-core-1-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Trabajo como ingeniero de ventas de software.",
+        "audio": "code/audio/tmp/island-01-work-core-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Our company writes software and I have to know it in and out and show it off to customers.",
+        "audio": "code/audio/tmp/island-01-work-core-1-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Nuestra empresa desarrolla software y yo tengo que conocerlo a fondo y presentárselo a los clientes.",
+        "audio": "code/audio/tmp/island-01-work-core-1-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 1",
+    "mode": "shadow",
+    "stem": "island-01-work-core-1",
+    "segments": [
+      {
+        "text": "¿A qué te dedicas?",
+        "audio": "code/audio/tmp/island-01-work-core-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Trabajo como ingeniero de ventas de software.",
+        "audio": "code/audio/tmp/island-01-work-core-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Nuestra empresa desarrolla software y yo tengo que conocerlo a fondo y presentárselo a los clientes.",
+        "audio": "code/audio/tmp/island-01-work-core-1-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 2",
+    "mode": "recall",
+    "stem": "island-01-work-core-2",
+    "segments": [
+      {
+        "text": "How long have you been with your company?",
+        "audio": "code/audio/tmp/island-01-work-core-2-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Cuánto tiempo llevas en tu empresa?",
+        "audio": "code/audio/tmp/island-01-work-core-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "I've been with my current company for a while now.",
+        "audio": "code/audio/tmp/island-01-work-core-2-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Llevo bastante tiempo en mi empresa actual.",
+        "audio": "code/audio/tmp/island-01-work-core-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Just about 10 years.",
+        "audio": "code/audio/tmp/island-01-work-core-2-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Ya casi diez años.",
+        "audio": "code/audio/tmp/island-01-work-core-2-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 2",
+    "mode": "shadow",
+    "stem": "island-01-work-core-2",
+    "segments": [
+      {
+        "text": "¿Cuánto tiempo llevas en tu empresa?",
+        "audio": "code/audio/tmp/island-01-work-core-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Llevo bastante tiempo en mi empresa actual.",
+        "audio": "code/audio/tmp/island-01-work-core-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Ya casi diez años.",
+        "audio": "code/audio/tmp/island-01-work-core-2-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 3",
+    "mode": "recall",
+    "stem": "island-01-work-core-3",
+    "segments": [
+      {
+        "text": "How did you get into tech?",
+        "audio": "code/audio/tmp/island-01-work-core-3-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Cómo llegaste al mundo de la tecnología?",
+        "audio": "code/audio/tmp/island-01-work-core-3-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "I was in the military and we used a lot of cutting edge technology.",
+        "audio": "code/audio/tmp/island-01-work-core-3-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Estuve en el ejército y usábamos mucha tecnología de punta.",
+        "audio": "code/audio/tmp/island-01-work-core-3-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "I really liked the tech part but the military pay wasn't great, so I got a job in tech and the pay was much better.",
+        "audio": "code/audio/tmp/island-01-work-core-3-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Me gustaba mucho la parte tecnológica, pero el sueldo militar no era gran cosa, así que conseguí un trabajo en tecnología y el sueldo era mucho mejor.",
+        "audio": "code/audio/tmp/island-01-work-core-3-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 3",
+    "mode": "shadow",
+    "stem": "island-01-work-core-3",
+    "segments": [
+      {
+        "text": "¿Cómo llegaste al mundo de la tecnología?",
+        "audio": "code/audio/tmp/island-01-work-core-3-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Estuve en el ejército y usábamos mucha tecnología de punta.",
+        "audio": "code/audio/tmp/island-01-work-core-3-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Me gustaba mucho la parte tecnológica, pero el sueldo militar no era gran cosa, así que conseguí un trabajo en tecnología y el sueldo era mucho mejor.",
+        "audio": "code/audio/tmp/island-01-work-core-3-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 4",
+    "mode": "recall",
+    "stem": "island-01-work-core-4",
+    "segments": [
+      {
+        "text": "What does your day to day look like?",
+        "audio": "code/audio/tmp/island-01-work-core-4-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Cómo es tu día a día?",
+        "audio": "code/audio/tmp/island-01-work-core-4-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Most days I'm on calls with customers, doing demos, helping people test the software, and helping build the technical case for why they should buy and use our software to solve their problems.",
+        "audio": "code/audio/tmp/island-01-work-core-4-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "La mayoría de los días estoy en llamadas con clientes, haciendo demos, ayudando a la gente a probar el software, y ayudando a construir el argumento técnico de por qué deberían comprarlo y usarlo para resolver sus problemas.",
+        "audio": "code/audio/tmp/island-01-work-core-4-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Core 4",
+    "mode": "shadow",
+    "stem": "island-01-work-core-4",
+    "segments": [
+      {
+        "text": "¿Cómo es tu día a día?",
+        "audio": "code/audio/tmp/island-01-work-core-4-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "La mayoría de los días estoy en llamadas con clientes, haciendo demos, ayudando a la gente a probar el software, y ayudando a construir el argumento técnico de por qué deberían comprarlo y usarlo para resolver sus problemas.",
+        "audio": "code/audio/tmp/island-01-work-core-4-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Deeper 1",
+    "mode": "recall",
+    "stem": "island-01-work-deeper-1",
+    "segments": [
+      {
+        "text": "What makes a good sales engineer?",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Qué hace a un buen ingeniero de ventas?",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "A good listener and communicator.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Saber escuchar y comunicarse bien.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Anyone can learn the technology, but landing in a room and really understanding what people need — and communicating in a way that resonates — that's the hard part.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Cualquiera puede aprender la tecnología, pero llegar a una sala y entender de verdad lo que necesita la gente — y comunicarlo de una manera que les llegue — eso es lo difícil.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "A lot of people get nervous or talk too much or not enough.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-en-s03.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Mucha gente se pone nerviosa o habla demasiado o muy poco.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s03.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "It's really all about communication.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-en-s04.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Al final todo se trata de la comunicación.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s04.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Deeper 1",
+    "mode": "shadow",
+    "stem": "island-01-work-deeper-1",
+    "segments": [
+      {
+        "text": "¿Qué hace a un buen ingeniero de ventas?",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Saber escuchar y comunicarse bien.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Cualquiera puede aprender la tecnología, pero llegar a una sala y entender de verdad lo que necesita la gente — y comunicarlo de una manera que les llegue — eso es lo difícil.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Mucha gente se pone nerviosa o habla demasiado o muy poco.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s03.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Al final todo se trata de la comunicación.",
+        "audio": "code/audio/tmp/island-01-work-deeper-1-a-es-s04.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Deeper 2",
+    "mode": "recall",
+    "stem": "island-01-work-deeper-2",
+    "segments": [
+      {
+        "text": "What do you think about AI's impact on your field?",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Qué piensas del impacto de la IA en tu campo?",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "It's made my job easier for tedious tasks, but at the end of the day I'm a technical storyteller.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Me ha facilitado el trabajo en las tareas tediosas, pero al final del día soy un narrador técnico.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "The story still has to be something I craft and tell.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "La historia sigue siendo algo que yo construyo y cuento.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "AI can help with the data but I have to tell the story.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-en-s03.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "La IA puede ayudar con los datos, pero la historia la tengo que contar yo.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-es-s03.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Work",
+    "card": "Deeper 2",
+    "mode": "shadow",
+    "stem": "island-01-work-deeper-2",
+    "segments": [
+      {
+        "text": "¿Qué piensas del impacto de la IA en tu campo?",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Me ha facilitado el trabajo en las tareas tediosas, pero al final del día soy un narrador técnico.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "La historia sigue siendo algo que yo construyo y cuento.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "La IA puede ayudar con los datos, pero la historia la tengo que contar yo.",
+        "audio": "code/audio/tmp/island-01-work-deeper-2-a-es-s03.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  }
+]
