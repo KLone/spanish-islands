@@ -377,8 +377,6 @@ audio.addEventListener('ended', () => {
 });
 
 function finishCard() {
-  isPlaying = false;
-  document.getElementById('play-btn').textContent = '▶';
   updateProgress();
   // Mark all revealed
   const entry = currentEntry();
@@ -387,6 +385,25 @@ function finishCard() {
       const el = document.getElementById(`seg-${i}`);
       if (el) el.className = 'segment-text revealed';
     });
+  }
+  // Shadow mode: auto-advance to next card
+  if (currentMode === 'shadow' && currentCardIndex < cards().length - 1) {
+    pauseTimer = setTimeout(() => {
+      currentCardIndex++;
+      const next = currentEntry();
+      if (!next) return;
+      renderSegments(next);
+      updateHeader(next);
+      updateDots();
+      highlightSegment(0);
+      document.getElementById('prev-btn').disabled = currentCardIndex === 0;
+      document.getElementById('next-btn').disabled = currentCardIndex >= cards().length - 1;
+      currentSegIndex = 0;
+      playSegment(0);
+    }, PAUSE_MS);
+  } else {
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶';
   }
 }
 
