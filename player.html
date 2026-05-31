@@ -222,8 +222,10 @@
 <script>
 let playlist = [];
 let currentMode = 'recall';
-let currentCardIndex = 0;  // index into cards array (not playlist)
+let currentCardIndex = 0;
 let currentSegIndex = 0;
+let shadowSegs = [];       // flat segment list for shadow mode
+let shadowSegIndex = 0;
 let isPlaying = false;
 let pauseTimer = null;
 
@@ -235,35 +237,40 @@ fetch('playlist.json')
   .then(r => r.json())
   .then(data => {
     playlist = data;
+    buildShadowSegs();
     renderCardDots();
     loadCard(0);
   })
-  .catch(e => {
+  .catch(() => {
     document.getElementById('main').innerHTML =
       '<p style="color:#f66;padding:20px">Could not load playlist.json.<br>Run generate_playlist.py first,<br>then serve from the spanish/ directory.</p>';
   });
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
-function cards() {
-  // Return playlist entries matching current mode
-  return playlist.filter(e => e.mode === currentMode);
+function recallCards() {
+  return playlist.filter(e => e.mode === 'recall');
 }
 
 function currentEntry() {
-  return cards()[currentCardIndex];
+  return recallCards()[currentCardIndex];
 }
 
-function playlistIndex() {
-  // Find index in full playlist for current card+mode
-  const entry = currentEntry();
-  return playlist.indexOf(entry);
+function buildShadowSegs() {
+  // Flatten all shadow cards into one sequence, adding card dividers
+  shadowSegs = [];
+  playlist.filter(e => e.mode === 'shadow').forEach(card => {
+    card.segments.forEach((seg, i) => {
+      shadowSegs.push({ ...seg, _card: card.card, _first: i === 0 });
+    });
+  });
 }
 
 // ── Render ───────────────────────────────────────────────────────────────────
 function renderCardDots() {
   const nav = document.getElementById('card-nav');
   nav.innerHTML = '';
-  cards().forEach((_, i) => {
+  if (currentMode === 'shadow') return; // no dots in shadow mode
+  recallCards().forEach((_, i) => {
     const dot = document.createElement('div');
     dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
     dot.onclick = () => { stopPlayback(); loadCard(i); };
@@ -271,14 +278,17 @@ function renderCardDots() {
   });
 }
 
-function renderSegments(entry) {
+function renderSegmentList(segs, activeIndex) {
   const main = document.getElementById('main');
   main.innerHTML = '';
-
-  // Group consecutive same-lang segments into visual blocks
-  // For recall: show Q pair together, then each answer pair together
-  // For shadow: show Q, then each answer sentence
-  entry.segments.forEach((seg, i) => {
+  segs.forEach((seg, i) => {
+    // In shadow mode, add a card label before the first segment of each card
+    if (seg._first && seg._card) {
+      const divider = document.createElement('div');
+      divider.style.cssText = 'font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#444;padding:12px 0 4px;border-top:1px solid #1a1a1a;margin-top:8px;';
+      divider.textContent = seg._card;
+      main.appendChild(divider);
+    }
     const block = document.createElement('div');
     block.className = 'segment-block';
 
@@ -287,7 +297,7 @@ function renderSegments(entry) {
     tag.textContent = seg.lang === 'en' ? 'English' : (seg.lang === 'es' ? 'Español' : seg.lang.toUpperCase());
 
     const text = document.createElement('div');
-    text.className = 'segment-text';
+    text.className = 'segment-text' + (i === activeIndex ? ' active' : i < activeIndex ? ' revealed' : '');
     text.id = `seg-${i}`;
     text.textContent = seg.text;
 
@@ -297,128 +307,136 @@ function renderSegments(entry) {
   });
 }
 
-function updateHeader(entry) {
-  document.getElementById('island-label').textContent = entry.island;
-  document.getElementById('card-name').textContent = entry.card;
+function updateHeader() {
   const badge = document.getElementById('mode-badge');
-  badge.textContent = entry.mode.charAt(0).toUpperCase() + entry.mode.slice(1);
-  badge.className = `mode-badge ${entry.mode}`;
-  badge.id = 'mode-badge';
+  if (currentMode === 'shadow') {
+    const entry = playlist.find(e => e.mode === 'shadow');
+    document.getElementById('island-label').textContent = entry ? entry.island : '';
+    document.getElementById('card-name').textContent = 'Full Island';
+    badge.textContent = 'Shadow';
+    badge.className = 'mode-badge shadow';
+    badge.id = 'mode-badge';
+  } else {
+    const entry = currentEntry();
+    if (!entry) return;
+    document.getElementById('island-label').textContent = entry.island;
+    document.getElementById('card-name').textContent = entry.card;
+    badge.textContent = 'Recall';
+    badge.className = 'mode-badge recall';
+    badge.id = 'mode-badge';
+  }
 }
 
 function updateDots() {
+  if (currentMode === 'shadow') return;
   document.querySelectorAll('.card-dot').forEach((dot, i) => {
     dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
   });
 }
 
 function updateProgress() {
-  const entry = currentEntry();
-  const pct = entry ? (currentSegIndex / entry.segments.length) * 100 : 0;
+  let pct = 0;
+  if (currentMode === 'shadow') {
+    pct = shadowSegs.length ? (shadowSegIndex / shadowSegs.length) * 100 : 0;
+  } else {
+    const entry = currentEntry();
+    pct = entry ? (currentSegIndex / entry.segments.length) * 100 : 0;
+  }
   document.getElementById('progress-fill').style.width = pct + '%';
 }
 
 function highlightSegment(index) {
-  const entry = currentEntry();
-  if (!entry) return;
-  entry.segments.forEach((_, i) => {
-    const el = document.getElementById(`seg-${i}`);
-    if (!el) return;
+  document.querySelectorAll('.segment-text').forEach((el, i) => {
     if (i < index) el.className = 'segment-text revealed';
     else if (i === index) el.className = 'segment-text active';
     else el.className = 'segment-text';
   });
-  // Scroll active segment into view
   const active = document.getElementById(`seg-${index}`);
   if (active) active.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-// ── Playback ─────────────────────────────────────────────────────────────────
+// ── Recall playback ───────────────────────────────────────────────────────────
 function loadCard(index) {
   stopPlayback();
   currentCardIndex = index;
   currentSegIndex = 0;
   const entry = currentEntry();
   if (!entry) return;
-
-  renderSegments(entry);
-  updateHeader(entry);
+  renderSegmentList(entry.segments, 0);
+  updateHeader();
   updateDots();
   updateProgress();
-  highlightSegment(0);
-
   document.getElementById('prev-btn').disabled = currentCardIndex === 0;
-  document.getElementById('next-btn').disabled = currentCardIndex >= cards().length - 1;
+  document.getElementById('next-btn').disabled = currentCardIndex >= recallCards().length - 1;
   document.getElementById('play-btn').textContent = '▶';
 }
 
-function playSegment(index) {
+function playRecallSegment(index) {
   const entry = currentEntry();
   if (!entry || index >= entry.segments.length) {
-    finishCard();
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶';
+    updateProgress();
+    highlightSegment(entry ? entry.segments.length : 0);
     return;
   }
-
   currentSegIndex = index;
   updateProgress();
   highlightSegment(index);
-
   const seg = entry.segments[index];
   audio.src = seg.audio;
   audio.load();
   audio.play().catch(() => {});
 }
 
+// ── Shadow playback ───────────────────────────────────────────────────────────
+function loadShadow() {
+  stopPlayback();
+  shadowSegIndex = 0;
+  renderSegmentList(shadowSegs, 0);
+  updateHeader();
+  updateProgress();
+  document.getElementById('prev-btn').disabled = true;
+  document.getElementById('next-btn').disabled = true;
+  document.getElementById('play-btn').textContent = '▶';
+}
+
+function playShadowSegment(index) {
+  if (index >= shadowSegs.length) {
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶';
+    updateProgress();
+    highlightSegment(shadowSegs.length);
+    return;
+  }
+  shadowSegIndex = index;
+  updateProgress();
+  highlightSegment(index);
+  const seg = shadowSegs[index];
+  audio.src = seg.audio;
+  audio.load();
+  audio.play().catch(() => {});
+}
+
+// ── Shared audio handler ─────────────────────────────────────────────────────
 audio.addEventListener('ended', () => {
   if (!isPlaying) return;
   pauseTimer = setTimeout(() => {
-    playSegment(currentSegIndex + 1);
+    if (currentMode === 'shadow') playShadowSegment(shadowSegIndex + 1);
+    else playRecallSegment(currentSegIndex + 1);
   }, PAUSE_MS);
 });
 
-function finishCard() {
-  updateProgress();
-  // Mark all revealed
-  const entry = currentEntry();
-  if (entry) {
-    entry.segments.forEach((_, i) => {
-      const el = document.getElementById(`seg-${i}`);
-      if (el) el.className = 'segment-text revealed';
-    });
-  }
-  // Shadow mode: auto-advance to next card
-  if (currentMode === 'shadow' && currentCardIndex < cards().length - 1) {
-    pauseTimer = setTimeout(() => {
-      currentCardIndex++;
-      const next = currentEntry();
-      if (!next) return;
-      renderSegments(next);
-      updateHeader(next);
-      updateDots();
-      highlightSegment(0);
-      document.getElementById('prev-btn').disabled = currentCardIndex === 0;
-      document.getElementById('next-btn').disabled = currentCardIndex >= cards().length - 1;
-      currentSegIndex = 0;
-      playSegment(0);
-    }, PAUSE_MS);
-  } else {
-    isPlaying = false;
-    document.getElementById('play-btn').textContent = '▶';
-  }
-}
-
+// ── Controls ─────────────────────────────────────────────────────────────────
 function togglePlay() {
   if (isPlaying) {
     pausePlayback();
   } else {
-    startPlayback();
+    isPlaying = true;
+    document.getElementById('play-btn').textContent = '⏸';
+    if (currentMode === 'shadow') playShadowSegment(shadowSegIndex);
+    else playRecallSegment(currentSegIndex);
   }
-}
-
-function startPlayback() {
-  isPlaying = true;
-  document.getElementById('play-btn').textContent = '⏸';
-  playSegment(currentSegIndex);
 }
 
 function pausePlayback() {
@@ -432,14 +450,15 @@ function stopPlayback() {
   pausePlayback();
   audio.src = '';
   currentSegIndex = 0;
+  shadowSegIndex = 0;
 }
 
 function prevCard() {
-  if (currentCardIndex > 0) loadCard(currentCardIndex - 1);
+  if (currentMode === 'recall' && currentCardIndex > 0) loadCard(currentCardIndex - 1);
 }
 
 function nextCard() {
-  if (currentCardIndex < cards().length - 1) loadCard(currentCardIndex + 1);
+  if (currentMode === 'recall' && currentCardIndex < recallCards().length - 1) loadCard(currentCardIndex + 1);
 }
 
 function setMode(mode) {
@@ -452,7 +471,8 @@ function setMode(mode) {
   document.getElementById('btn-shadow').className = 'mode-btn' + (mode === 'shadow' ? ' active shadow' : '');
 
   renderCardDots();
-  loadCard(0);
+  if (mode === 'shadow') loadShadow();
+  else loadCard(0);
 }
 
 // ── Service worker ───────────────────────────────────────────────────────────
