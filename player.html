@@ -25,6 +25,25 @@
     border-bottom: 1px solid #222;
   }
 
+  #island-select {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    color: #e8e8e8;
+    font-size: 14px;
+    padding: 10px 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 36px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  #island-select:focus { outline: none; border-color: #3a3a3a; }
+
   #island-label {
     font-size: 11px;
     text-transform: uppercase;
@@ -204,6 +223,9 @@
 <body>
 
 <div id="header">
+  <select id="island-select" onchange="setIsland(this.value)">
+    <option value="all">All Islands</option>
+  </select>
   <div id="island-label">Island</div>
   <div id="card-label">
     <span id="card-name">—</span>
@@ -236,6 +258,7 @@
 
 <script>
 let playlist = [];
+let selectedIsland = 'all';
 let currentMode = 'recall';
 let currentCardIndex = 0;
 let currentSegIndex = 0;
@@ -254,6 +277,17 @@ fetch('playlist.json')
   .then(r => r.json())
   .then(data => {
     playlist = data;
+    // Populate island dropdown
+    const sel = document.getElementById('island-select');
+    const islands = [...new Map(
+      data.filter(e => e.mode === 'recall').map(e => [e.island_slug, e.island])
+    )];
+    islands.forEach(([slug, name]) => {
+      const opt = document.createElement('option');
+      opt.value = slug;
+      opt.textContent = name;
+      sel.appendChild(opt);
+    });
     buildShadowSegs();
     buildListenSegs();
     renderCardDots();
@@ -266,7 +300,8 @@ fetch('playlist.json')
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function recallCards() {
-  return playlist.filter(e => e.mode === 'recall');
+  return playlist.filter(e => e.mode === 'recall' &&
+    (selectedIsland === 'all' || e.island_slug === selectedIsland));
 }
 
 function currentEntry() {
@@ -274,9 +309,9 @@ function currentEntry() {
 }
 
 function buildShadowSegs() {
-  // Flatten all shadow cards into one sequence, adding card dividers
   shadowSegs = [];
-  playlist.filter(e => e.mode === 'shadow').forEach(card => {
+  playlist.filter(e => e.mode === 'shadow' &&
+    (selectedIsland === 'all' || e.island_slug === selectedIsland)).forEach(card => {
     card.segments.forEach((seg, i) => {
       shadowSegs.push({ ...seg, _card: card.card, _first: i === 0 });
     });
@@ -284,9 +319,9 @@ function buildShadowSegs() {
 }
 
 function buildListenSegs() {
-  // ES question → ES answer for each card (full Spanish immersion), auto-advance, loops
   listenSegs = [];
-  playlist.filter(e => e.mode === 'recall').forEach(card => {
+  playlist.filter(e => e.mode === 'recall' &&
+    (selectedIsland === 'all' || e.island_slug === selectedIsland)).forEach(card => {
     const segs = card.segments;
     const esQ = segs.find(s => s.lang === 'es' && s.role === 'question');
     const esA = segs.filter(s => s.lang === 'es' && s.role === 'answer');
@@ -527,6 +562,17 @@ function prevCard() {
 
 function nextCard() {
   if (currentMode === 'recall' && currentCardIndex < recallCards().length - 1) loadCard(currentCardIndex + 1);
+}
+
+function setIsland(slug) {
+  selectedIsland = slug;
+  stopPlayback();
+  buildShadowSegs();
+  buildListenSegs();
+  renderCardDots();
+  if (currentMode === 'shadow') loadShadow();
+  else if (currentMode === 'listen') loadListen();
+  else loadCard(0);
 }
 
 function setMode(mode) {
