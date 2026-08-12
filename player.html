@@ -277,16 +277,17 @@ fetch('playlist.json')
   .then(r => r.json())
   .then(data => {
     playlist = data;
-    // Populate island dropdown
+    // Populate island dropdown (use island name as both key and value)
     const sel = document.getElementById('island-select');
-    const islands = [...new Map(
-      data.filter(e => e.mode === 'recall').map(e => [e.island_slug, e.island])
-    )];
-    islands.forEach(([slug, name]) => {
-      const opt = document.createElement('option');
-      opt.value = slug;
-      opt.textContent = name;
-      sel.appendChild(opt);
+    const seen = new Set();
+    data.filter(e => e.mode === 'recall').forEach(e => {
+      if (!seen.has(e.island)) {
+        seen.add(e.island);
+        const opt = document.createElement('option');
+        opt.value = e.island;
+        opt.textContent = e.island;
+        sel.appendChild(opt);
+      }
     });
     buildShadowSegs();
     buildListenSegs();
@@ -301,7 +302,7 @@ fetch('playlist.json')
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function recallCards() {
   return playlist.filter(e => e.mode === 'recall' &&
-    (selectedIsland === 'all' || e.island_slug === selectedIsland));
+    (selectedIsland === 'all' || e.island === selectedIsland));
 }
 
 function currentEntry() {
@@ -311,7 +312,7 @@ function currentEntry() {
 function buildShadowSegs() {
   shadowSegs = [];
   playlist.filter(e => e.mode === 'shadow' &&
-    (selectedIsland === 'all' || e.island_slug === selectedIsland)).forEach(card => {
+    (selectedIsland === 'all' || e.island === selectedIsland)).forEach(card => {
     card.segments.forEach((seg, i) => {
       shadowSegs.push({ ...seg, _card: card.card, _first: i === 0 });
     });
@@ -321,7 +322,7 @@ function buildShadowSegs() {
 function buildListenSegs() {
   listenSegs = [];
   playlist.filter(e => e.mode === 'recall' &&
-    (selectedIsland === 'all' || e.island_slug === selectedIsland)).forEach(card => {
+    (selectedIsland === 'all' || e.island === selectedIsland)).forEach(card => {
     const segs = card.segments;
     const esQ = segs.find(s => s.lang === 'es' && s.role === 'question');
     const esA = segs.filter(s => s.lang === 'es' && s.role === 'answer');
