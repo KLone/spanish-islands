@@ -299,7 +299,7 @@ function buildListenSegs() {
 function renderCardDots() {
   const nav = document.getElementById('card-nav');
   nav.innerHTML = '';
-  if (currentMode === 'shadow') return; // no dots in shadow mode
+  if (currentMode === 'shadow' || currentMode === 'listen') return; // no dots in shadow or listen mode
   recallCards().forEach((_, i) => {
     const dot = document.createElement('div');
     dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
