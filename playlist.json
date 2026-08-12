@@ -454,5 +454,407 @@
         "role": "answer"
       }
     ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 1",
+    "mode": "recall",
+    "stem": "island-02-daily-routine-core-1",
+    "segments": [
+      {
+        "text": "What time do you usually wake up?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿A qué hora te despiertas normalmente?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Most days I wake up before 6 to day trade.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "La mayoría de los días me despierto antes de las 6 para hacer day trading.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "If I'm too tired I'll sleep in.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Si estoy muy cansado, me quedo dormido más tiempo.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 1",
+    "mode": "shadow",
+    "stem": "island-02-daily-routine-core-1",
+    "segments": [
+      {
+        "text": "¿A qué hora te despiertas normalmente?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "La mayoría de los días me despierto antes de las 6 para hacer day trading.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Si estoy muy cansado, me quedo dormido más tiempo.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-1-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 2",
+    "mode": "recall",
+    "stem": "island-02-daily-routine-core-2",
+    "segments": [
+      {
+        "text": "Do you have a morning routine?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-2-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Tienes una rutina por las mañanas?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Yeah, after trading or when I get up, I stretch, meditate, journal, and then make coffee before starting work.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-2-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Sí, después del trading o cuando me levanto, estiro, medito, escribo en mi diario, y luego me hago un café antes de empezar a trabajar.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 2",
+    "mode": "shadow",
+    "stem": "island-02-daily-routine-core-2",
+    "segments": [
+      {
+        "text": "¿Tienes una rutina por las mañanas?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Sí, después del trading o cuando me levanto, estiro, medito, escribo en mi diario, y luego me hago un café antes de empezar a trabajar.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 3",
+    "mode": "recall",
+    "stem": "island-02-daily-routine-core-3",
+    "segments": [
+      {
+        "text": "What do you eat during the day?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Qué comes durante el día?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "I don't usually eat breakfast.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "No suelo desayunar.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "My first meal is around 12:30, then I eat again after working out.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Mi primera comida es como a las 12:30, y luego como de nuevo después de entrenar.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Just a couple of meals a day, sometimes a snack before the workout and another at night while watching videos.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-en-s03.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Básicamente dos comidas al día, a veces un snack antes de entrenar y otro en la noche viendo videos.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-es-s03.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 3",
+    "mode": "shadow",
+    "stem": "island-02-daily-routine-core-3",
+    "segments": [
+      {
+        "text": "¿Qué comes durante el día?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "No suelo desayunar.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Mi primera comida es como a las 12:30, y luego como de nuevo después de entrenar.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Básicamente dos comidas al día, a veces un snack antes de entrenar y otro en la noche viendo videos.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-3-a-es-s03.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 4",
+    "mode": "recall",
+    "stem": "island-02-daily-routine-core-4",
+    "segments": [
+      {
+        "text": "How do you usually work out?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Cómo sueles entrenar?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "I do either resistance training or cardio, but not both on the same day.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Hago pesas o cardio, pero no los dos el mismo día.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "I work out after 5 when the work day is done.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Entreno después de las 5, cuando termina el día de trabajo.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Core 4",
+    "mode": "shadow",
+    "stem": "island-02-daily-routine-core-4",
+    "segments": [
+      {
+        "text": "¿Cómo sueles entrenar?",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Hago pesas o cardio, pero no los dos el mismo día.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Entreno después de las 5, cuando termina el día de trabajo.",
+        "audio": "code/audio/segments/island-02-daily-routine-core-4-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Deeper 1",
+    "mode": "recall",
+    "stem": "island-02-daily-routine-deeper-1",
+    "segments": [
+      {
+        "text": "How do you wind down at night?",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-1-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Cómo te relajas por las noches?",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "After errands and getting some air, I'll watch YouTube videos and then read in bed until I fall asleep.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-1-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Después de los mandados y de salir a airearme un poco, veo videos de YouTube y luego leo en la cama hasta que me quedo dormido.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Deeper 1",
+    "mode": "shadow",
+    "stem": "island-02-daily-routine-deeper-1",
+    "segments": [
+      {
+        "text": "¿Cómo te relajas por las noches?",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-1-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Después de los mandados y de salir a airearme un poco, veo videos de YouTube y luego leo en la cama hasta que me quedo dormido.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-1-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Deeper 2",
+    "mode": "recall",
+    "stem": "island-02-daily-routine-deeper-2",
+    "segments": [
+      {
+        "text": "Do you work from home?",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-q-en.mp3",
+        "lang": "en",
+        "role": "question"
+      },
+      {
+        "text": "¿Trabajas desde casa?",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Yeah, I work remotely.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-a-en-s01.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Sí, trabajo en remoto.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "I go to my desk in my home office, log in, and work with clients or on internal projects until about 5.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-a-en-s02.mp3",
+        "lang": "en",
+        "role": "answer"
+      },
+      {
+        "text": "Me voy a mi escritorio en mi oficina en casa, me conecto, y trabajo con clientes o en proyectos internos hasta como las 5.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
+  },
+  {
+    "island": "Daily Routine",
+    "card": "Deeper 2",
+    "mode": "shadow",
+    "stem": "island-02-daily-routine-deeper-2",
+    "segments": [
+      {
+        "text": "¿Trabajas desde casa?",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-q-es.mp3",
+        "lang": "es",
+        "role": "question"
+      },
+      {
+        "text": "Sí, trabajo en remoto.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-a-es-s01.mp3",
+        "lang": "es",
+        "role": "answer"
+      },
+      {
+        "text": "Me voy a mi escritorio en mi oficina en casa, me conecto, y trabajo con clientes o en proyectos internos hasta como las 5.",
+        "audio": "code/audio/segments/island-02-daily-routine-deeper-2-a-es-s02.mp3",
+        "lang": "es",
+        "role": "answer"
+      }
+    ]
   }
 ]

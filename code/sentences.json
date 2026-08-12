@@ -58,5 +58,65 @@
     "q_es": "¿Qué piensas del impacto de la IA en tu campo?",
     "a_en": "It's made my job easier for tedious tasks, but at the end of the day I'm a technical storyteller. The story still has to be something I craft and tell. AI can help with the data but I have to tell the story.",
     "a_es": "Me ha facilitado el trabajo en las tareas tediosas, pero al final del día soy un narrador técnico. La historia sigue siendo algo que yo construyo y cuento. La IA puede ayudar con los datos, pero la historia la tengo que contar yo."
+  },
+  {
+    "island_num": 2,
+    "island_slug": "daily-routine",
+    "card_type": "core",
+    "card_num": 1,
+    "q_en": "What time do you usually wake up?",
+    "q_es": "¿A qué hora te despiertas normalmente?",
+    "a_en": "Most days I wake up before 6 to day trade. If I'm too tired I'll sleep in.",
+    "a_es": "La mayoría de los días me despierto antes de las 6 para hacer day trading. Si estoy muy cansado, me quedo dormido más tiempo."
+  },
+  {
+    "island_num": 2,
+    "island_slug": "daily-routine",
+    "card_type": "core",
+    "card_num": 2,
+    "q_en": "Do you have a morning routine?",
+    "q_es": "¿Tienes una rutina por las mañanas?",
+    "a_en": "Yeah, after trading or when I get up, I stretch, meditate, journal, and then make coffee before starting work.",
+    "a_es": "Sí, después del trading o cuando me levanto, estiro, medito, escribo en mi diario, y luego me hago un café antes de empezar a trabajar."
+  },
+  {
+    "island_num": 2,
+    "island_slug": "daily-routine",
+    "card_type": "core",
+    "card_num": 3,
+    "q_en": "What do you eat during the day?",
+    "q_es": "¿Qué comes durante el día?",
+    "a_en": "I don't usually eat breakfast. My first meal is around 12:30, then I eat again after working out. Just a couple of meals a day, sometimes a snack before the workout and another at night while watching videos.",
+    "a_es": "No suelo desayunar. Mi primera comida es como a las 12:30, y luego como de nuevo después de entrenar. Básicamente dos comidas al día, a veces un snack antes de entrenar y otro en la noche viendo videos."
+  },
+  {
+    "island_num": 2,
+    "island_slug": "daily-routine",
+    "card_type": "core",
+    "card_num": 4,
+    "q_en": "How do you usually work out?",
+    "q_es": "¿Cómo sueles entrenar?",
+    "a_en": "I do either resistance training or cardio, but not both on the same day. I work out after 5 when the work day is done.",
+    "a_es": "Hago pesas o cardio, pero no los dos el mismo día. Entreno después de las 5, cuando termina el día de trabajo."
+  },
+  {
+    "island_num": 2,
+    "island_slug": "daily-routine",
+    "card_type": "deeper",
+    "card_num": 1,
+    "q_en": "How do you wind down at night?",
+    "q_es": "¿Cómo te relajas por las noches?",
+    "a_en": "After errands and getting some air, I'll watch YouTube videos and then read in bed until I fall asleep.",
+    "a_es": "Después de los mandados y de salir a airearme un poco, veo videos de YouTube y luego leo en la cama hasta que me quedo dormido."
+  },
+  {
+    "island_num": 2,
+    "island_slug": "daily-routine",
+    "card_type": "deeper",
+    "card_num": 2,
+    "q_en": "Do you work from home?",
+    "q_es": "¿Trabajas desde casa?",
+    "a_en": "Yeah, I work remotely. I go to my desk in my home office, log in, and work with clients or on internal projects until about 5.",
+    "a_es": "Sí, trabajo en remoto. Me voy a mi escritorio en mi oficina en casa, me conecto, y trabajo con clientes o en proyectos internos hasta como las 5."
   }
 ]
