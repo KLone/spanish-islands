@@ -284,14 +284,14 @@ function buildShadowSegs() {
 }
 
 function buildListenSegs() {
-  // EN question → ES answer for each card, auto-advance, loops
+  // ES question → ES answer for each card (full Spanish immersion), auto-advance, loops
   listenSegs = [];
   playlist.filter(e => e.mode === 'recall').forEach(card => {
     const segs = card.segments;
-    const enQ = segs.find(s => s.lang === 'en' && s.role === 'question');
+    const esQ = segs.find(s => s.lang === 'es' && s.role === 'question');
     const esA = segs.filter(s => s.lang === 'es' && s.role === 'answer');
-    if (enQ) listenSegs.push({ ...enQ, _card: card.card, _first: true });
-    esA.forEach((s, i) => listenSegs.push({ ...s, _card: card.card, _first: !enQ && i === 0 }));
+    if (esQ) listenSegs.push({ ...esQ, _card: card.card, _first: true });
+    esA.forEach((s, i) => listenSegs.push({ ...s, _card: card.card, _first: !esQ && i === 0 }));
   });
 }
 
