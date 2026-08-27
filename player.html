@@ -71,6 +71,7 @@
   #mode-badge.recall { background: #1a3a2a; color: #4ade80; }
   #mode-badge.shadow { background: #1a2a3a; color: #60a5fa; }
   #mode-badge.listen { background: #3a2a1a; color: #fb923c; }
+  #mode-badge.cue   { background: #2a2500; color: #fbbf24; }
 
   /* ── Main content ── */
   #main {
@@ -199,6 +200,7 @@
   .mode-btn.active.recall { background: #1a3a2a; color: #4ade80; border-color: #2a5a3a; }
   .mode-btn.active.shadow { background: #1a2a3a; color: #60a5fa; border-color: #2a3a5a; }
   .mode-btn.active.listen { background: #3a2a1a; color: #fb923c; border-color: #5a3a2a; }
+  .mode-btn.active.cue   { background: #2a2500; color: #fbbf24; border-color: #4a4000; }
 
   #card-nav {
     display: flex;
@@ -250,6 +252,7 @@
     <button class="mode-btn active recall" id="btn-recall" onclick="setMode('recall')">Recall</button>
     <button class="mode-btn shadow" id="btn-shadow" onclick="setMode('shadow')">Shadow</button>
     <button class="mode-btn listen" id="btn-listen" onclick="setMode('listen')">Listen</button>
+    <button class="mode-btn cue"    id="btn-cue"    onclick="setMode('cue')">Cue</button>
   </div>
   <div id="card-nav"></div>
 </div>
@@ -266,6 +269,9 @@ let shadowSegs = [];       // flat segment list for shadow mode
 let shadowSegIndex = 0;
 let listenSegs = [];
 let listenSegIndex = 0;
+let cueSegs = [];
+let cueSegIndex = 0;
+let cueRevealed = false;
 let isPlaying = false;
 let pauseTimer = null;
 
@@ -331,6 +337,45 @@ function buildListenSegs() {
   });
 }
 
+function renderCueCard(entry, revealed) {
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+  const enQ = entry.segments.find(s => s.lang === 'en' && s.role === 'question');
+  if (enQ) {
+    const block = document.createElement('div');
+    block.className = 'segment-block';
+    const tag = document.createElement('div');
+    tag.className = 'lang-tag en';
+    tag.textContent = 'English';
+    const text = document.createElement('div');
+    text.className = 'segment-text active';
+    text.textContent = enQ.text;
+    block.appendChild(tag);
+    block.appendChild(text);
+    main.appendChild(block);
+  }
+  if (revealed) {
+    entry.segments.filter(s => s.lang === 'es' && s.role === 'answer').forEach(seg => {
+      const block = document.createElement('div');
+      block.className = 'segment-block';
+      const tag = document.createElement('div');
+      tag.className = 'lang-tag es';
+      tag.textContent = 'Español';
+      const text = document.createElement('div');
+      text.className = 'segment-text active';
+      text.textContent = seg.text;
+      block.appendChild(tag);
+      block.appendChild(text);
+      main.appendChild(block);
+    });
+  } else {
+    const hint = document.createElement('div');
+    hint.style.cssText = 'color:#333;font-size:14px;text-align:center;margin-top:32px;letter-spacing:0.04em;';
+    hint.textContent = 'Speak your answer, then tap Reveal ↓';
+    main.appendChild(hint);
+  }
+}
+
 // ── Render ───────────────────────────────────────────────────────────────────
 function renderCardDots() {
   const nav = document.getElementById('card-nav');
@@ -389,6 +434,14 @@ function updateHeader() {
     badge.textContent = 'Listen';
     badge.className = 'mode-badge listen';
     badge.id = 'mode-badge';
+  } else if (currentMode === 'cue') {
+    const entry = currentEntry();
+    if (!entry) return;
+    document.getElementById('island-label').textContent = entry.island;
+    document.getElementById('card-name').textContent = entry.card;
+    badge.textContent = 'Cue';
+    badge.className = 'mode-badge cue';
+    badge.id = 'mode-badge';
   } else {
     const entry = currentEntry();
     if (!entry) return;
@@ -413,6 +466,8 @@ function updateProgress() {
     pct = shadowSegs.length ? (shadowSegIndex / shadowSegs.length) * 100 : 0;
   } else if (currentMode === 'listen') {
     pct = listenSegs.length ? (listenSegIndex / listenSegs.length) * 100 : 0;
+  } else if (currentMode === 'cue') {
+    pct = cueRevealed ? (cueSegs.length ? (cueSegIndex / cueSegs.length) * 100 : 50) : 0;
   } else {
     const entry = currentEntry();
     pct = entry ? (currentSegIndex / entry.segments.length) * 100 : 0;
@@ -493,6 +548,46 @@ function playShadowSegment(index) {
   audio.play().catch(() => {});
 }
 
+// ── Cue playback ─────────────────────────────────────────────────────────────
+function loadCue(index) {
+  stopPlayback();
+  currentCardIndex = index;
+  cueRevealed = false;
+  const entry = currentEntry();
+  if (!entry) return;
+  renderCueCard(entry, false);
+  updateHeader();
+  updateDots();
+  updateProgress();
+  document.getElementById('prev-btn').disabled = currentCardIndex === 0;
+  document.getElementById('next-btn').disabled = currentCardIndex >= recallCards().length - 1;
+  document.getElementById('play-btn').textContent = 'Reveal';
+}
+
+function revealCue() {
+  cueRevealed = true;
+  const entry = currentEntry();
+  if (!entry) return;
+  renderCueCard(entry, true);
+  cueSegs = entry.segments.filter(s => s.lang === 'es' && s.role === 'answer');
+  cueSegIndex = 0;
+  isPlaying = true;
+  document.getElementById('play-btn').textContent = '⏸';
+  playCueSegment(0);
+}
+
+function playCueSegment(index) {
+  if (index >= cueSegs.length) {
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶';
+    return;
+  }
+  cueSegIndex = index;
+  audio.src = cueSegs[index].audio;
+  audio.load();
+  audio.play().catch(() => {});
+}
+
 // ── Listen playback ───────────────────────────────────────────────────────────
 function loadListen() {
   stopPlayback();
@@ -524,12 +619,17 @@ audio.addEventListener('ended', () => {
   pauseTimer = setTimeout(() => {
     if (currentMode === 'shadow') playShadowSegment(shadowSegIndex + 1);
     else if (currentMode === 'listen') playListenSegment(listenSegIndex + 1);
+    else if (currentMode === 'cue') playCueSegment(cueSegIndex + 1);
     else playRecallSegment(currentSegIndex + 1);
   }, PAUSE_MS);
 });
 
 // ── Controls ─────────────────────────────────────────────────────────────────
 function togglePlay() {
+  if (currentMode === 'cue' && !cueRevealed) {
+    revealCue();
+    return;
+  }
   if (isPlaying) {
     pausePlayback();
   } else {
@@ -537,6 +637,7 @@ function togglePlay() {
     document.getElementById('play-btn').textContent = '⏸';
     if (currentMode === 'shadow') playShadowSegment(shadowSegIndex);
     else if (currentMode === 'listen') playListenSegment(listenSegIndex);
+    else if (currentMode === 'cue') playCueSegment(cueSegIndex);
     else playRecallSegment(currentSegIndex);
   }
 }
@@ -554,15 +655,21 @@ function stopPlayback() {
   currentSegIndex = 0;
   shadowSegIndex = 0;
   listenSegIndex = 0;
+  cueSegIndex = 0;
+  cueRevealed = false;
   document.getElementById('loop-indicator').classList.remove('visible');
 }
 
 function prevCard() {
-  if (currentMode === 'recall' && currentCardIndex > 0) loadCard(currentCardIndex - 1);
+  if ((currentMode === 'recall' || currentMode === 'cue') && currentCardIndex > 0) {
+    currentMode === 'cue' ? loadCue(currentCardIndex - 1) : loadCard(currentCardIndex - 1);
+  }
 }
 
 function nextCard() {
-  if (currentMode === 'recall' && currentCardIndex < recallCards().length - 1) loadCard(currentCardIndex + 1);
+  if ((currentMode === 'recall' || currentMode === 'cue') && currentCardIndex < recallCards().length - 1) {
+    currentMode === 'cue' ? loadCue(currentCardIndex + 1) : loadCard(currentCardIndex + 1);
+  }
 }
 
 function setIsland(slug) {
@@ -573,6 +680,7 @@ function setIsland(slug) {
   renderCardDots();
   if (currentMode === 'shadow') loadShadow();
   else if (currentMode === 'listen') loadListen();
+  else if (currentMode === 'cue') loadCue(0);
   else loadCard(0);
 }
 
@@ -585,10 +693,12 @@ function setMode(mode) {
   document.getElementById('btn-recall').className = 'mode-btn' + (mode === 'recall' ? ' active recall' : '');
   document.getElementById('btn-shadow').className = 'mode-btn' + (mode === 'shadow' ? ' active shadow' : '');
   document.getElementById('btn-listen').className = 'mode-btn' + (mode === 'listen' ? ' active listen' : '');
+  document.getElementById('btn-cue').className    = 'mode-btn' + (mode === 'cue'    ? ' active cue'    : '');
 
   renderCardDots();
   if (mode === 'shadow') loadShadow();
   else if (mode === 'listen') loadListen();
+  else if (mode === 'cue') loadCue(0);
   else loadCard(0);
 }
 

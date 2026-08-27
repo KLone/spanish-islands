@@ -1,4 +1,4 @@
-const CACHE = 'island-player-v7';
+const CACHE = 'island-player-v8';
 
 // On install: cache all files listed in playlist.json
 self.addEventListener('install', event => {
