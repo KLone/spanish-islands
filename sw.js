@@ -1,56 +1,92 @@
-const CACHE = 'island-player-v9';
+// Island Player service worker
+//  - App files (player.html, playlist.json, manifest, icon): network-first,
+//    so a git push shows up on the next open; cached copy is the offline fallback.
+//  - Audio: cache-first in a long-lived cache that survives app updates.
+//    One failed download never blocks an update; missing files are fetched
+//    (and cached) when played, and retried on the next update.
 
-// On install: cache all files listed in playlist.json
+const SHELL_CACHE = 'island-shell-v10';
+const AUDIO_CACHE = 'island-audio';
+const SHELL_FILES = ['player.html', 'playlist.json', 'manifest.json', 'icon.svg'];
+
+async function precacheAudio() {
+  const res = await fetch('playlist.json', { cache: 'no-store' });
+  const playlist = await res.json();
+  const files = new Set();
+  playlist.forEach(entry =>
+    (entry.segments || []).forEach(seg => { if (seg.audio) files.add(seg.audio); })
+  );
+  const cache = await caches.open(AUDIO_CACHE);
+  const list = [...files];
+  for (let i = 0; i < list.length; i += 6) {
+    await Promise.all(list.slice(i, i + 6).map(async f => {
+      try {
+        if (await cache.match(f)) return;          // already have it
+        const r = await fetch(f);
+        if (r.ok && r.status === 200) await cache.put(f, r);
+      } catch (e) { /* skip; will retry when played or on next update */ }
+    }));
+  }
+}
+
 self.addEventListener('install', event => {
   event.waitUntil(
-    fetch('playlist.json')
-      .then(r => r.json())
-      .then(playlist => {
-        const audioFiles = new Set();
-        playlist.forEach(entry => {
-          (entry.segments || []).forEach(seg => {
-            if (seg.audio) audioFiles.add(seg.audio);
-          });
-        });
-
-        const filesToCache = [
-          'player.html',
-          'playlist.json',
-          'manifest.json',
-          'icon.svg',
-          ...audioFiles,
-        ];
-
-        return caches.open(CACHE).then(cache => {
-          console.log('[SW] Caching', filesToCache.length, 'files');
-          // Cache in small batches to avoid overwhelming the browser
-          const batchSize = 5;
-          const batches = [];
-          for (let i = 0; i < filesToCache.length; i += batchSize) {
-            batches.push(filesToCache.slice(i, i + batchSize));
-          }
-          return batches.reduce((chain, batch) => {
-            return chain.then(() => cache.addAll(batch));
-          }, Promise.resolve());
-        });
-      })
+    caches.open(SHELL_CACHE)
+      .then(c => c.addAll(SHELL_FILES.map(f => new Request(f, { cache: 'no-store' }))))
+      .then(() => precacheAudio().catch(() => {}))
   );
   self.skipWaiting();
 });
 
-// On activate: delete old caches
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-    )
+    caches.keys()
+      .then(keys => Promise.all(
+        keys.filter(k => k !== SHELL_CACHE && k !== AUDIO_CACHE).map(k => caches.delete(k))
+      ))
+      .then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
-// On fetch: serve from cache, fall back to network
+function isShell(url) {
+  const path = url.pathname;
+  return path.endsWith('/') || SHELL_FILES.some(f => path.endsWith('/' + f));
+}
+
 self.addEventListener('fetch', event => {
+  const req = event.request;
+  if (req.method !== 'GET') return;
+  const url = new URL(req.url);
+  if (url.origin !== self.location.origin) return;
+
+  if (req.mode === 'navigate' || isShell(url)) {
+    // Network first, fall back to cache when offline
+    event.respondWith(
+      fetch(req, { cache: 'no-store' })
+        .then(res => {
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(SHELL_CACHE).then(c => c.put(req, copy));
+          }
+          return res;
+        })
+        .catch(() => caches.match(req, { ignoreSearch: true })
+          .then(r => r || caches.match('player.html')))
+    );
+    return;
+  }
+
+  // Audio and everything else: cache first, then network (and keep a copy)
   event.respondWith(
-    caches.match(event.request).then(cached => cached || fetch(event.request))
+    caches.match(req, { ignoreSearch: true }).then(cached => {
+      if (cached) return cached;
+      return fetch(req).then(res => {
+        if (res.ok && res.status === 200 && url.pathname.includes('/audio/')) {
+          const copy = res.clone();
+          caches.open(AUDIO_CACHE).then(c => c.put(req, copy));
+        }
+        return res;
+      });
+    })
   );
 });
