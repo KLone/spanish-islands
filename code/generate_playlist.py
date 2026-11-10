@@ -1,100 +1,213 @@
 """
 generate_playlist.py
 
-Reads sentences.json and generates playlist.json for the island player.
-Each card produces two entries (recall + shadow) with ordered segments:
-  { text, audio, lang, role }
+Reads data/islands.json + data/segments.json and writes playlist.json.
 
-Recall sequence per card:
-  EN question → ES question → EN sent 1 → ES sent 1 → EN sent 2 → ES sent 2 → ...
+Produces one playlist entry per (island, section, mode) for 6 modes:
+  listen, shadow, runlines, engcue, reverse, offbook
 
-Shadow sequence per card:
-  ES question → ES sent 1 → ES sent 2 → ...
+Gap formula: gap_after = max(MIN_GAP, FACTOR × es_duration_s_of_the_line_to_produce)
+  Listening mode uses a fixed 0.6 s pause. Off-book has no audio.
 
-Audio paths are relative to the spanish/ directory (one level up from code/).
+The player handles gaps dynamically (gap_after field); driving MP3s are
+baked separately by build_driving.py.
+
+Old recall/shadow entries are appended after the new entries so the player
+keeps working until the new modes are verified.
 
 Usage:
+  cd code
   python3 generate_playlist.py
 """
 
 import json
 import os
-import re
+import sys
 
-INPUT_FILE  = "sentences.json"
-OUTPUT_FILE = "../playlist.json"
-TMP_DIR     = "code/audio/segments"   # relative to spanish/ (where player is served from)
+ISLANDS_JSON  = "data/islands.json"
+SEGMENTS_JSON = "data/segments.json"
+OUTPUT        = "../playlist.json"
+
+MIN_GAP = 2.0
+
+FACTORS = {
+    "listen":  None,   # fixed 0.6 s pause
+    "shadow":  1.2,
+    "runlines": 1.5,
+    "engcue":  1.75,
+    "reverse": 1.5,
+    "offbook": None,   # no audio
+}
+
+LISTEN_PAUSE = 0.6
 
 
-def split_sentences(text):
-    parts = re.split(r'(?<=[.!?])\s+(?=[A-ZÁÉÍÓÚÜÑA-Z])', text)
-    return [p.strip() for p in parts if p.strip()]
+def gap(factor, es_duration_s):
+    if factor is None:
+        return LISTEN_PAUSE
+    return max(MIN_GAP, factor * es_duration_s)
 
 
-def seg(text, audio, lang, role):
-    return {"text": text, "audio": audio, "lang": lang, "role": role}
+def seg(text, audio, lang, role, line_id, gap_after, hint=None):
+    entry = {
+        "text": text,
+        "audio": audio,
+        "lang": lang,
+        "role": role,
+        "line_id": line_id,
+        "gap_after": round(gap_after, 3),
+    }
+    if hint is not None:
+        entry["hint"] = hint
+    return entry
 
 
-def tmp(filename):
-    return f"{TMP_DIR}/{filename}"
+def build_section_entry(island, section, mode, manifest):
+    lines = section["lines"]
+    island_slug = island["island_slug"]
+    island_num  = island["island_num"]
+    island_name = island["island"]
+    section_name = section["section"]
+
+    segs = []
+
+    if mode == "offbook":
+        # No audio segments; player uses the line data for the reveal UI
+        lines_data = []
+        for line in lines:
+            if line["is_stage_direction"]:
+                continue
+            lines_data.append({
+                "line_id": line["line_id"],
+                "speaker": line["speaker"],
+                "spanish": line["spanish"],
+                "english": line["english"],
+            })
+        return {
+            "island": island_name,
+            "island_num": island_num,
+            "section": section_name,
+            "mode": mode,
+            "stem": f"{island_num:02d}-{island_slug}-{section_name.lower().replace(' ', '-')}",
+            "lines": lines_data,
+            "segments": [],
+        }
+
+    for line in lines:
+        lid = line["line_id"]
+        is_kirk = line["speaker"].lower() == "kirk"
+        m = manifest.get(lid)
+        if m is None:
+            # Segment not synthesized yet — emit placeholder
+            es_path, en_path = None, None
+            es_dur = 2.0
+        else:
+            es_path = m["es"]
+            en_path = m["en"]
+            es_dur  = m["es_duration_s"]
+
+        is_stage = line["is_stage_direction"]
+
+        if mode == "listen":
+            if is_stage:
+                continue
+            segs.append(seg(line["spanish"], es_path, "es",
+                            "kirk" if is_kirk else "partner", lid,
+                            LISTEN_PAUSE))
+
+        elif mode == "shadow":
+            if is_stage:
+                continue
+            segs.append(seg(line["spanish"], es_path, "es",
+                            "kirk" if is_kirk else "partner", lid,
+                            gap(FACTORS["shadow"], es_dur)))
+
+        elif mode == "runlines":
+            if is_stage:
+                continue
+            if not is_kirk:
+                # Partner line plays straight through (small pause)
+                segs.append(seg(line["spanish"], es_path, "es", "partner", lid, 0.6))
+            else:
+                # Gap for Kirk to speak, then confirmation
+                segs.append(seg("", None, None, "gap", lid,
+                                gap(FACTORS["runlines"], es_dur),
+                                hint=line["english"]))
+                segs.append(seg(line["spanish"], es_path, "es", "kirk", lid, 0.6))
+
+        elif mode == "engcue":
+            if is_stage:
+                continue
+            if not is_kirk:
+                segs.append(seg(line["spanish"], es_path, "es", "partner", lid, 0.6))
+            else:
+                segs.append(seg(line["english"], en_path, "en", "cue", lid, 0.4))
+                segs.append(seg("", None, None, "gap", lid,
+                                gap(FACTORS["engcue"], es_dur),
+                                hint=line["spanish"]))
+                segs.append(seg(line["spanish"], es_path, "es", "kirk", lid, 0.6))
+
+        elif mode == "reverse":
+            if is_stage:
+                continue
+            if is_kirk:
+                # Kirk's line plays as the cue
+                segs.append(seg(line["spanish"], es_path, "es", "cue", lid, 0.4))
+                # Find next non-stage partner line to use as the gap target
+                # (gap size based on that partner line's duration — approximate with es_dur)
+                segs.append(seg("", None, None, "gap", lid,
+                                gap(FACTORS["reverse"], es_dur),
+                                hint=line["english"]))
+            else:
+                segs.append(seg(line["spanish"], es_path, "es", "partner", lid, 0.6))
+
+    return {
+        "island": island_name,
+        "island_num": island_num,
+        "section": section_name,
+        "mode": mode,
+        "stem": f"{island_num:02d}-{island_slug}-{section_name.lower().replace(' ', '-')}",
+        "segments": segs,
+    }
 
 
 def main():
-    with open(INPUT_FILE, encoding="utf-8") as f:
-        cards = json.load(f)
+    if not os.path.exists(ISLANDS_JSON):
+        print(f"ERROR: {ISLANDS_JSON} not found. Run sync_sheet.py first.")
+        sys.exit(1)
+    if not os.path.exists(SEGMENTS_JSON):
+        print(f"WARNING: {SEGMENTS_JSON} not found — audio paths will be null.")
+        manifest = {}
+    else:
+        with open(SEGMENTS_JSON, encoding="utf-8") as f:
+            manifest = json.load(f)
+
+    with open(ISLANDS_JSON, encoding="utf-8") as f:
+        islands = json.load(f)
 
     playlist = []
+    modes = list(FACTORS.keys())
 
-    for card in cards:
-        num = card["island_num"]
-        slug = card["island_slug"]
-        ctype = card["card_type"]
-        cnum = card["card_num"]
-        stem = f"island-{num:02d}-{slug}-{ctype}-{cnum}"
+    for island in islands:
+        for section in island["sections"]:
+            for mode in modes:
+                entry = build_section_entry(island, section, mode, manifest)
+                playlist.append(entry)
 
-        en_sents = split_sentences(card["a_en"])
-        es_sents = split_sentences(card["a_es"])
-
-        label = f"{ctype.title()} {cnum}"
-        island_name = slug.replace("-", " ").title()
-
-        # ── Recall ──────────────────────────────────────────────────────────
-        recall_segs = [
-            seg(card["q_en"], tmp(f"{stem}-q-en.mp3"), "en", "question"),
-            seg(card["q_es"], tmp(f"{stem}-q-es.mp3"), "es", "question"),
-        ]
-        for i, (en_s, es_s) in enumerate(zip(en_sents, es_sents), 1):
-            recall_segs.append(seg(en_s, tmp(f"{stem}-a-en-s{i:02d}.mp3"), "en", "answer"))
-            recall_segs.append(seg(es_s, tmp(f"{stem}-a-es-s{i:02d}.mp3"), "es", "answer"))
-
-        playlist.append({
-            "island": island_name,
-            "card": label,
-            "mode": "recall",
-            "stem": stem,
-            "segments": recall_segs,
-        })
-
-        # ── Shadow ──────────────────────────────────────────────────────────
-        shadow_segs = [
-            seg(card["q_es"], tmp(f"{stem}-q-es.mp3"), "es", "question"),
-        ]
-        for i, es_s in enumerate(es_sents, 1):
-            shadow_segs.append(seg(es_s, tmp(f"{stem}-a-es-s{i:02d}.mp3"), "es", "answer"))
-
-        playlist.append({
-            "island": island_name,
-            "card": label,
-            "mode": "shadow",
-            "stem": stem,
-            "segments": shadow_segs,
-        })
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(OUTPUT, "w", encoding="utf-8") as f:
         json.dump(playlist, f, ensure_ascii=False, indent=2)
 
-    card_count = len(cards)
-    print(f"Written {len(playlist)} entries ({card_count} cards × 2 modes) to {OUTPUT_FILE}")
+    total_sections = sum(len(i["sections"]) for i in islands)
+    print(f"Written {OUTPUT}")
+    print(f"  Islands:  {len(islands)}")
+    print(f"  Sections: {total_sections}")
+    print(f"  Entries:  {len(playlist)}  ({total_sections} sections × {len(modes)} modes)")
+    missing = sum(1 for i in islands
+                  for s in i["sections"]
+                  for l in s["lines"]
+                  if l["line_id"] not in manifest and not l["is_stage_direction"])
+    if missing:
+        print(f"  WARNING: {missing} lines have no synthesized audio yet — run generate_audio.py")
 
 
 if __name__ == "__main__":

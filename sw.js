@@ -1,4 +1,4 @@
-const CACHE = 'island-player-v8';
+const CACHE = 'island-player-v9';
 
 // On install: cache all files listed in playlist.json
 self.addEventListener('install', event => {
@@ -7,8 +7,10 @@ self.addEventListener('install', event => {
       .then(r => r.json())
       .then(playlist => {
         const audioFiles = new Set();
-        playlist.forEach(card => {
-          card.segments.forEach(seg => audioFiles.add(seg.audio));
+        playlist.forEach(entry => {
+          (entry.segments || []).forEach(seg => {
+            if (seg.audio) audioFiles.add(seg.audio);
+          });
         });
 
         const filesToCache = [

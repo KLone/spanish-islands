@@ -6,712 +6,1051 @@
 <title>Island Player</title>
 <link rel="manifest" href="manifest.json">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f0f0f;
+    --bg2: #1a1a1a;
+    --bg3: #252525;
+    --border: #2a2a2a;
+    --text: #e8e8e8;
+    --dim: #888;
+    --dim2: #555;
+    --dim3: #333;
+    --green: #4ade80;
+    --blue: #60a5fa;
+    --orange: #fb923c;
+    --yellow: #fbbf24;
+    --purple: #c084fc;
+    --teal: #2dd4bf;
+    --red: #f87171;
+  }
 
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background: #0f0f0f;
-    color: #e8e8e8;
+    background: var(--bg); color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    -webkit-user-select: none;
+    min-height: 100dvh; display: flex; flex-direction: column;
+    user-select: none; -webkit-user-select: none;
   }
 
   /* ── Header ── */
-  #header {
-    padding: 16px 20px 12px;
-    border-bottom: 1px solid #222;
-  }
+  #header { padding: 12px 16px 10px; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 8px; }
 
-  #island-select {
-    width: 100%;
-    background: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    border-radius: 10px;
-    color: #e8e8e8;
-    font-size: 14px;
-    padding: 10px 14px;
-    appearance: none;
-    -webkit-appearance: none;
+  .select-row { display: flex; gap: 8px; }
+
+  select {
+    flex: 1; background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 10px; color: var(--text); font-size: 14px;
+    padding: 9px 32px 9px 12px; appearance: none; -webkit-appearance: none;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 14px center;
-    padding-right: 36px;
-    margin-bottom: 10px;
+    background-repeat: no-repeat; background-position: right 12px center; cursor: pointer;
+  }
+  select:focus { outline: none; border-color: #3a3a3a; }
+
+  #mode-row {
+    display: flex; gap: 6px; overflow-x: auto;
+    scrollbar-width: none; -ms-overflow-style: none;
+  }
+  #mode-row::-webkit-scrollbar { display: none; }
+
+  .mode-btn {
+    flex-shrink: 0; padding: 7px 12px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--bg2); color: var(--dim2); font-size: 12px; cursor: pointer;
+    white-space: nowrap; transition: all 0.15s;
+  }
+  .mode-btn.active { font-weight: 600; }
+  .mode-btn[data-mode="listen"].active  { background: #2a1a0a; color: var(--orange); border-color: #5a3a1a; }
+  .mode-btn[data-mode="shadow"].active  { background: #0a1a2a; color: var(--blue);   border-color: #1a3a5a; }
+  .mode-btn[data-mode="runlines"].active{ background: #0a2a1a; color: var(--green);  border-color: #1a5a3a; }
+  .mode-btn[data-mode="engcue"].active  { background: #252000; color: var(--yellow); border-color: #454000; }
+  .mode-btn[data-mode="reverse"].active { background: #1a0a2a; color: var(--purple); border-color: #3a1a5a; }
+  .mode-btn[data-mode="offbook"].active { background: #0a2a2a; color: var(--teal);   border-color: #1a4a4a; }
+  .mode-btn[data-mode="driving"].active { background: #2a0a0a; color: var(--red);    border-color: #5a1a1a; }
+
+  /* ── Stats bar (home) ── */
+  #stats-bar {
+    display: none; gap: 0; border-bottom: 1px solid var(--border);
+  }
+  #stats-bar.visible { display: flex; }
+  .stat-cell {
+    flex: 1; padding: 10px 4px; text-align: center; border-right: 1px solid var(--border);
     cursor: pointer;
   }
-  #island-select:focus { outline: none; border-color: #3a3a3a; }
-
-  #island-label {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #666;
-    margin-bottom: 4px;
-  }
-
-  #card-label {
-    font-size: 15px;
-    color: #aaa;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  #mode-badge {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    padding: 2px 7px;
-    border-radius: 10px;
-    font-weight: 600;
-  }
-  #mode-badge.recall { background: #1a3a2a; color: #4ade80; }
-  #mode-badge.shadow { background: #1a2a3a; color: #60a5fa; }
-  #mode-badge.listen { background: #3a2a1a; color: #fb923c; }
-  #mode-badge.cue   { background: #2a2500; color: #fbbf24; }
+  .stat-cell:last-child { border-right: none; }
+  .stat-num { font-size: 20px; font-weight: 700; }
+  .stat-lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dim2); margin-top: 2px; }
+  .stat-cell.due .stat-num   { color: var(--red); }
+  .stat-cell.learn .stat-num { color: var(--yellow); }
+  .stat-cell.solid .stat-num { color: var(--green); }
+  .stat-cell.new .stat-num   { color: var(--dim); }
 
   /* ── Main content ── */
   #main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 24px 24px 16px;
-    gap: 20px;
+    flex: 1; overflow-y: auto; padding: 16px 20px 8px;
+    display: flex; flex-direction: column; gap: 14px;
   }
 
-  .segment-block {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+  /* Section header inside content */
+  .section-header {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--dim2); padding: 6px 0 2px; border-top: 1px solid #1a1a1a;
+    margin-top: 4px;
   }
+  .section-header:first-child { border-top: none; margin-top: 0; }
 
-  .lang-tag {
-    font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-  }
-  .lang-tag.en { color: #555; }
-  .lang-tag.es { color: #3a6b4a; }
+  .segment-block { display: flex; flex-direction: column; gap: 4px; }
 
-  #loop-indicator {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #6a4a2a;
-    text-align: center;
-    padding: 4px 0;
-    display: none;
-  }
-  #loop-indicator.visible { display: block; }
+  .lang-tag { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+  .lang-tag.en { color: var(--dim2); }
+  .lang-tag.es { color: #3a7a5a; }
+  .lang-tag.gap-tag { color: #3a3a2a; }
 
-  .segment-text {
-    font-size: 22px;
-    line-height: 1.45;
-    color: #333;
-    transition: color 0.3s ease;
+  .seg-text {
+    font-size: 20px; line-height: 1.45; color: #555; transition: color 0.25s;
   }
-  .segment-text.active {
-    color: #f0f0f0;
+  .seg-text.active  { color: var(--text); }
+  .seg-text.done    { color: #444; }
+  .seg-text.gap-text { font-style: italic; color: #2a2a2a; }
+  .seg-text.gap-text.active { color: #666; }
+
+  /* Gap countdown bar */
+  #gap-bar { height: 3px; background: var(--border); margin: 0 20px; display: none; }
+  #gap-fill { height: 100%; background: var(--dim2); transition: width 0.1s linear; width: 0%; }
+
+  /* ── Off-book ── */
+  .ob-line {
+    padding: 12px 0; border-bottom: 1px solid #1a1a1a; display: flex;
+    flex-direction: column; gap: 4px; cursor: pointer;
   }
-  .segment-text.revealed {
-    color: #888;
+  .ob-line:last-child { border-bottom: none; }
+  .ob-speaker { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dim2); }
+  .ob-es { font-size: 20px; color: var(--dim3); transition: color 0.2s; }
+  .ob-es.revealed { color: var(--text); }
+  .ob-en { font-size: 14px; color: #2a2a2a; transition: color 0.2s; margin-top: 2px; }
+  .ob-en.revealed { color: var(--dim2); }
+
+  /* ── Driving island list ── */
+  .driving-item {
+    padding: 14px 16px; background: var(--bg2); border-radius: 12px;
+    border: 1px solid var(--border); cursor: pointer; transition: background 0.15s;
+    display: flex; align-items: center; justify-content: space-between;
   }
+  .driving-item.active { background: #2a0a0a; border-color: #5a1a1a; }
+  .driving-item:active { background: var(--bg3); }
+  .driving-name { font-size: 16px; }
+  .driving-dur  { font-size: 12px; color: var(--dim2); }
+
+  /* ── Rating buttons (post-section) ── */
+  #rating-panel {
+    display: none; flex-direction: column; gap: 12px; padding: 20px;
+    background: var(--bg); border-top: 1px solid var(--border); position: sticky; bottom: 0;
+  }
+  #rating-panel.visible { display: flex; }
+  #rating-label { font-size: 13px; color: var(--dim); text-align: center; }
+  #rating-btns { display: flex; gap: 8px; }
+  .rating-btn {
+    flex: 1; padding: 18px 8px; border-radius: 14px; border: none; font-size: 14px;
+    font-weight: 600; cursor: pointer; transition: transform 0.1s;
+  }
+  .rating-btn:active { transform: scale(0.96); }
+  #btn-again { background: #3a1a1a; color: var(--red); }
+  #btn-ok    { background: #2a2500; color: var(--yellow); }
+  #btn-solid { background: #0a2a1a; color: var(--green); }
 
   /* ── Progress bar ── */
-  #progress-bar {
-    height: 2px;
-    background: #222;
-    margin: 0 24px;
-  }
-  #progress-fill {
-    height: 100%;
-    background: #4ade80;
-    transition: width 0.1s linear;
-    width: 0%;
-  }
+  #progress-bar { height: 2px; background: var(--border); flex-shrink: 0; }
+  #progress-fill { height: 100%; background: var(--green); transition: width 0.1s linear; width: 0%; }
 
   /* ── Controls ── */
-  #controls {
-    padding: 16px 24px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  #controls { padding: 12px 20px 32px; display: flex; flex-direction: column; gap: 12px; }
 
-  #transport {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
+  #transport { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 
   .nav-btn {
-    background: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    color: #aaa;
-    border-radius: 12px;
-    padding: 14px 22px;
-    font-size: 14px;
-    cursor: pointer;
-    flex: 1;
+    background: var(--bg2); border: 1px solid var(--border); color: var(--dim);
+    border-radius: 12px; padding: 13px 20px; font-size: 14px; cursor: pointer; flex: 1;
     transition: background 0.15s, color 0.15s;
   }
-  .nav-btn:active { background: #252525; color: #fff; }
+  .nav-btn:active { background: var(--bg3); color: var(--text); }
   .nav-btn:disabled { opacity: 0.3; cursor: default; }
 
   #play-btn {
-    background: #1a3a2a;
-    border: none;
-    color: #4ade80;
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
-    font-size: 22px;
-    cursor: pointer;
-    flex-shrink: 0;
-    transition: background 0.15s, transform 0.1s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #0a2a1a; border: none; color: var(--green);
+    border-radius: 50%; width: 64px; height: 64px; font-size: 24px; cursor: pointer;
+    flex-shrink: 0; transition: background 0.15s, transform 0.1s;
+    display: flex; align-items: center; justify-content: center;
   }
   #play-btn:active { transform: scale(0.94); }
+  #play-btn.driving { background: #2a0a0a; color: var(--red); }
 
-  #mode-controls {
-    display: flex;
-    gap: 8px;
+  #aux-row { display: flex; gap: 8px; align-items: center; }
+
+  .aux-btn {
+    background: var(--bg2); border: 1px solid var(--border); color: var(--dim2);
+    border-radius: 10px; padding: 8px 12px; font-size: 12px; cursor: pointer;
   }
+  .aux-btn:active { background: var(--bg3); }
 
-  .mode-btn {
-    flex: 1;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #2a2a2a;
-    background: #1a1a1a;
-    color: #555;
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.15s;
+  #gap-factor-row { display: flex; align-items: center; gap: 10px; }
+  #gap-factor-row label { font-size: 12px; color: var(--dim2); white-space: nowrap; }
+  #gap-factor { flex: 1; accent-color: var(--green); }
+  #gap-factor-val { font-size: 12px; color: var(--dim); min-width: 32px; }
+
+  #hint-btn {
+    background: #1a2a1a; border: 1px solid #2a4a2a; color: #3a7a5a;
+    border-radius: 10px; padding: 8px 14px; font-size: 12px; cursor: pointer;
+    display: none;
   }
-  .mode-btn.active.recall { background: #1a3a2a; color: #4ade80; border-color: #2a5a3a; }
-  .mode-btn.active.shadow { background: #1a2a3a; color: #60a5fa; border-color: #2a3a5a; }
-  .mode-btn.active.listen { background: #3a2a1a; color: #fb923c; border-color: #5a3a2a; }
-  .mode-btn.active.cue   { background: #2a2500; color: #fbbf24; border-color: #4a4000; }
+  #hint-btn.visible { display: block; }
 
-  #card-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .card-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #2a2a2a;
-    cursor: pointer;
+  #section-dots { display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
+  .sdot {
+    width: 7px; height: 7px; border-radius: 50%; background: var(--border); cursor: pointer;
     transition: background 0.2s;
   }
-  .card-dot.active { background: #4ade80; }
-  .card-dot.done { background: #3a5a4a; }
+  .sdot.active { background: var(--green); }
+  .sdot.done   { background: #2a4a3a; }
 </style>
 </head>
 <body>
 
 <div id="header">
-  <select id="island-select" onchange="setIsland(this.value)">
-    <option value="all">All Islands</option>
-  </select>
-  <div id="island-label">Island</div>
-  <div id="card-label">
-    <span id="card-name">—</span>
-    <span id="mode-badge" class="recall">Recall</span>
+  <div class="select-row">
+    <select id="island-sel" onchange="selectIsland(this.value)">
+      <option value="">Loading…</option>
+    </select>
+    <select id="section-sel" onchange="selectSection(this.value)">
+      <option value="">—</option>
+    </select>
+  </div>
+  <div id="mode-row">
+    <button class="mode-btn" data-mode="listen"   onclick="setMode('listen')">Listen</button>
+    <button class="mode-btn active" data-mode="runlines" onclick="setMode('runlines')">Run Lines</button>
+    <button class="mode-btn" data-mode="shadow"   onclick="setMode('shadow')">Shadow</button>
+    <button class="mode-btn" data-mode="engcue"   onclick="setMode('engcue')">Eng Cue</button>
+    <button class="mode-btn" data-mode="reverse"  onclick="setMode('reverse')">Reverse</button>
+    <button class="mode-btn" data-mode="offbook"  onclick="setMode('offbook')">Off Book</button>
+    <button class="mode-btn" data-mode="driving"  onclick="setMode('driving')">Driving</button>
   </div>
 </div>
 
-<div id="main">
-  <!-- segments injected here -->
+<div id="stats-bar">
+  <div class="stat-cell due"   onclick="startReviewMix()"><div class="stat-num" id="stat-due">0</div><div class="stat-lbl">Due</div></div>
+  <div class="stat-cell learn" onclick="startReviewMix()"><div class="stat-num" id="stat-learn">0</div><div class="stat-lbl">Learning</div></div>
+  <div class="stat-cell solid"><div class="stat-num" id="stat-solid">0</div><div class="stat-lbl">Solid</div></div>
+  <div class="stat-cell new"  onclick="startReviewMix()"><div class="stat-num" id="stat-new">0</div><div class="stat-lbl">New</div></div>
+</div>
+
+<div id="main"></div>
+<div id="gap-bar"><div id="gap-fill"></div></div>
+
+<div id="rating-panel">
+  <div id="rating-label">How did it go?</div>
+  <div id="rating-btns">
+    <button class="rating-btn" id="btn-again" onclick="rate('again')">Again</button>
+    <button class="rating-btn" id="btn-ok"    onclick="rate('ok')">OK</button>
+    <button class="rating-btn" id="btn-solid" onclick="rate('solid')">Solid</button>
+  </div>
 </div>
 
 <div id="progress-bar"><div id="progress-fill"></div></div>
-<div id="loop-indicator">↻ Looping</div>
 
 <div id="controls">
   <div id="transport">
-    <button class="nav-btn" id="prev-btn" onclick="prevCard()">← Prev</button>
+    <button class="nav-btn" id="prev-btn" onclick="prevSection()">← Prev</button>
     <button id="play-btn" onclick="togglePlay()">▶</button>
-    <button class="nav-btn" id="next-btn" onclick="nextCard()">Next →</button>
+    <button class="nav-btn" id="next-btn" onclick="nextSection()">Next →</button>
   </div>
-  <div id="mode-controls">
-    <button class="mode-btn active recall" id="btn-recall" onclick="setMode('recall')">Recall</button>
-    <button class="mode-btn shadow" id="btn-shadow" onclick="setMode('shadow')">Shadow</button>
-    <button class="mode-btn listen" id="btn-listen" onclick="setMode('listen')">Listen</button>
-    <button class="mode-btn cue"    id="btn-cue"    onclick="setMode('cue')">Cue</button>
+  <div id="aux-row">
+    <button class="aux-btn" id="hint-btn" onclick="showHint()">Hint</button>
+    <div id="gap-factor-row">
+      <label>Gap</label>
+      <input type="range" id="gap-factor" min="0.75" max="2.5" step="0.25" value="1.0"
+             oninput="setGapFactor(this.value)">
+      <span id="gap-factor-val">1.0×</span>
+    </div>
+    <button class="aux-btn" onclick="showExportImport()">⬆⬇</button>
   </div>
-  <div id="card-nav"></div>
+  <div id="section-dots"></div>
 </div>
 
-<audio id="audio-player"></audio>
+<audio id="audio-el"></audio>
+
+<!-- Export/Import dialog -->
+<div id="ei-dialog" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:100;display:none;flex-direction:column;align-items:center;justify-content:center;padding:24px;gap:16px;">
+  <div style="background:var(--bg2);border-radius:16px;padding:20px;width:100%;max-width:360px;display:flex;flex-direction:column;gap:12px;">
+    <div style="font-size:16px;font-weight:600;">Progress Backup</div>
+    <button class="aux-btn" style="padding:14px;" onclick="exportProgress()">Export CSV</button>
+    <label style="cursor:pointer;">
+      <span class="aux-btn" style="display:block;padding:14px;text-align:center;">Import CSV</span>
+      <input type="file" accept=".csv" style="display:none;" onchange="importProgress(this)">
+    </label>
+    <button class="aux-btn" style="padding:14px;" onclick="closeEI()">Cancel</button>
+  </div>
+</div>
 
 <script>
+// ── State ──────────────────────────────────────────────────────────────────
 let playlist = [];
-let selectedIsland = 'all';
-let currentMode = 'recall';
-let currentCardIndex = 0;
-let currentSegIndex = 0;
-let shadowSegs = [];       // flat segment list for shadow mode
-let shadowSegIndex = 0;
-let listenSegs = [];
-let listenSegIndex = 0;
-let cueSegs = [];
-let cueSegIndex = 0;
-let cueRevealed = false;
+let grouped = {};   // island -> section -> mode -> entry
+let islandList = []; // [{name, slug, num}]
+let reviewQueue = [];
+let isReviewMix = false;
+let reviewIdx = 0;
+
+let selIsland = '';
+let selSection = '';
+let currentMode = 'runlines';
+
+// Playback
+const audio = document.getElementById('audio-el');
+let segIdx = 0;
 let isPlaying = false;
-let pauseTimer = null;
+let isInGap = false;
+let gapTimer = null;
+let gapStart = 0;
+let gapTotal = 0;
+let gapAF = null;
+let currentHintText = '';
+let pauseTime = 0;
 
-const PAUSE_MS = 5000;
-const audio = document.getElementById('audio-player');
+let gapFactor = 1.0;
+let srsProgress = {};
 
-// ── Load playlist ────────────────────────────────────────────────────────────
+// ── Init ──────────────────────────────────────────────────────────────────
+try { gapFactor = parseFloat(localStorage.getItem('gap_factor') || '1.0'); } catch(e){}
+try { srsProgress = JSON.parse(localStorage.getItem('srs_progress') || '{}'); } catch(e){}
+document.getElementById('gap-factor').value = gapFactor;
+document.getElementById('gap-factor-val').textContent = gapFactor.toFixed(2).replace(/\.?0+$/, '') + '×';
+
 fetch('playlist.json')
   .then(r => r.json())
   .then(data => {
     playlist = data;
-    // Populate island dropdown (use island name as both key and value)
-    const sel = document.getElementById('island-select');
-    const seen = new Set();
-    data.filter(e => e.mode === 'recall').forEach(e => {
-      if (!seen.has(e.island)) {
-        seen.add(e.island);
-        const opt = document.createElement('option');
-        opt.value = e.island;
-        opt.textContent = e.island;
-        sel.appendChild(opt);
-      }
-    });
-    buildShadowSegs();
-    buildListenSegs();
-    renderCardDots();
-    loadCard(0);
+    buildGrouped();
+    populateIslandSelect();
+    updateStats();
+    if (islandList.length) {
+      selectIsland(islandList[0].name, true);
+    }
   })
   .catch(() => {
     document.getElementById('main').innerHTML =
-      '<p style="color:#f66;padding:20px">Could not load playlist.json.<br>Run generate_playlist.py first,<br>then serve from the spanish/ directory.</p>';
+      '<p style="color:#f66;padding:20px">Could not load playlist.json.<br>Run generate_playlist.py first.</p>';
   });
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
-function recallCards() {
-  return playlist.filter(e => e.mode === 'recall' &&
-    (selectedIsland === 'all' || e.island === selectedIsland));
+function buildGrouped() {
+  grouped = {};
+  islandList = [];
+  const seenIslands = new Set();
+  for (const entry of playlist) {
+    if (!entry.section && !entry.card) continue; // malformed
+    const iname = entry.island;
+    const sname = entry.section || entry.card;
+    const mode = entry.mode;
+    if (!grouped[iname]) grouped[iname] = {};
+    if (!grouped[iname][sname]) grouped[iname][sname] = {};
+    grouped[iname][sname][mode] = entry;
+    if (!seenIslands.has(iname)) {
+      seenIslands.add(iname);
+      islandList.push({ name: iname, slug: slugOf(iname), num: entry.island_num || 0 });
+    }
+  }
+}
+
+function slugOf(name) {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function populateIslandSelect() {
+  const sel = document.getElementById('island-sel');
+  sel.innerHTML = '';
+  const opt0 = document.createElement('option');
+  opt0.value = '__review__';
+  opt0.textContent = '★ Review Mix';
+  sel.appendChild(opt0);
+  for (const isl of islandList) {
+    const opt = document.createElement('option');
+    opt.value = isl.name;
+    opt.textContent = isl.name;
+    sel.appendChild(opt);
+  }
+}
+
+function populateSectionSelect(islandName) {
+  const sel = document.getElementById('section-sel');
+  sel.innerHTML = '';
+  const sections = grouped[islandName] ? Object.keys(grouped[islandName]) : [];
+  for (const s of sections) {
+    const opt = document.createElement('option');
+    opt.value = s;
+    opt.textContent = s;
+    sel.appendChild(opt);
+  }
+  if (sections.length) sel.value = sections[0];
+  return sections[0] || '';
+}
+
+// ── Selection ──────────────────────────────────────────────────────────────
+function selectIsland(name, skipRender) {
+  if (name === '__review__') {
+    startReviewMix();
+    return;
+  }
+  isReviewMix = false;
+  selIsland = name;
+  document.getElementById('island-sel').value = name;
+  const firstSec = populateSectionSelect(name);
+  selSection = firstSec;
+  if (!skipRender) loadSection();
+  updateStats();
+}
+
+function selectSection(name) {
+  if (!name) return;
+  selSection = name;
+  loadSection();
+}
+
+function sectionsForIsland(iname) {
+  return grouped[iname] ? Object.keys(grouped[iname]) : [];
 }
 
 function currentEntry() {
-  return recallCards()[currentCardIndex];
+  if (!selIsland || !selSection) return null;
+  const modes = grouped[selIsland]?.[selSection];
+  if (!modes) return null;
+  // For driving, there's no playlist entry — handled separately
+  return modes[currentMode] || null;
 }
 
-function buildShadowSegs() {
-  shadowSegs = [];
-  playlist.filter(e => e.mode === 'shadow' &&
-    (selectedIsland === 'all' || e.island === selectedIsland)).forEach(card => {
-    card.segments.forEach((seg, i) => {
-      shadowSegs.push({ ...seg, _card: card.card, _first: i === 0 });
-    });
-  });
+function sectionKey(iname, sname) {
+  return slugOf(iname) + '/' + sname;
 }
 
-function buildListenSegs() {
-  listenSegs = [];
-  playlist.filter(e => e.mode === 'recall' &&
-    (selectedIsland === 'all' || e.island === selectedIsland)).forEach(card => {
-    const segs = card.segments;
-    const esQ = segs.find(s => s.lang === 'es' && s.role === 'question');
-    const esA = segs.filter(s => s.lang === 'es' && s.role === 'answer');
-    if (esQ) listenSegs.push({ ...esQ, _card: card.card, _first: true });
-    esA.forEach((s, i) => listenSegs.push({ ...s, _card: card.card, _first: !esQ && i === 0 }));
-  });
+// ── SRS ───────────────────────────────────────────────────────────────────
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
 }
 
-function renderCueCard(entry, revealed) {
-  const main = document.getElementById('main');
-  main.innerHTML = '';
-  const enQ = entry.segments.find(s => s.lang === 'en' && s.role === 'question');
-  if (enQ) {
-    const block = document.createElement('div');
-    block.className = 'segment-block';
-    const tag = document.createElement('div');
-    tag.className = 'lang-tag en';
-    tag.textContent = 'English';
-    const text = document.createElement('div');
-    text.className = 'segment-text active';
-    text.textContent = enQ.text;
-    block.appendChild(tag);
-    block.appendChild(text);
-    main.appendChild(block);
+function getSRS(iname, sname) {
+  return srsProgress[sectionKey(iname, sname)] || null;
+}
+
+function setSRS(iname, sname, rating) {
+  const key = sectionKey(iname, sname);
+  const existing = srsProgress[key] || { interval_days: 0 };
+  let interval;
+  if (rating === 'again') {
+    interval = 1;
+  } else if (rating === 'ok') {
+    interval = Math.max(1, existing.interval_days) * 2;
+    interval = interval < 2 ? 2 : interval;
+  } else { // solid
+    interval = Math.max(1, existing.interval_days) * 3;
+    interval = interval < 4 ? 4 : interval;
   }
-  if (revealed) {
-    entry.segments.filter(s => s.lang === 'es' && s.role === 'answer').forEach(seg => {
-      const block = document.createElement('div');
-      block.className = 'segment-block';
-      const tag = document.createElement('div');
-      tag.className = 'lang-tag es';
-      tag.textContent = 'Español';
-      const text = document.createElement('div');
-      text.className = 'segment-text active';
-      text.textContent = seg.text;
-      block.appendChild(tag);
-      block.appendChild(text);
-      main.appendChild(block);
-    });
-  } else {
-    const hint = document.createElement('div');
-    hint.style.cssText = 'color:#333;font-size:14px;text-align:center;margin-top:32px;letter-spacing:0.04em;';
-    hint.textContent = 'Speak your answer, then tap Reveal ↓';
-    main.appendChild(hint);
+  interval = Math.min(interval, 60);
+  const due = new Date();
+  due.setDate(due.getDate() + interval);
+  srsProgress[key] = {
+    section_key: key,
+    last_run: todayStr(),
+    rating,
+    interval_days: interval,
+    due_date: due.toISOString().slice(0, 10),
+  };
+  try { localStorage.setItem('srs_progress', JSON.stringify(srsProgress)); } catch(e){}
+  updateStats();
+}
+
+function isDue(iname, sname) {
+  const s = getSRS(iname, sname);
+  if (!s) return true; // new
+  return s.due_date <= todayStr();
+}
+
+function updateStats() {
+  let due = 0, learning = 0, solid = 0, newCount = 0;
+  for (const iname of Object.keys(grouped)) {
+    for (const sname of Object.keys(grouped[iname])) {
+      const s = getSRS(iname, sname);
+      if (!s) { newCount++; continue; }
+      if (s.interval_days >= 7) solid++;
+      else learning++;
+      if (s.due_date <= todayStr()) due++;
+    }
+  }
+  document.getElementById('stat-due').textContent = due;
+  document.getElementById('stat-learn').textContent = learning;
+  document.getElementById('stat-solid').textContent = solid;
+  document.getElementById('stat-new').textContent = newCount;
+  document.getElementById('stats-bar').classList.toggle('visible', due + newCount > 0);
+}
+
+// ── Review Mix ────────────────────────────────────────────────────────────
+function startReviewMix() {
+  document.getElementById('island-sel').value = '__review__';
+  const today = todayStr();
+  let overdue = [], dueToday = [], newSecs = [];
+  for (const iname of Object.keys(grouped)) {
+    for (const sname of Object.keys(grouped[iname])) {
+      const s = getSRS(iname, sname);
+      if (!s) { newSecs.push([iname, sname]); continue; }
+      if (s.due_date < today) overdue.push([iname, sname]);
+      else if (s.due_date === today) dueToday.push([iname, sname]);
+    }
+  }
+  shuffle(dueToday);
+  shuffle(newSecs);
+  reviewQueue = [...overdue, ...dueToday, ...newSecs.slice(0, 10)];
+  if (!reviewQueue.length) {
+    document.getElementById('main').innerHTML =
+      '<p style="color:var(--green);padding:20px;text-align:center;font-size:18px;">Nothing due! 🎉</p>';
+    return;
+  }
+  isReviewMix = true;
+  reviewIdx = 0;
+  loadReviewItem();
+}
+
+function loadReviewItem() {
+  if (reviewIdx >= reviewQueue.length) {
+    document.getElementById('main').innerHTML =
+      '<p style="color:var(--green);padding:20px;text-align:center;font-size:18px;">Review done! 🎉</p>';
+    isReviewMix = false;
+    updateStats();
+    return;
+  }
+  const [iname, sname] = reviewQueue[reviewIdx];
+  selIsland = iname;
+  selSection = sname;
+  document.getElementById('section-sel').innerHTML = `<option value="${sname}">${sname}</option>`;
+  loadSection();
+}
+
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
   }
 }
 
-// ── Render ───────────────────────────────────────────────────────────────────
-function renderCardDots() {
-  const nav = document.getElementById('card-nav');
-  nav.innerHTML = '';
-  if (currentMode === 'shadow' || currentMode === 'listen') return; // no dots in shadow or listen mode
-  recallCards().forEach((_, i) => {
-    const dot = document.createElement('div');
-    dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
-    dot.onclick = () => { stopPlayback(); loadCard(i); };
-    nav.appendChild(dot);
-  });
+// ── Load section ──────────────────────────────────────────────────────────
+function loadSection() {
+  stopPlayback();
+  hideRating();
+
+  if (currentMode === 'driving') {
+    renderDriving();
+    return;
+  }
+  if (currentMode === 'offbook') {
+    renderOffBook();
+    return;
+  }
+
+  const entry = currentEntry();
+  if (!entry) {
+    document.getElementById('main').innerHTML =
+      `<p style="color:var(--dim2);padding:20px">No "${currentMode}" data for this section yet.<br>Run generate_playlist.py first.</p>`;
+    return;
+  }
+
+  renderSegments(entry.segments, -1);
+  updateProgress(0, entry.segments.length);
+  updateNav();
+  updateMediaSession();
+  document.getElementById('play-btn').textContent = '▶';
+  document.getElementById('play-btn').className = 'play-btn';
+  updateHintBtn(false);
+  renderSectionDots();
 }
 
-function renderSegmentList(segs, activeIndex) {
+// ── Render ────────────────────────────────────────────────────────────────
+function renderSegments(segs, activeIdx) {
   const main = document.getElementById('main');
   main.innerHTML = '';
   segs.forEach((seg, i) => {
-    // In shadow mode, add a card label before the first segment of each card
-    if (seg._first && seg._card) {
-      const divider = document.createElement('div');
-      divider.style.cssText = 'font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:#444;padding:12px 0 4px;border-top:1px solid #1a1a1a;margin-top:8px;';
-      divider.textContent = seg._card;
-      main.appendChild(divider);
-    }
     const block = document.createElement('div');
     block.className = 'segment-block';
+    block.id = `sb-${i}`;
 
+    const isGap = seg.role === 'gap';
     const tag = document.createElement('div');
-    tag.className = `lang-tag ${seg.lang}`;
-    tag.textContent = seg.lang === 'en' ? 'English' : seg.lang === 'es' ? 'Español' : seg.lang.toUpperCase();
+    tag.className = 'lang-tag ' + (isGap ? 'gap-tag' : (seg.lang || 'gap-tag'));
+    tag.textContent = isGap ? '…' : (seg.lang === 'en' ? 'English' : seg.lang === 'es' ? 'Español' : (seg.lang || '').toUpperCase());
 
-    const text = document.createElement('div');
-    text.className = 'segment-text' + (i === activeIndex ? ' active' : i < activeIndex ? ' revealed' : '');
-    text.id = `seg-${i}`;
-    text.textContent = seg.text;
+    const txt = document.createElement('div');
+    txt.className = 'seg-text' + (isGap ? ' gap-text' : '') +
+                    (i === activeIdx ? ' active' : i < activeIdx ? ' done' : '');
+    txt.id = `st-${i}`;
+    if (isGap) {
+      txt.textContent = seg.hint || '';
+    } else {
+      txt.textContent = seg.text || '';
+    }
 
     block.appendChild(tag);
-    block.appendChild(text);
+    block.appendChild(txt);
     main.appendChild(block);
   });
 }
 
-function updateHeader() {
-  const badge = document.getElementById('mode-badge');
-  if (currentMode === 'shadow') {
-    const entry = playlist.find(e => e.mode === 'shadow');
-    document.getElementById('island-label').textContent = entry ? entry.island : '';
-    document.getElementById('card-name').textContent = 'Full Island';
-    badge.textContent = 'Shadow';
-    badge.className = 'mode-badge shadow';
-    badge.id = 'mode-badge';
-  } else if (currentMode === 'listen') {
-    const entry = playlist.find(e => e.mode === 'recall');
-    document.getElementById('island-label').textContent = entry ? entry.island : '';
-    document.getElementById('card-name').textContent = 'Full Island';
-    badge.textContent = 'Listen';
-    badge.className = 'mode-badge listen';
-    badge.id = 'mode-badge';
-  } else if (currentMode === 'cue') {
-    const entry = currentEntry();
-    if (!entry) return;
-    document.getElementById('island-label').textContent = entry.island;
-    document.getElementById('card-name').textContent = entry.card;
-    badge.textContent = 'Cue';
-    badge.className = 'mode-badge cue';
-    badge.id = 'mode-badge';
-  } else {
-    const entry = currentEntry();
-    if (!entry) return;
-    document.getElementById('island-label').textContent = entry.island;
-    document.getElementById('card-name').textContent = entry.card;
-    badge.textContent = 'Recall';
-    badge.className = 'mode-badge recall';
-    badge.id = 'mode-badge';
-  }
-}
-
-function updateDots() {
-  if (currentMode === 'shadow') return;
-  document.querySelectorAll('.card-dot').forEach((dot, i) => {
-    dot.className = 'card-dot' + (i === currentCardIndex ? ' active' : '');
+function activateSeg(idx) {
+  document.querySelectorAll('.seg-text').forEach((el, i) => {
+    if (i < idx) el.className = el.className.replace(/ active| done/g, '') + ' done';
+    else if (i === idx) el.className = el.className.replace(/ active| done/g, '') + ' active';
+    else el.className = el.className.replace(/ active| done/g, '');
   });
+  const el = document.getElementById(`st-${idx}`);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-function updateProgress() {
-  let pct = 0;
-  if (currentMode === 'shadow') {
-    pct = shadowSegs.length ? (shadowSegIndex / shadowSegs.length) * 100 : 0;
-  } else if (currentMode === 'listen') {
-    pct = listenSegs.length ? (listenSegIndex / listenSegs.length) * 100 : 0;
-  } else if (currentMode === 'cue') {
-    pct = cueRevealed ? (cueSegs.length ? (cueSegIndex / cueSegs.length) * 100 : 50) : 0;
-  } else {
-    const entry = currentEntry();
-    pct = entry ? (currentSegIndex / entry.segments.length) * 100 : 0;
-  }
-  document.getElementById('progress-fill').style.width = pct + '%';
-}
-
-function highlightSegment(index) {
-  document.querySelectorAll('.segment-text').forEach((el, i) => {
-    if (i < index) el.className = 'segment-text revealed';
-    else if (i === index) el.className = 'segment-text active';
-    else el.className = 'segment-text';
-  });
-  const active = document.getElementById(`seg-${index}`);
-  if (active) active.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-
-// ── Recall playback ───────────────────────────────────────────────────────────
-function loadCard(index) {
-  stopPlayback();
-  currentCardIndex = index;
-  currentSegIndex = 0;
+function renderOffBook() {
   const entry = currentEntry();
-  if (!entry) return;
-  renderSegmentList(entry.segments, 0);
-  updateHeader();
-  updateDots();
-  updateProgress();
-  document.getElementById('prev-btn').disabled = currentCardIndex === 0;
-  document.getElementById('next-btn').disabled = currentCardIndex >= recallCards().length - 1;
-  document.getElementById('play-btn').textContent = '▶';
-}
+  const lines = entry?.lines || [];
+  const main = document.getElementById('main');
+  main.innerHTML = '';
 
-function playRecallSegment(index) {
-  const entry = currentEntry();
-  if (!entry || index >= entry.segments.length) {
-    isPlaying = false;
-    document.getElementById('play-btn').textContent = '▶';
-    updateProgress();
-    highlightSegment(entry ? entry.segments.length : 0);
+  if (!lines.length) {
+    main.innerHTML = '<p style="color:var(--dim2);padding:20px">No off-book data for this section.</p>';
     return;
   }
-  currentSegIndex = index;
-  updateProgress();
-  highlightSegment(index);
-  const seg = entry.segments[index];
-  audio.src = seg.audio;
-  audio.load();
-  audio.play().catch(() => {});
+
+  const header = document.createElement('div');
+  header.style.cssText = 'font-size:12px;color:var(--dim2);margin-bottom:12px;';
+  header.textContent = `${selIsland} · ${selSection} — tap to reveal Spanish, long-press for English`;
+  main.appendChild(header);
+
+  lines.forEach(line => {
+    const el = document.createElement('div');
+    el.className = 'ob-line';
+
+    const spk = document.createElement('div');
+    spk.className = 'ob-speaker';
+    spk.textContent = line.speaker;
+
+    const es = document.createElement('div');
+    es.className = 'ob-es';
+    es.textContent = '▪ ▪ ▪';
+
+    const en = document.createElement('div');
+    en.className = 'ob-en';
+    en.textContent = line.english;
+
+    el.appendChild(spk);
+    el.appendChild(es);
+    el.appendChild(en);
+
+    let holdTimer = null;
+    el.addEventListener('pointerdown', () => {
+      holdTimer = setTimeout(() => {
+        en.classList.toggle('revealed');
+        holdTimer = null;
+      }, 500);
+    });
+    el.addEventListener('pointerup', () => {
+      if (holdTimer) {
+        clearTimeout(holdTimer);
+        holdTimer = null;
+        es.textContent = line.spanish;
+        es.classList.add('revealed');
+      }
+    });
+    el.addEventListener('pointerleave', () => {
+      if (holdTimer) { clearTimeout(holdTimer); holdTimer = null; }
+    });
+
+    main.appendChild(el);
+  });
+
+  document.getElementById('play-btn').textContent = '—';
+  document.getElementById('prev-btn').disabled = !hasPrevSection();
+  document.getElementById('next-btn').disabled = !hasNextSection();
 }
 
-// ── Shadow playback ───────────────────────────────────────────────────────────
-function loadShadow() {
-  stopPlayback();
-  shadowSegIndex = 0;
-  renderSegmentList(shadowSegs, 0);
-  updateHeader();
-  updateProgress();
+function renderDriving() {
+  const main = document.getElementById('main');
+  main.innerHTML = '';
+
+  const isl = islandList.find(i => i.name === selIsland);
+  if (!isl) return;
+
+  // Show all islands in driving list
+  for (const il of islandList) {
+    const item = document.createElement('div');
+    item.className = 'driving-item' + (il.name === selIsland ? ' active' : '');
+    const name = document.createElement('div');
+    name.className = 'driving-name';
+    name.textContent = `${il.num < 10 ? '0' + il.num : il.num}  ${il.name}`;
+    item.appendChild(name);
+    item.onclick = () => {
+      selIsland = il.name;
+      stopPlayback();
+      renderDriving();
+      const src = drivingPath(il);
+      audio.src = src;
+      audio.load();
+      isPlaying = true;
+      document.getElementById('play-btn').textContent = '⏸';
+      document.getElementById('play-btn').className = 'play-btn driving';
+      audio.play().catch(() => {});
+    };
+    main.appendChild(item);
+  }
+
+  document.getElementById('play-btn').textContent = '▶';
+  document.getElementById('play-btn').className = 'play-btn driving';
   document.getElementById('prev-btn').disabled = true;
   document.getElementById('next-btn').disabled = true;
-  document.getElementById('play-btn').textContent = '▶';
+  document.getElementById('progress-fill').style.width = '0%';
 }
 
-function playShadowSegment(index) {
-  if (index >= shadowSegs.length) {
+function drivingPath(isl) {
+  const num = String(isl.num).padStart(2, '0');
+  return `islands/${isl.slug}/audio/${num}-${isl.slug}-driving.mp3`;
+}
+
+// ── Playback ──────────────────────────────────────────────────────────────
+function playSeg(idx) {
+  const entry = currentEntry();
+  if (!entry || currentMode === 'offbook' || currentMode === 'driving') return;
+  const segs = entry.segments;
+  if (idx >= segs.length) {
+    // Section finished
     isPlaying = false;
     document.getElementById('play-btn').textContent = '▶';
-    updateProgress();
-    highlightSegment(shadowSegs.length);
+    updateProgress(segs.length, segs.length);
+    activateSeg(segs.length);
+    document.getElementById('gap-bar').style.display = 'none';
+    if (['runlines', 'engcue', 'reverse'].includes(currentMode)) {
+      showRating();
+    }
     return;
   }
-  shadowSegIndex = index;
-  updateProgress();
-  highlightSegment(index);
-  const seg = shadowSegs[index];
-  audio.src = seg.audio;
-  audio.load();
-  audio.play().catch(() => {});
-}
 
-// ── Cue playback ─────────────────────────────────────────────────────────────
-function loadCue(index) {
-  stopPlayback();
-  currentCardIndex = index;
-  cueRevealed = false;
-  const entry = currentEntry();
-  if (!entry) return;
-  renderCueCard(entry, false);
-  updateHeader();
-  updateDots();
-  updateProgress();
-  document.getElementById('prev-btn').disabled = currentCardIndex === 0;
-  document.getElementById('next-btn').disabled = currentCardIndex >= recallCards().length - 1;
-  document.getElementById('play-btn').textContent = 'Reveal';
-}
+  segIdx = idx;
+  updateProgress(idx, segs.length);
+  activateSeg(idx);
 
-function revealCue() {
-  cueRevealed = true;
-  const entry = currentEntry();
-  if (!entry) return;
-  renderCueCard(entry, true);
-  cueSegs = entry.segments.filter(s => s.lang === 'es' && s.role === 'answer');
-  cueSegIndex = 0;
-  isPlaying = true;
-  document.getElementById('play-btn').textContent = '⏸';
-  playCueSegment(0);
-}
+  const seg = segs[idx];
+  const rawGap = seg.gap_after ?? 0.6;
+  const scaledGap = rawGap * gapFactor;
 
-function playCueSegment(index) {
-  if (index >= cueSegs.length) {
-    isPlaying = false;
-    document.getElementById('play-btn').textContent = '▶';
-    return;
+  if (seg.role === 'gap') {
+    // No audio — show hint button, start gap timer
+    currentHintText = seg.hint || '';
+    updateHintBtn(!!currentHintText);
+    document.getElementById(`st-${idx}`).textContent = ''; // hide hint text until tapped
+    startGapTimer(scaledGap, idx);
+  } else {
+    updateHintBtn(false);
+    if (!seg.audio) {
+      // No audio yet — skip after gap
+      scheduleNext(scaledGap, idx);
+      return;
+    }
+    // Auto-rewind: if we resumed after a pause > 2s, we already restarted at this seg
+    audio.src = seg.audio;
+    audio.load();
+    audio.play().catch(() => {});
   }
-  cueSegIndex = index;
-  audio.src = cueSegs[index].audio;
-  audio.load();
-  audio.play().catch(() => {});
 }
 
-// ── Listen playback ───────────────────────────────────────────────────────────
-function loadListen() {
-  stopPlayback();
-  listenSegIndex = 0;
-  renderSegmentList(listenSegs, 0);
-  updateHeader();
-  updateProgress();
-  document.getElementById('prev-btn').disabled = true;
-  document.getElementById('next-btn').disabled = true;
-  document.getElementById('play-btn').textContent = '▶';
-  document.getElementById('loop-indicator').classList.add('visible');
+function startGapTimer(seconds, idx) {
+  isInGap = true;
+  gapStart = performance.now();
+  gapTotal = seconds * 1000;
+  document.getElementById('gap-bar').style.display = 'block';
+
+  function tick() {
+    if (!isPlaying || !isInGap) return;
+    const elapsed = performance.now() - gapStart;
+    const pct = Math.min(100, (elapsed / gapTotal) * 100);
+    document.getElementById('gap-fill').style.width = pct + '%';
+    if (elapsed >= gapTotal) {
+      isInGap = false;
+      document.getElementById('gap-bar').style.display = 'none';
+      playSeg(idx + 1);
+    } else {
+      gapAF = requestAnimationFrame(tick);
+    }
+  }
+  gapAF = requestAnimationFrame(tick);
 }
 
-function playListenSegment(index) {
-  if (index >= listenSegs.length) index = 0;
-  listenSegIndex = index;
-  if (index === 0) renderSegmentList(listenSegs, 0);
-  updateProgress();
-  highlightSegment(index);
-  const seg = listenSegs[index];
-  audio.src = seg.audio;
-  audio.load();
-  audio.play().catch(() => {});
+function scheduleNext(delaySec, idx) {
+  gapTimer = setTimeout(() => {
+    if (isPlaying) playSeg(idx + 1);
+  }, delaySec * 1000);
 }
 
-// ── Shared audio handler ─────────────────────────────────────────────────────
 audio.addEventListener('ended', () => {
   if (!isPlaying) return;
-  pauseTimer = setTimeout(() => {
-    if (currentMode === 'shadow') playShadowSegment(shadowSegIndex + 1);
-    else if (currentMode === 'listen') playListenSegment(listenSegIndex + 1);
-    else if (currentMode === 'cue') playCueSegment(cueSegIndex + 1);
-    else playRecallSegment(currentSegIndex + 1);
-  }, PAUSE_MS);
+  const entry = currentEntry();
+  if (!entry) return;
+  const seg = entry.segments[segIdx];
+  const rawGap = seg?.gap_after ?? 0.6;
+  scheduleNext(rawGap * gapFactor, segIdx);
 });
 
-// ── Controls ─────────────────────────────────────────────────────────────────
+audio.addEventListener('timeupdate', () => {
+  const entry = currentEntry();
+  if (!entry || entry.segments.length === 0) return;
+  updateProgress(segIdx, entry.segments.length);
+});
+
 function togglePlay() {
-  if (currentMode === 'cue' && !cueRevealed) {
-    revealCue();
+  if (currentMode === 'offbook') return;
+  if (currentMode === 'driving') {
+    if (isPlaying) {
+      audio.pause();
+      isPlaying = false;
+      document.getElementById('play-btn').textContent = '▶';
+    } else {
+      isPlaying = true;
+      document.getElementById('play-btn').textContent = '⏸';
+      const isl = islandList.find(i => i.name === selIsland);
+      if (isl && !audio.src.includes(isl.slug)) {
+        audio.src = drivingPath(isl);
+        audio.load();
+      }
+      audio.play().catch(() => {});
+    }
     return;
   }
   if (isPlaying) {
     pausePlayback();
   } else {
-    isPlaying = true;
-    document.getElementById('play-btn').textContent = '⏸';
-    if (currentMode === 'shadow') playShadowSegment(shadowSegIndex);
-    else if (currentMode === 'listen') playListenSegment(listenSegIndex);
-    else if (currentMode === 'cue') playCueSegment(cueSegIndex);
-    else playRecallSegment(currentSegIndex);
+    resumePlayback();
   }
 }
 
 function pausePlayback() {
   isPlaying = false;
   document.getElementById('play-btn').textContent = '▶';
+  pauseTime = Date.now();
   audio.pause();
-  if (pauseTimer) { clearTimeout(pauseTimer); pauseTimer = null; }
+  if (gapTimer) { clearTimeout(gapTimer); gapTimer = null; }
+  if (gapAF) { cancelAnimationFrame(gapAF); gapAF = null; }
+  isInGap = false;
+  document.getElementById('gap-bar').style.display = 'none';
+}
+
+function resumePlayback() {
+  isPlaying = true;
+  document.getElementById('play-btn').textContent = '⏸';
+  updateMediaSession();
+
+  // Never started yet, or paused > 2s → restart at current segment
+  const neverStarted = pauseTime === 0;
+  const pausedMs = pauseTime ? Date.now() - pauseTime : 0;
+  if (neverStarted || pausedMs > 2000) {
+    playSeg(segIdx);
+    return;
+  }
+
+  const entry = currentEntry();
+  if (!entry) return;
+  const seg = entry.segments[segIdx];
+  if (!seg) { playSeg(0); return; }
+  if (seg.role === 'gap') {
+    playSeg(segIdx);
+  } else {
+    audio.play().catch(() => {});
+  }
 }
 
 function stopPlayback() {
   pausePlayback();
+  segIdx = 0;
+  pauseTime = 0;
   audio.src = '';
-  currentSegIndex = 0;
-  shadowSegIndex = 0;
-  listenSegIndex = 0;
-  cueSegIndex = 0;
-  cueRevealed = false;
-  document.getElementById('loop-indicator').classList.remove('visible');
+  hideRating();
+  document.getElementById('gap-bar').style.display = 'none';
+  updateHintBtn(false);
 }
 
-function prevCard() {
-  if ((currentMode === 'recall' || currentMode === 'cue') && currentCardIndex > 0) {
-    currentMode === 'cue' ? loadCue(currentCardIndex - 1) : loadCard(currentCardIndex - 1);
+// ── Progress ───────────────────────────────────────────────────────────────
+function updateProgress(idx, total) {
+  const pct = total ? (idx / total) * 100 : 0;
+  document.getElementById('progress-fill').style.width = pct + '%';
+}
+
+// ── Rating ────────────────────────────────────────────────────────────────
+function showRating() {
+  document.getElementById('rating-panel').classList.add('visible');
+}
+function hideRating() {
+  document.getElementById('rating-panel').classList.remove('visible');
+}
+function rate(r) {
+  if (selIsland && selSection) setSRS(selIsland, selSection, r);
+  hideRating();
+  if (isReviewMix) {
+    reviewIdx++;
+    loadReviewItem();
+  } else {
+    nextSection();
   }
 }
 
-function nextCard() {
-  if ((currentMode === 'recall' || currentMode === 'cue') && currentCardIndex < recallCards().length - 1) {
-    currentMode === 'cue' ? loadCue(currentCardIndex + 1) : loadCard(currentCardIndex + 1);
+// ── Navigation ────────────────────────────────────────────────────────────
+function allSectionsForIsland() {
+  if (!selIsland) return [];
+  return sectionsForIsland(selIsland);
+}
+
+function hasPrevSection() {
+  const secs = allSectionsForIsland();
+  return secs.indexOf(selSection) > 0;
+}
+
+function hasNextSection() {
+  const secs = allSectionsForIsland();
+  return secs.indexOf(selSection) < secs.length - 1;
+}
+
+function prevSection() {
+  const secs = allSectionsForIsland();
+  const idx = secs.indexOf(selSection);
+  if (idx > 0) {
+    selSection = secs[idx - 1];
+    document.getElementById('section-sel').value = selSection;
+    loadSection();
   }
 }
 
-function setIsland(slug) {
-  selectedIsland = slug;
-  stopPlayback();
-  buildShadowSegs();
-  buildListenSegs();
-  renderCardDots();
-  if (currentMode === 'shadow') loadShadow();
-  else if (currentMode === 'listen') loadListen();
-  else if (currentMode === 'cue') loadCue(0);
-  else loadCard(0);
+function nextSection() {
+  if (isReviewMix) return; // review mix advances via rate()
+  const secs = allSectionsForIsland();
+  const idx = secs.indexOf(selSection);
+  if (idx < secs.length - 1) {
+    selSection = secs[idx + 1];
+    document.getElementById('section-sel').value = selSection;
+    loadSection();
+  }
 }
 
+function updateNav() {
+  document.getElementById('prev-btn').disabled = !hasPrevSection();
+  document.getElementById('next-btn').disabled = !hasNextSection();
+}
+
+function renderSectionDots() {
+  const dots = document.getElementById('section-dots');
+  dots.innerHTML = '';
+  if (currentMode === 'driving') return;
+  const secs = allSectionsForIsland();
+  secs.forEach((s, i) => {
+    const d = document.createElement('div');
+    d.className = 'sdot' + (s === selSection ? ' active' : '');
+    d.title = s;
+    d.onclick = () => { selSection = s; document.getElementById('section-sel').value = s; loadSection(); };
+    dots.appendChild(d);
+  });
+}
+
+// ── Mode ──────────────────────────────────────────────────────────────────
 function setMode(mode) {
   if (mode === currentMode) return;
   stopPlayback();
   currentMode = mode;
-  currentCardIndex = 0;
-
-  document.getElementById('btn-recall').className = 'mode-btn' + (mode === 'recall' ? ' active recall' : '');
-  document.getElementById('btn-shadow').className = 'mode-btn' + (mode === 'shadow' ? ' active shadow' : '');
-  document.getElementById('btn-listen').className = 'mode-btn' + (mode === 'listen' ? ' active listen' : '');
-  document.getElementById('btn-cue').className    = 'mode-btn' + (mode === 'cue'    ? ' active cue'    : '');
-
-  renderCardDots();
-  if (mode === 'shadow') loadShadow();
-  else if (mode === 'listen') loadListen();
-  else if (mode === 'cue') loadCue(0);
-  else loadCard(0);
+  document.querySelectorAll('.mode-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === mode);
+  });
+  loadSection();
 }
 
-// ── Service worker ───────────────────────────────────────────────────────────
+// ── Hint ──────────────────────────────────────────────────────────────────
+function updateHintBtn(show) {
+  document.getElementById('hint-btn').classList.toggle('visible', show);
+}
+
+function showHint() {
+  const idx = segIdx;
+  const el = document.getElementById(`st-${idx}`);
+  if (el && currentHintText) {
+    el.textContent = currentHintText;
+    el.style.color = 'var(--dim2)';
+  }
+}
+
+// ── Gap factor ────────────────────────────────────────────────────────────
+function setGapFactor(val) {
+  gapFactor = parseFloat(val);
+  document.getElementById('gap-factor-val').textContent =
+    gapFactor.toFixed(2).replace(/\.?0+$/, '') + '×';
+  try { localStorage.setItem('gap_factor', String(gapFactor)); } catch(e){}
+}
+
+// ── Media Session ─────────────────────────────────────────────────────────
+function updateMediaSession() {
+  if (!('mediaSession' in navigator)) return;
+  const modeLabels = {listen:'Listen',shadow:'Shadow',runlines:'Run Lines',
+    engcue:'English Cue',reverse:'Reverse',offbook:'Off Book',driving:'Driving'};
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: selSection || selIsland,
+    artist: selIsland,
+    album: `Spanish Islands · ${modeLabels[currentMode] || currentMode}`,
+  });
+  navigator.mediaSession.setActionHandler('previoustrack', prevSection);
+  navigator.mediaSession.setActionHandler('nexttrack', nextSection);
+}
+
+// ── Export / Import ───────────────────────────────────────────────────────
+function showExportImport() {
+  document.getElementById('ei-dialog').style.display = 'flex';
+}
+function closeEI() {
+  document.getElementById('ei-dialog').style.display = 'none';
+}
+
+function exportProgress() {
+  const rows = ['section_key,last_run,rating,interval_days,due_date'];
+  for (const [k, v] of Object.entries(srsProgress)) {
+    rows.push(`${k},${v.last_run},${v.rating},${v.interval_days},${v.due_date}`);
+  }
+  const blob = new Blob([rows.join('\n')], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'islands-progress.csv'; a.click();
+  URL.revokeObjectURL(url);
+  closeEI();
+}
+
+function importProgress(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const lines = e.target.result.split('\n').slice(1); // skip header
+    let count = 0;
+    for (const line of lines) {
+      const [key, last_run, rating, interval_days, due_date] = line.split(',');
+      if (!key) continue;
+      srsProgress[key] = { section_key: key, last_run, rating, interval_days: parseInt(interval_days), due_date };
+      count++;
+    }
+    try { localStorage.setItem('srs_progress', JSON.stringify(srsProgress)); } catch(e){}
+    updateStats();
+    closeEI();
+    alert(`Imported ${count} sections.`);
+  };
+  reader.readAsText(file);
+}
+
+// ── Service Worker ────────────────────────────────────────────────────────
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
 }
 
-// ── Keyboard (desktop) ───────────────────────────────────────────────────────
+// ── Keyboard ──────────────────────────────────────────────────────────────
 document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
   if (e.key === ' ') { e.preventDefault(); togglePlay(); }
-  if (e.key === 'ArrowRight') nextCard();
-  if (e.key === 'ArrowLeft') prevCard();
+  if (e.key === 'ArrowRight') nextSection();
+  if (e.key === 'ArrowLeft')  prevSection();
 });
 </script>
 </body>

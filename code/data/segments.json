@@ -1,0 +1,3166 @@
+{
+  "01-getting-coffee-01": {
+    "es": "code/audio/segments/seg-315ce00d7d0c.mp3",
+    "en": "code/audio/segments/seg-e9ccc72f9071.mp3",
+    "es_duration_s": 2.424,
+    "en_duration_s": 2.568,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-02": {
+    "es": "code/audio/segments/seg-d75e210e1b58.mp3",
+    "en": "code/audio/segments/seg-ff997f94f870.mp3",
+    "es_duration_s": 4.368,
+    "en_duration_s": 3.96,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-03": {
+    "es": "code/audio/segments/seg-214b98db82bf.mp3",
+    "en": "code/audio/segments/seg-801478d29122.mp3",
+    "es_duration_s": 2.352,
+    "en_duration_s": 2.448,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-04": {
+    "es": "code/audio/segments/seg-52361337817a.mp3",
+    "en": "code/audio/segments/seg-6e9b1cb1f9bc.mp3",
+    "es_duration_s": 2.424,
+    "en_duration_s": 2.472,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-05": {
+    "es": "code/audio/segments/seg-72bf0c132c07.mp3",
+    "en": "code/audio/segments/seg-acc838f66082.mp3",
+    "es_duration_s": 3.888,
+    "en_duration_s": 3.168,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-06": {
+    "es": "code/audio/segments/seg-2d548ed38980.mp3",
+    "en": "code/audio/segments/seg-98988b6cbba4.mp3",
+    "es_duration_s": 2.088,
+    "en_duration_s": 1.416,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-07": {
+    "es": "code/audio/segments/seg-8196d7bcbc8a.mp3",
+    "en": "code/audio/segments/seg-e067daa1458b.mp3",
+    "es_duration_s": 2.712,
+    "en_duration_s": 2.232,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-08": {
+    "es": "code/audio/segments/seg-b95bb29baa92.mp3",
+    "en": "code/audio/segments/seg-3df66b098f37.mp3",
+    "es_duration_s": 1.824,
+    "en_duration_s": 1.608,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-09": {
+    "es": "code/audio/segments/seg-5718d2b0b628.mp3",
+    "en": "code/audio/segments/seg-7bd15e17f3f9.mp3",
+    "es_duration_s": 2.208,
+    "en_duration_s": 2.016,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-10": {
+    "es": "code/audio/segments/seg-a04ded672f9c.mp3",
+    "en": "code/audio/segments/seg-3d3074b01bd1.mp3",
+    "es_duration_s": 9.6,
+    "en_duration_s": 8.64,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-11": {
+    "es": "code/audio/segments/seg-8c9a0a7ccdab.mp3",
+    "en": "code/audio/segments/seg-0db467f81bdd.mp3",
+    "es_duration_s": 1.872,
+    "en_duration_s": 1.368,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-12": {
+    "es": "code/audio/segments/seg-98c84906343c.mp3",
+    "en": "code/audio/segments/seg-85db564a312a.mp3",
+    "es_duration_s": 4.344,
+    "en_duration_s": 3.24,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-13": {
+    "es": "code/audio/segments/seg-5bc68fc8e288.mp3",
+    "en": "code/audio/segments/seg-f1efaa67b882.mp3",
+    "es_duration_s": 10.032,
+    "en_duration_s": 9.072,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-14": {
+    "es": "code/audio/segments/seg-756715bbbb01.mp3",
+    "en": "code/audio/segments/seg-62ede782dd0a.mp3",
+    "es_duration_s": 1.104,
+    "en_duration_s": 0.888,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-15": {
+    "es": "code/audio/segments/seg-2a846dc42756.mp3",
+    "en": "code/audio/segments/seg-70a675ef2f59.mp3",
+    "es_duration_s": 3.816,
+    "en_duration_s": 3.624,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-16": {
+    "es": "code/audio/segments/seg-28b3d0fc9c64.mp3",
+    "en": "code/audio/segments/seg-49a1a3828413.mp3",
+    "es_duration_s": 2.064,
+    "en_duration_s": 2.136,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-17": {
+    "es": "code/audio/segments/seg-b514d8a889ff.mp3",
+    "en": "code/audio/segments/seg-8c2aa45ca8d2.mp3",
+    "es_duration_s": 2.592,
+    "en_duration_s": 2.28,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-18": {
+    "es": "code/audio/segments/seg-61c1c849c975.mp3",
+    "en": "code/audio/segments/seg-340030c80319.mp3",
+    "es_duration_s": 3.144,
+    "en_duration_s": 2.64,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-19": {
+    "es": "code/audio/segments/seg-9cc07d4aceb9.mp3",
+    "en": "code/audio/segments/seg-1243b141fb7f.mp3",
+    "es_duration_s": 1.416,
+    "en_duration_s": 1.824,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-20": {
+    "es": "code/audio/segments/seg-3a62fd23bd70.mp3",
+    "en": "code/audio/segments/seg-31cfc6c22fec.mp3",
+    "es_duration_s": 2.184,
+    "en_duration_s": 1.656,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-21": {
+    "es": "code/audio/segments/seg-c0cd9756fe9a.mp3",
+    "en": "code/audio/segments/seg-46d4f4a8db5f.mp3",
+    "es_duration_s": 3.528,
+    "en_duration_s": 3.864,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-22": {
+    "es": "code/audio/segments/seg-655448b5ff56.mp3",
+    "en": "code/audio/segments/seg-7895707e4c28.mp3",
+    "es_duration_s": 1.224,
+    "en_duration_s": 0.816,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-23": {
+    "es": "code/audio/segments/seg-e05cbda03050.mp3",
+    "en": "code/audio/segments/seg-04c6d84b083c.mp3",
+    "es_duration_s": 3.192,
+    "en_duration_s": 4.032,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-24": {
+    "es": "code/audio/segments/seg-624ff6b56aac.mp3",
+    "en": "code/audio/segments/seg-f4e766d92780.mp3",
+    "es_duration_s": 4.728,
+    "en_duration_s": 4.632,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "01-getting-coffee-25": {
+    "es": "code/audio/segments/seg-d380fd4e5c22.mp3",
+    "en": "code/audio/segments/seg-e02102d23092.mp3",
+    "es_duration_s": 2.736,
+    "en_duration_s": 2.112,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "01-getting-coffee-26": {
+    "es": "code/audio/segments/seg-12dcad498e61.mp3",
+    "en": "code/audio/segments/seg-c9e48bc20a79.mp3",
+    "es_duration_s": 2.016,
+    "en_duration_s": 1.632,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-01": {
+    "es": "code/audio/segments/seg-5bb119e6b6d9.mp3",
+    "en": "code/audio/segments/seg-a20076faa724.mp3",
+    "es_duration_s": 3.456,
+    "en_duration_s": 3.312,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-02": {
+    "es": "code/audio/segments/seg-01e2da68b93a.mp3",
+    "en": "code/audio/segments/seg-b74a7308a2b0.mp3",
+    "es_duration_s": 4.32,
+    "en_duration_s": 3.576,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-03": {
+    "es": "code/audio/segments/seg-8dca7a8f905c.mp3",
+    "en": "code/audio/segments/seg-f2df5cbdd0d4.mp3",
+    "es_duration_s": 1.464,
+    "en_duration_s": 1.248,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-04": {
+    "es": "code/audio/segments/seg-48b4db7509a4.mp3",
+    "en": "code/audio/segments/seg-1be156c44c9b.mp3",
+    "es_duration_s": 1.44,
+    "en_duration_s": 1.608,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-05": {
+    "es": "code/audio/segments/seg-8c9a0a7ccdab.mp3",
+    "en": "code/audio/segments/seg-0db467f81bdd.mp3",
+    "es_duration_s": 1.872,
+    "en_duration_s": 1.368,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-06": {
+    "es": "code/audio/segments/seg-8247b99a65d4.mp3",
+    "en": "code/audio/segments/seg-edca61690c5b.mp3",
+    "es_duration_s": 2.952,
+    "en_duration_s": 1.896,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-07": {
+    "es": "code/audio/segments/seg-035cce2f5e63.mp3",
+    "en": "code/audio/segments/seg-4f7804effdff.mp3",
+    "es_duration_s": 3.24,
+    "en_duration_s": 2.976,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-08": {
+    "es": "code/audio/segments/seg-723ddbb24ee1.mp3",
+    "en": "code/audio/segments/seg-d671f94a1eb2.mp3",
+    "es_duration_s": 7.728,
+    "en_duration_s": 7.056,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-09": {
+    "es": "code/audio/segments/seg-75d7246d2874.mp3",
+    "en": "code/audio/segments/seg-645780125e8b.mp3",
+    "es_duration_s": 2.568,
+    "en_duration_s": 2.808,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-10": {
+    "es": "code/audio/segments/seg-2d5b078c2837.mp3",
+    "en": "code/audio/segments/seg-df14aa07d08d.mp3",
+    "es_duration_s": 2.352,
+    "en_duration_s": 1.584,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-11": {
+    "es": "code/audio/segments/seg-7dc78543f100.mp3",
+    "en": "code/audio/segments/seg-80843fd5d25f.mp3",
+    "es_duration_s": 2.208,
+    "en_duration_s": 1.848,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-12": {
+    "es": "code/audio/segments/seg-d0b41d345b5a.mp3",
+    "en": "code/audio/segments/seg-33d707c6b4f1.mp3",
+    "es_duration_s": 5.808,
+    "en_duration_s": 5.04,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-13": {
+    "es": "code/audio/segments/seg-a621817a87e7.mp3",
+    "en": "code/audio/segments/seg-cdea82d8e608.mp3",
+    "es_duration_s": 2.544,
+    "en_duration_s": 1.92,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-14": {
+    "es": "code/audio/segments/seg-16bc35be25d3.mp3",
+    "en": "code/audio/segments/seg-f89e17bde91f.mp3",
+    "es_duration_s": 2.472,
+    "en_duration_s": 2.256,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-15": {
+    "es": "code/audio/segments/seg-451af1f9156e.mp3",
+    "en": "code/audio/segments/seg-b08b65ab9c51.mp3",
+    "es_duration_s": 1.2,
+    "en_duration_s": 1.176,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-16": {
+    "es": "code/audio/segments/seg-16c66d476018.mp3",
+    "en": "code/audio/segments/seg-bd14489ba005.mp3",
+    "es_duration_s": 9.672,
+    "en_duration_s": 8.424,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-17": {
+    "es": "code/audio/segments/seg-6f930e124a25.mp3",
+    "en": "code/audio/segments/seg-632021203e23.mp3",
+    "es_duration_s": 2.472,
+    "en_duration_s": 2.472,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-18": {
+    "es": "code/audio/segments/seg-e24454f95eab.mp3",
+    "en": "code/audio/segments/seg-c08d92d7c5d6.mp3",
+    "es_duration_s": 7.2,
+    "en_duration_s": 6.144,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-19": {
+    "es": "code/audio/segments/seg-4bc7c4f70c32.mp3",
+    "en": "code/audio/segments/seg-6e58f3e785a3.mp3",
+    "es_duration_s": 2.376,
+    "en_duration_s": 2.544,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "02-ordering-at-a-restaurant-20": {
+    "es": "code/audio/segments/seg-edfc9037d1c8.mp3",
+    "en": "code/audio/segments/seg-bbcfc7507b09.mp3",
+    "es_duration_s": 3.24,
+    "en_duration_s": 3.144,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "02-ordering-at-a-restaurant-21": {
+    "es": "code/audio/segments/seg-40359fa695ba.mp3",
+    "en": "code/audio/segments/seg-25f7bb2998c7.mp3",
+    "es_duration_s": 1.08,
+    "en_duration_s": 1.176,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-01": {
+    "es": "code/audio/segments/seg-14120e332f9f.mp3",
+    "en": "code/audio/segments/seg-8134239c54c8.mp3",
+    "es_duration_s": 3.072,
+    "en_duration_s": 2.592,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-02": {
+    "es": "code/audio/segments/seg-3007d9fe1b3d.mp3",
+    "en": "code/audio/segments/seg-67ee3a772aeb.mp3",
+    "es_duration_s": 5.952,
+    "en_duration_s": 5.16,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-03": {
+    "es": "code/audio/segments/seg-71acf7e85341.mp3",
+    "en": "code/audio/segments/seg-e7d54b5e11d0.mp3",
+    "es_duration_s": 4.44,
+    "en_duration_s": 3.576,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-04": {
+    "es": "code/audio/segments/seg-9658966ac901.mp3",
+    "en": "code/audio/segments/seg-7a6c8082a5c2.mp3",
+    "es_duration_s": 3.696,
+    "en_duration_s": 3.408,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-05": {
+    "es": "code/audio/segments/seg-9c45a0207ace.mp3",
+    "en": "code/audio/segments/seg-4b59658f0cca.mp3",
+    "es_duration_s": 5.952,
+    "en_duration_s": 5.352,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-06": {
+    "es": "code/audio/segments/seg-6a02f064bc76.mp3",
+    "en": "code/audio/segments/seg-eb122d758dc0.mp3",
+    "es_duration_s": 5.016,
+    "en_duration_s": 4.368,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-07": {
+    "es": "code/audio/segments/seg-4eb53fe962bf.mp3",
+    "en": "code/audio/segments/seg-c3cd3d84f2f7.mp3",
+    "es_duration_s": 2.232,
+    "en_duration_s": 2.232,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-08": {
+    "es": "code/audio/segments/seg-58a9f49453a2.mp3",
+    "en": "code/audio/segments/seg-5ad224829f4f.mp3",
+    "es_duration_s": 2.28,
+    "en_duration_s": 1.632,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-09": {
+    "es": "code/audio/segments/seg-c73478b9a9bc.mp3",
+    "en": "code/audio/segments/seg-1670b9f11046.mp3",
+    "es_duration_s": 4.632,
+    "en_duration_s": 4.248,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-10": {
+    "es": "code/audio/segments/seg-e50a9a2cdaf3.mp3",
+    "en": "code/audio/segments/seg-2a6d9909dbce.mp3",
+    "es_duration_s": 1.704,
+    "en_duration_s": 1.584,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-11": {
+    "es": "code/audio/segments/seg-3441b635ad96.mp3",
+    "en": "code/audio/segments/seg-bb73b618a8e7.mp3",
+    "es_duration_s": 5.808,
+    "en_duration_s": 4.056,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-12": {
+    "es": "code/audio/segments/seg-ee96ac347ef6.mp3",
+    "en": "code/audio/segments/seg-fbf5f6ab03ba.mp3",
+    "es_duration_s": 5.04,
+    "en_duration_s": 5.28,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-13": {
+    "es": "code/audio/segments/seg-4fee3a258fe4.mp3",
+    "en": "code/audio/segments/seg-36df9b683c81.mp3",
+    "es_duration_s": 1.872,
+    "en_duration_s": 1.512,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-14": {
+    "es": "code/audio/segments/seg-1068fd647f65.mp3",
+    "en": "code/audio/segments/seg-7ba4939330f0.mp3",
+    "es_duration_s": 3.264,
+    "en_duration_s": 2.808,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-15": {
+    "es": "code/audio/segments/seg-35f6ae3b47cf.mp3",
+    "en": "code/audio/segments/seg-2e0ac73ebedc.mp3",
+    "es_duration_s": 4.656,
+    "en_duration_s": 4.368,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "03-going-to-the-bank-16": {
+    "es": "code/audio/segments/seg-cf3903234ad5.mp3",
+    "en": "code/audio/segments/seg-3851b3afb2c9.mp3",
+    "es_duration_s": 4.008,
+    "en_duration_s": 3.936,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "03-going-to-the-bank-17": {
+    "es": "code/audio/segments/seg-bb76ce297af5.mp3",
+    "en": "code/audio/segments/seg-bd39f6bdf313.mp3",
+    "es_duration_s": 2.448,
+    "en_duration_s": 2.112,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-01": {
+    "es": "code/audio/segments/seg-afcd324a1589.mp3",
+    "en": "code/audio/segments/seg-f68746ae87fd.mp3",
+    "es_duration_s": 2.472,
+    "en_duration_s": 2.808,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-02": {
+    "es": "code/audio/segments/seg-a106c620a118.mp3",
+    "en": "code/audio/segments/seg-b530d95bf272.mp3",
+    "es_duration_s": 4.032,
+    "en_duration_s": 3.744,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-03": {
+    "es": "code/audio/segments/seg-4eb7059e3f62.mp3",
+    "en": "code/audio/segments/seg-a5c35e217b28.mp3",
+    "es_duration_s": 6.048,
+    "en_duration_s": 5.328,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-04": {
+    "es": "code/audio/segments/seg-14120e332f9f.mp3",
+    "en": "code/audio/segments/seg-8134239c54c8.mp3",
+    "es_duration_s": 3.072,
+    "en_duration_s": 2.592,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-05": {
+    "es": "code/audio/segments/seg-6ac25506f49c.mp3",
+    "en": "code/audio/segments/seg-da4f8cb32d90.mp3",
+    "es_duration_s": 6.528,
+    "en_duration_s": 5.592,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-06": {
+    "es": "code/audio/segments/seg-cffa6b206f49.mp3",
+    "en": "code/audio/segments/seg-346e3bfc047a.mp3",
+    "es_duration_s": 3.288,
+    "en_duration_s": 2.832,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-07": {
+    "es": "code/audio/segments/seg-8a191cb342f9.mp3",
+    "en": "code/audio/segments/seg-d5d4f22d44e7.mp3",
+    "es_duration_s": 1.752,
+    "en_duration_s": 1.68,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-08": {
+    "es": "code/audio/segments/seg-692b9a64721c.mp3",
+    "en": "code/audio/segments/seg-2ecaf2d0c6cd.mp3",
+    "es_duration_s": 3.192,
+    "en_duration_s": 2.928,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-09": {
+    "es": "code/audio/segments/seg-19a2dfaf7f1a.mp3",
+    "en": "code/audio/segments/seg-ce55ea0d0605.mp3",
+    "es_duration_s": 1.776,
+    "en_duration_s": 1.704,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-10": {
+    "es": "code/audio/segments/seg-eb1ce6b6cc07.mp3",
+    "en": "code/audio/segments/seg-7e85ec45c253.mp3",
+    "es_duration_s": 11.568,
+    "en_duration_s": 10.584,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-11": {
+    "es": "code/audio/segments/seg-8c80b4d264d9.mp3",
+    "en": "code/audio/segments/seg-92f38d120116.mp3",
+    "es_duration_s": 5.976,
+    "en_duration_s": 5.496,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-12": {
+    "es": "code/audio/segments/seg-44d08dcebe83.mp3",
+    "en": "code/audio/segments/seg-9a908d0c1379.mp3",
+    "es_duration_s": 5.664,
+    "en_duration_s": 4.968,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-13": {
+    "es": "code/audio/segments/seg-037a03521388.mp3",
+    "en": "code/audio/segments/seg-c700b2c7125c.mp3",
+    "es_duration_s": 2.016,
+    "en_duration_s": 1.632,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-14": {
+    "es": "code/audio/segments/seg-56925f11fc3d.mp3",
+    "en": "code/audio/segments/seg-a3347f762a92.mp3",
+    "es_duration_s": 2.472,
+    "en_duration_s": 1.992,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-15": {
+    "es": "code/audio/segments/seg-3aa23e612d4a.mp3",
+    "en": "code/audio/segments/seg-4c9b85a8d3db.mp3",
+    "es_duration_s": 3.0,
+    "en_duration_s": 2.736,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-16": {
+    "es": "code/audio/segments/seg-86272c9d926e.mp3",
+    "en": "code/audio/segments/seg-32ee0239ab08.mp3",
+    "es_duration_s": 4.44,
+    "en_duration_s": 3.696,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-17": {
+    "es": "code/audio/segments/seg-0b6f675ead98.mp3",
+    "en": "code/audio/segments/seg-47c484706996.mp3",
+    "es_duration_s": 2.448,
+    "en_duration_s": 2.232,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-18": {
+    "es": "code/audio/segments/seg-fcbd5260db50.mp3",
+    "en": "code/audio/segments/seg-ba9ab04df578.mp3",
+    "es_duration_s": 5.376,
+    "en_duration_s": 4.632,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-19": {
+    "es": "code/audio/segments/seg-bdcc3c422e93.mp3",
+    "en": "code/audio/segments/seg-c4d99ca93f94.mp3",
+    "es_duration_s": 3.384,
+    "en_duration_s": 3.288,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-20": {
+    "es": "code/audio/segments/seg-78609e537bbf.mp3",
+    "en": "code/audio/segments/seg-7ccc980c74fc.mp3",
+    "es_duration_s": 4.32,
+    "en_duration_s": 4.632,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-21": {
+    "es": "code/audio/segments/seg-6ab653640e0f.mp3",
+    "en": "code/audio/segments/seg-dfc0d5e6b536.mp3",
+    "es_duration_s": 1.176,
+    "en_duration_s": 1.128,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-22": {
+    "es": "code/audio/segments/seg-15bad08d89ba.mp3",
+    "en": "code/audio/segments/seg-75fa6bbc16c4.mp3",
+    "es_duration_s": 6.024,
+    "en_duration_s": 5.664,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-23": {
+    "es": "code/audio/segments/seg-3bf691e65a2c.mp3",
+    "en": "code/audio/segments/seg-d887ab78958e.mp3",
+    "es_duration_s": 7.176,
+    "en_duration_s": 5.664,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-24": {
+    "es": "code/audio/segments/seg-8f8dab0cc533.mp3",
+    "en": "code/audio/segments/seg-30558be4ac5c.mp3",
+    "es_duration_s": 2.592,
+    "en_duration_s": 2.088,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-25": {
+    "es": "code/audio/segments/seg-d4d2cd27222d.mp3",
+    "en": "code/audio/segments/seg-731e05ae4f84.mp3",
+    "es_duration_s": 2.688,
+    "en_duration_s": 2.472,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "04-going-to-the-immigration-office-26": {
+    "es": "code/audio/segments/seg-985dcf06d2a8.mp3",
+    "en": "code/audio/segments/seg-392a0e523c64.mp3",
+    "es_duration_s": 3.24,
+    "en_duration_s": 3.432,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "04-going-to-the-immigration-office-27": {
+    "es": "code/audio/segments/seg-04bfe66f6015.mp3",
+    "en": "code/audio/segments/seg-a6c1b9a3657d.mp3",
+    "es_duration_s": 2.376,
+    "en_duration_s": 2.136,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-01": {
+    "es": "code/audio/segments/seg-f385f23aa87e.mp3",
+    "en": "code/audio/segments/seg-c0a4170ab78e.mp3",
+    "es_duration_s": 3.0,
+    "en_duration_s": 3.072,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-02": {
+    "es": "code/audio/segments/seg-e71d68f20619.mp3",
+    "en": "code/audio/segments/seg-99c5e762f0d8.mp3",
+    "es_duration_s": 5.928,
+    "en_duration_s": 6.696,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-03": {
+    "es": "code/audio/segments/seg-a234ef930be6.mp3",
+    "en": "code/audio/segments/seg-31b047396e9f.mp3",
+    "es_duration_s": 3.24,
+    "en_duration_s": 3.336,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-04": {
+    "es": "code/audio/segments/seg-d4b730f625df.mp3",
+    "en": "code/audio/segments/seg-d62de8aef02c.mp3",
+    "es_duration_s": 1.824,
+    "en_duration_s": 1.656,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-05": {
+    "es": "code/audio/segments/seg-e38787f33b9d.mp3",
+    "en": "code/audio/segments/seg-e4fd7ab688ac.mp3",
+    "es_duration_s": 11.568,
+    "en_duration_s": 11.16,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-06": {
+    "es": "code/audio/segments/seg-d994d2b6548e.mp3",
+    "en": "code/audio/segments/seg-70a23ba22f9c.mp3",
+    "es_duration_s": 2.544,
+    "en_duration_s": 2.64,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-07": {
+    "es": "code/audio/segments/seg-321fe052680b.mp3",
+    "en": "code/audio/segments/seg-6eaee43dba6f.mp3",
+    "es_duration_s": 3.912,
+    "en_duration_s": 3.264,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-08": {
+    "es": "code/audio/segments/seg-c8ef1355f58b.mp3",
+    "en": "code/audio/segments/seg-b5cd290f91de.mp3",
+    "es_duration_s": 3.744,
+    "en_duration_s": 3.528,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-09": {
+    "es": "code/audio/segments/seg-54d607ca6777.mp3",
+    "en": "code/audio/segments/seg-3dd42ac14bad.mp3",
+    "es_duration_s": 10.776,
+    "en_duration_s": 9.36,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-10": {
+    "es": "code/audio/segments/seg-976f48a518ac.mp3",
+    "en": "code/audio/segments/seg-63d8a3b42db9.mp3",
+    "es_duration_s": 1.992,
+    "en_duration_s": 2.232,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-11": {
+    "es": "code/audio/segments/seg-a5949cbb62be.mp3",
+    "en": "code/audio/segments/seg-62b1acf70be0.mp3",
+    "es_duration_s": 9.72,
+    "en_duration_s": 10.176,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-12": {
+    "es": "code/audio/segments/seg-7bd5faecfb14.mp3",
+    "en": "code/audio/segments/seg-a763214c9c75.mp3",
+    "es_duration_s": 1.248,
+    "en_duration_s": 1.368,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-13": {
+    "es": "code/audio/segments/seg-463342882250.mp3",
+    "en": "code/audio/segments/seg-8f704d0dc699.mp3",
+    "es_duration_s": 23.064,
+    "en_duration_s": 20.952,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-14": {
+    "es": "code/audio/segments/seg-279254fb0b2f.mp3",
+    "en": "code/audio/segments/seg-b656e6469e9c.mp3",
+    "es_duration_s": 3.768,
+    "en_duration_s": 3.312,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-15": {
+    "es": "code/audio/segments/seg-f413e7580f87.mp3",
+    "en": "code/audio/segments/seg-f2c031d4d4e4.mp3",
+    "es_duration_s": 1.728,
+    "en_duration_s": 2.064,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-16": {
+    "es": "code/audio/segments/seg-b88b648b2a3f.mp3",
+    "en": "code/audio/segments/seg-f8f6a1c5cb11.mp3",
+    "es_duration_s": 20.712,
+    "en_duration_s": 18.72,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-17": {
+    "es": "code/audio/segments/seg-e220da3e1884.mp3",
+    "en": "code/audio/segments/seg-92743e66fc23.mp3",
+    "es_duration_s": 2.856,
+    "en_duration_s": 3.144,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-18": {
+    "es": "code/audio/segments/seg-70d8be40b443.mp3",
+    "en": "code/audio/segments/seg-adcd0324b740.mp3",
+    "es_duration_s": 7.656,
+    "en_duration_s": 7.032,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-19": {
+    "es": "code/audio/segments/seg-c6c9f717f34a.mp3",
+    "en": "code/audio/segments/seg-86419dc73476.mp3",
+    "es_duration_s": 1.512,
+    "en_duration_s": 1.464,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-20": {
+    "es": "code/audio/segments/seg-7ad33376ef51.mp3",
+    "en": "code/audio/segments/seg-80681a987fdf.mp3",
+    "es_duration_s": 17.568,
+    "en_duration_s": 16.464,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-21": {
+    "es": "code/audio/segments/seg-773fe4602a93.mp3",
+    "en": "code/audio/segments/seg-55c2fc5634b4.mp3",
+    "es_duration_s": 3.024,
+    "en_duration_s": 3.648,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-22": {
+    "es": "code/audio/segments/seg-bde4419032c2.mp3",
+    "en": "code/audio/segments/seg-2503a72505f5.mp3",
+    "es_duration_s": 21.264,
+    "en_duration_s": 21.648,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-23": {
+    "es": "code/audio/segments/seg-debf38dd9d0d.mp3",
+    "en": "code/audio/segments/seg-a54038d421c1.mp3",
+    "es_duration_s": 1.392,
+    "en_duration_s": 1.2,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-24": {
+    "es": "code/audio/segments/seg-4ff77993df60.mp3",
+    "en": "code/audio/segments/seg-b6dfce1562ef.mp3",
+    "es_duration_s": 2.808,
+    "en_duration_s": 2.592,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-25": {
+    "es": "code/audio/segments/seg-4f8e1639f12c.mp3",
+    "en": "code/audio/segments/seg-ef0f6a7e050e.mp3",
+    "es_duration_s": 21.744,
+    "en_duration_s": 20.16,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-26": {
+    "es": "code/audio/segments/seg-67a88220ffdf.mp3",
+    "en": "code/audio/segments/seg-5d15e3a256fb.mp3",
+    "es_duration_s": 2.784,
+    "en_duration_s": 2.592,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-27": {
+    "es": "code/audio/segments/seg-a9a3e4da2c50.mp3",
+    "en": "code/audio/segments/seg-f4c3e962d555.mp3",
+    "es_duration_s": 6.048,
+    "en_duration_s": 6.312,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "05-meeting-someone-new-for-the-first-time-28": {
+    "es": "code/audio/segments/seg-0e14dd9f19db.mp3",
+    "en": "code/audio/segments/seg-713576d34076.mp3",
+    "es_duration_s": 3.792,
+    "en_duration_s": 4.224,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "05-meeting-someone-new-for-the-first-time-29": {
+    "es": "code/audio/segments/seg-62ca66870bce.mp3",
+    "en": "code/audio/segments/seg-bb8b404fe284.mp3",
+    "es_duration_s": 4.512,
+    "en_duration_s": 3.264,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-01": {
+    "es": "code/audio/segments/seg-1deb8e991825.mp3",
+    "en": "code/audio/segments/seg-1ebde38f3c06.mp3",
+    "es_duration_s": 5.616,
+    "en_duration_s": 4.32,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-02": {
+    "es": "code/audio/segments/seg-d04913928def.mp3",
+    "en": "code/audio/segments/seg-1d6d81e1239d.mp3",
+    "es_duration_s": 4.848,
+    "en_duration_s": 5.352,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-03": {
+    "es": "code/audio/segments/seg-3fa9106bac2c.mp3",
+    "en": "code/audio/segments/seg-7eacfe075d9e.mp3",
+    "es_duration_s": 6.504,
+    "en_duration_s": 6.432,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-04": {
+    "es": "code/audio/segments/seg-cdb3fe01d8c3.mp3",
+    "en": "code/audio/segments/seg-816da6774053.mp3",
+    "es_duration_s": 5.16,
+    "en_duration_s": 4.728,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-05": {
+    "es": "code/audio/segments/seg-32d3164b8f27.mp3",
+    "en": "code/audio/segments/seg-b2370c77c020.mp3",
+    "es_duration_s": 4.248,
+    "en_duration_s": 4.56,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-06": {
+    "es": "code/audio/segments/seg-ae3437706865.mp3",
+    "en": "code/audio/segments/seg-f42a0ee3d0d2.mp3",
+    "es_duration_s": 6.576,
+    "en_duration_s": 5.856,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-07": {
+    "es": "code/audio/segments/seg-145b9fca5fdf.mp3",
+    "en": "code/audio/segments/seg-9b97af9de2bb.mp3",
+    "es_duration_s": 2.712,
+    "en_duration_s": 2.808,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-08": {
+    "es": "code/audio/segments/seg-30bef7459fe6.mp3",
+    "en": "code/audio/segments/seg-ab62dc790815.mp3",
+    "es_duration_s": 1.344,
+    "en_duration_s": 1.128,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-09": {
+    "es": "code/audio/segments/seg-a4dfe5a82592.mp3",
+    "en": "code/audio/segments/seg-8b0f22975579.mp3",
+    "es_duration_s": 1.56,
+    "en_duration_s": 1.656,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-10": {
+    "es": "code/audio/segments/seg-ea5641c0d026.mp3",
+    "en": "code/audio/segments/seg-130fe365eac0.mp3",
+    "es_duration_s": 2.496,
+    "en_duration_s": 2.616,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-11": {
+    "es": "code/audio/segments/seg-11d99fbfe803.mp3",
+    "en": "code/audio/segments/seg-8c581853c60e.mp3",
+    "es_duration_s": 3.72,
+    "en_duration_s": 3.192,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-12": {
+    "es": "code/audio/segments/seg-c5ecbfc6a883.mp3",
+    "en": "code/audio/segments/seg-f8b098231490.mp3",
+    "es_duration_s": 7.872,
+    "en_duration_s": 6.768,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-13": {
+    "es": "code/audio/segments/seg-231a4b3220ca.mp3",
+    "en": "code/audio/segments/seg-0d387e36baa9.mp3",
+    "es_duration_s": 5.472,
+    "en_duration_s": 4.752,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-14": {
+    "es": "code/audio/segments/seg-bb76ea20b047.mp3",
+    "en": "code/audio/segments/seg-9c0f7a6aae86.mp3",
+    "es_duration_s": 9.864,
+    "en_duration_s": 9.792,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-15": {
+    "es": "code/audio/segments/seg-0ad16f215bd1.mp3",
+    "en": "code/audio/segments/seg-5be603a23506.mp3",
+    "es_duration_s": 4.944,
+    "en_duration_s": 3.912,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-16": {
+    "es": "code/audio/segments/seg-58e418735e20.mp3",
+    "en": "code/audio/segments/seg-b8b28c4ad88e.mp3",
+    "es_duration_s": 3.6,
+    "en_duration_s": 3.576,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-17": {
+    "es": "code/audio/segments/seg-a51a749c61a9.mp3",
+    "en": "code/audio/segments/seg-83f575c6ac80.mp3",
+    "es_duration_s": 1.872,
+    "en_duration_s": 1.728,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-18": {
+    "es": "code/audio/segments/seg-754dbc3fce60.mp3",
+    "en": "code/audio/segments/seg-3bd13ed6ad39.mp3",
+    "es_duration_s": 7.128,
+    "en_duration_s": 7.248,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-19": {
+    "es": "code/audio/segments/seg-3eac97b9fa8f.mp3",
+    "en": "code/audio/segments/seg-87612e1f92b8.mp3",
+    "es_duration_s": 2.448,
+    "en_duration_s": 2.304,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-20": {
+    "es": "code/audio/segments/seg-62d7ab5c8ad7.mp3",
+    "en": "code/audio/segments/seg-6a227f7ce280.mp3",
+    "es_duration_s": 5.04,
+    "en_duration_s": 4.824,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-21": {
+    "es": "code/audio/segments/seg-be1b05b19bf6.mp3",
+    "en": "code/audio/segments/seg-fa72930a64cf.mp3",
+    "es_duration_s": 3.72,
+    "en_duration_s": 3.768,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-22": {
+    "es": "code/audio/segments/seg-89d3cdcd0ab7.mp3",
+    "en": "code/audio/segments/seg-02c420cfb3e0.mp3",
+    "es_duration_s": 2.4,
+    "en_duration_s": 2.112,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-23": {
+    "es": "code/audio/segments/seg-4c9ecec385be.mp3",
+    "en": "code/audio/segments/seg-3c2eb1d65b99.mp3",
+    "es_duration_s": 10.08,
+    "en_duration_s": 7.944,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-24": {
+    "es": "code/audio/segments/seg-66cc9c9b16b3.mp3",
+    "en": "code/audio/segments/seg-a5483c125b29.mp3",
+    "es_duration_s": 9.048,
+    "en_duration_s": 9.12,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-25": {
+    "es": "code/audio/segments/seg-7e24aa6b49af.mp3",
+    "en": "code/audio/segments/seg-785448dc0615.mp3",
+    "es_duration_s": 1.536,
+    "en_duration_s": 1.512,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-26": {
+    "es": "code/audio/segments/seg-bffc63969c92.mp3",
+    "en": "code/audio/segments/seg-c8a4c14f2357.mp3",
+    "es_duration_s": 5.784,
+    "en_duration_s": 5.424,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-27": {
+    "es": "code/audio/segments/seg-463829b939a3.mp3",
+    "en": "code/audio/segments/seg-b35b22c8acef.mp3",
+    "es_duration_s": 2.856,
+    "en_duration_s": 3.312,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-28": {
+    "es": "code/audio/segments/seg-edaee21b3e67.mp3",
+    "en": "code/audio/segments/seg-40279fee477d.mp3",
+    "es_duration_s": 4.92,
+    "en_duration_s": 4.2,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-29": {
+    "es": "code/audio/segments/seg-55afa6a40ecc.mp3",
+    "en": "code/audio/segments/seg-1bd614ea4a82.mp3",
+    "es_duration_s": 3.24,
+    "en_duration_s": 2.76,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-30": {
+    "es": "code/audio/segments/seg-549166d7ac2c.mp3",
+    "en": "code/audio/segments/seg-32ad705c9aab.mp3",
+    "es_duration_s": 3.432,
+    "en_duration_s": 3.072,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-31": {
+    "es": "code/audio/segments/seg-61eea7f98174.mp3",
+    "en": "code/audio/segments/seg-9fd660931701.mp3",
+    "es_duration_s": 3.432,
+    "en_duration_s": 3.144,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-32": {
+    "es": "code/audio/segments/seg-811be6aca629.mp3",
+    "en": "code/audio/segments/seg-3be1c8da632b.mp3",
+    "es_duration_s": 6.888,
+    "en_duration_s": 6.312,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-33": {
+    "es": "code/audio/segments/seg-6e92171b9828.mp3",
+    "en": "code/audio/segments/seg-f49fcfa86934.mp3",
+    "es_duration_s": 13.08,
+    "en_duration_s": 12.6,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-34": {
+    "es": "code/audio/segments/seg-c1346027c0b1.mp3",
+    "en": "code/audio/segments/seg-dfc0d5e6b536.mp3",
+    "es_duration_s": 1.152,
+    "en_duration_s": 1.128,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-35": {
+    "es": "code/audio/segments/seg-63f91304f9b0.mp3",
+    "en": "code/audio/segments/seg-12e3bd1f733a.mp3",
+    "es_duration_s": 5.736,
+    "en_duration_s": 5.544,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-36": {
+    "es": "code/audio/segments/seg-99cd11f365d3.mp3",
+    "en": "code/audio/segments/seg-6c249e22b4c4.mp3",
+    "es_duration_s": 5.208,
+    "en_duration_s": 4.752,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-37": {
+    "es": "code/audio/segments/seg-7188de3c69e6.mp3",
+    "en": "code/audio/segments/seg-4e69c3c80ea2.mp3",
+    "es_duration_s": 8.424,
+    "en_duration_s": 7.392,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-38": {
+    "es": "code/audio/segments/seg-b722282f4f7e.mp3",
+    "en": "code/audio/segments/seg-fecc451e7d7a.mp3",
+    "es_duration_s": 2.808,
+    "en_duration_s": 2.832,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-39": {
+    "es": "code/audio/segments/seg-71a666fb5f99.mp3",
+    "en": "code/audio/segments/seg-e74d20a53e4d.mp3",
+    "es_duration_s": 7.128,
+    "en_duration_s": 7.104,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "06-asking-for-a-food-recommendation-40": {
+    "es": "code/audio/segments/seg-cafe15611f4a.mp3",
+    "en": "code/audio/segments/seg-23879ce49718.mp3",
+    "es_duration_s": 2.784,
+    "en_duration_s": 2.544,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "06-asking-for-a-food-recommendation-41": {
+    "es": "code/audio/segments/seg-1f81b34b4fc1.mp3",
+    "en": "code/audio/segments/seg-98a5f255dddb.mp3",
+    "es_duration_s": 9.672,
+    "en_duration_s": 7.2,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-01": {
+    "es": "code/audio/segments/seg-94354fddd306.mp3",
+    "en": "code/audio/segments/seg-7f6b270c0750.mp3",
+    "es_duration_s": 5.472,
+    "en_duration_s": 5.328,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-02": {
+    "es": "code/audio/segments/seg-72c4ffa70bcf.mp3",
+    "en": "code/audio/segments/seg-d3079e2ec9a2.mp3",
+    "es_duration_s": 9.24,
+    "en_duration_s": 8.064,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-03": {
+    "es": "code/audio/segments/seg-0a77a291b0c6.mp3",
+    "en": "code/audio/segments/seg-1bf9c9a7e35c.mp3",
+    "es_duration_s": 5.016,
+    "en_duration_s": 5.328,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-04": {
+    "es": "code/audio/segments/seg-987c3ad80cfc.mp3",
+    "en": "code/audio/segments/seg-4357693ee117.mp3",
+    "es_duration_s": 8.712,
+    "en_duration_s": 8.736,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-05": {
+    "es": "code/audio/segments/seg-b102a93e080e.mp3",
+    "en": "code/audio/segments/seg-012b5c267df1.mp3",
+    "es_duration_s": 4.152,
+    "en_duration_s": 4.176,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-06": {
+    "es": "code/audio/segments/seg-a17e6ea2cbcf.mp3",
+    "en": "code/audio/segments/seg-e4d72b15fb24.mp3",
+    "es_duration_s": 7.248,
+    "en_duration_s": 6.888,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-07": {
+    "es": "code/audio/segments/seg-98b77bd72b30.mp3",
+    "en": "code/audio/segments/seg-f21f82a730c9.mp3",
+    "es_duration_s": 4.824,
+    "en_duration_s": 4.968,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-08": {
+    "es": "code/audio/segments/seg-807ee73c749d.mp3",
+    "en": "code/audio/segments/seg-18d0e36037fc.mp3",
+    "es_duration_s": 6.816,
+    "en_duration_s": 6.384,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-09": {
+    "es": "code/audio/segments/seg-740c7db7b94e.mp3",
+    "en": "code/audio/segments/seg-8ad718082ac5.mp3",
+    "es_duration_s": 3.312,
+    "en_duration_s": 3.696,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-10": {
+    "es": "code/audio/segments/seg-e6e7b9a04aad.mp3",
+    "en": "code/audio/segments/seg-92468f682666.mp3",
+    "es_duration_s": 10.56,
+    "en_duration_s": 9.24,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-11": {
+    "es": "code/audio/segments/seg-c68b374f2b62.mp3",
+    "en": "code/audio/segments/seg-d71a2af73550.mp3",
+    "es_duration_s": 4.344,
+    "en_duration_s": 4.152,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-12": {
+    "es": "code/audio/segments/seg-0ecc9826bb5b.mp3",
+    "en": "code/audio/segments/seg-17d6b19672e6.mp3",
+    "es_duration_s": 6.6,
+    "en_duration_s": 6.36,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-13": {
+    "es": "code/audio/segments/seg-e1ea9d1fffeb.mp3",
+    "en": "code/audio/segments/seg-cc81822c9f77.mp3",
+    "es_duration_s": 2.952,
+    "en_duration_s": 2.808,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-14": {
+    "es": "code/audio/segments/seg-c4ed448038e0.mp3",
+    "en": "code/audio/segments/seg-7bcf64414fbf.mp3",
+    "es_duration_s": 5.448,
+    "en_duration_s": 4.872,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-15": {
+    "es": "code/audio/segments/seg-9f6d190aa10d.mp3",
+    "en": "code/audio/segments/seg-2c51c665b840.mp3",
+    "es_duration_s": 2.088,
+    "en_duration_s": 2.04,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-16": {
+    "es": "code/audio/segments/seg-c413e8b2675f.mp3",
+    "en": "code/audio/segments/seg-0dd90082a74e.mp3",
+    "es_duration_s": 3.624,
+    "en_duration_s": 3.768,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-17": {
+    "es": "code/audio/segments/seg-d8fb655b3283.mp3",
+    "en": "code/audio/segments/seg-caa2dae0e0cb.mp3",
+    "es_duration_s": 8.04,
+    "en_duration_s": 7.032,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-18": {
+    "es": "code/audio/segments/seg-6624915b722b.mp3",
+    "en": "code/audio/segments/seg-a7b6dbd73f1f.mp3",
+    "es_duration_s": 6.264,
+    "en_duration_s": 5.784,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-19": {
+    "es": "code/audio/segments/seg-d8a1b6cd991e.mp3",
+    "en": "code/audio/segments/seg-6881c89b5f4f.mp3",
+    "es_duration_s": 3.048,
+    "en_duration_s": 2.664,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-20": {
+    "es": "code/audio/segments/seg-aba9f548a25a.mp3",
+    "en": "code/audio/segments/seg-e9147c4ac719.mp3",
+    "es_duration_s": 5.904,
+    "en_duration_s": 5.928,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-21": {
+    "es": "code/audio/segments/seg-f5bf8dd0b567.mp3",
+    "en": "code/audio/segments/seg-dfd6af672e37.mp3",
+    "es_duration_s": 2.04,
+    "en_duration_s": 1.728,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-22": {
+    "es": "code/audio/segments/seg-3afc0a9919f6.mp3",
+    "en": "code/audio/segments/seg-7d1a343c60fd.mp3",
+    "es_duration_s": 5.976,
+    "en_duration_s": 5.088,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-23": {
+    "es": "code/audio/segments/seg-f99baeb1eb0e.mp3",
+    "en": "code/audio/segments/seg-e8618e3c7c61.mp3",
+    "es_duration_s": 8.448,
+    "en_duration_s": 7.44,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-24": {
+    "es": "code/audio/segments/seg-c2c2a146c60e.mp3",
+    "en": "code/audio/segments/seg-a472c17d2255.mp3",
+    "es_duration_s": 2.328,
+    "en_duration_s": 1.896,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-25": {
+    "es": "code/audio/segments/seg-7dec287af2eb.mp3",
+    "en": "code/audio/segments/seg-56944d17f233.mp3",
+    "es_duration_s": 12.6,
+    "en_duration_s": 12.048,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-26": {
+    "es": "code/audio/segments/seg-35e028f18991.mp3",
+    "en": "code/audio/segments/seg-c3044bc82e4e.mp3",
+    "es_duration_s": 3.912,
+    "en_duration_s": 4.488,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-27": {
+    "es": "code/audio/segments/seg-f9f998b1892e.mp3",
+    "en": "code/audio/segments/seg-c66deba36dc2.mp3",
+    "es_duration_s": 8.304,
+    "en_duration_s": 8.568,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-28": {
+    "es": "code/audio/segments/seg-b4085d5d4ec9.mp3",
+    "en": "code/audio/segments/seg-28a0908f9341.mp3",
+    "es_duration_s": 1.632,
+    "en_duration_s": 1.704,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-29": {
+    "es": "code/audio/segments/seg-21723b0284cb.mp3",
+    "en": "code/audio/segments/seg-0ec426cf2517.mp3",
+    "es_duration_s": 7.368,
+    "en_duration_s": 6.984,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-30": {
+    "es": "code/audio/segments/seg-8e0d3d6403ff.mp3",
+    "en": "code/audio/segments/seg-e196643f0acb.mp3",
+    "es_duration_s": 4.872,
+    "en_duration_s": 4.488,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "07-ask-about-cool-things-to-see-31": {
+    "es": "code/audio/segments/seg-470c87b3989e.mp3",
+    "en": "code/audio/segments/seg-82307445e923.mp3",
+    "es_duration_s": 9.696,
+    "en_duration_s": 9.12,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "07-ask-about-cool-things-to-see-32": {
+    "es": "code/audio/segments/seg-5118a3d4de80.mp3",
+    "en": "code/audio/segments/seg-d87bee77dd3d.mp3",
+    "es_duration_s": 4.656,
+    "en_duration_s": 4.248,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-01": {
+    "es": "code/audio/segments/seg-162f6efab90c.mp3",
+    "en": "code/audio/segments/seg-3e195ebca14c.mp3",
+    "es_duration_s": 4.896,
+    "en_duration_s": 4.44,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-02": {
+    "es": "code/audio/segments/seg-6cfcf418d592.mp3",
+    "en": "code/audio/segments/seg-1358071c4ce0.mp3",
+    "es_duration_s": 6.744,
+    "en_duration_s": 5.352,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-03": {
+    "es": "code/audio/segments/seg-8371c7e9958f.mp3",
+    "en": "code/audio/segments/seg-b3b445a86e71.mp3",
+    "es_duration_s": 3.024,
+    "en_duration_s": 2.496,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-04": {
+    "es": "code/audio/segments/seg-c0a518861dac.mp3",
+    "en": "code/audio/segments/seg-d034750fe34b.mp3",
+    "es_duration_s": 4.08,
+    "en_duration_s": 3.72,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-05": {
+    "es": "code/audio/segments/seg-29b8e13b2e51.mp3",
+    "en": "code/audio/segments/seg-6e40943559cf.mp3",
+    "es_duration_s": 3.288,
+    "en_duration_s": 2.448,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-06": {
+    "es": "code/audio/segments/seg-469e8310ab12.mp3",
+    "en": "code/audio/segments/seg-8208d68c8e73.mp3",
+    "es_duration_s": 3.912,
+    "en_duration_s": 3.648,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-07": {
+    "es": "code/audio/segments/seg-33f2fcc8e265.mp3",
+    "en": "code/audio/segments/seg-402bdd595536.mp3",
+    "es_duration_s": 2.592,
+    "en_duration_s": 2.496,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-08": {
+    "es": "code/audio/segments/seg-1945a6cab7a9.mp3",
+    "en": "code/audio/segments/seg-20eb7a87fe1b.mp3",
+    "es_duration_s": 0.888,
+    "en_duration_s": 0.936,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-09": {
+    "es": "code/audio/segments/seg-fef5fd22a3ef.mp3",
+    "en": "code/audio/segments/seg-82b7048c1cd3.mp3",
+    "es_duration_s": 3.12,
+    "en_duration_s": 2.568,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-10": {
+    "es": "code/audio/segments/seg-69a6b15be349.mp3",
+    "en": "code/audio/segments/seg-163e11fa32c9.mp3",
+    "es_duration_s": 2.712,
+    "en_duration_s": 3.12,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-11": {
+    "es": "code/audio/segments/seg-9dc981f07c96.mp3",
+    "en": "code/audio/segments/seg-116c52a9cc61.mp3",
+    "es_duration_s": 4.344,
+    "en_duration_s": 4.296,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-12": {
+    "es": "code/audio/segments/seg-1b5948154e7f.mp3",
+    "en": "code/audio/segments/seg-27d38f0b8013.mp3",
+    "es_duration_s": 6.144,
+    "en_duration_s": 5.688,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-13": {
+    "es": "code/audio/segments/seg-490f347dd083.mp3",
+    "en": "code/audio/segments/seg-f730dd9108e5.mp3",
+    "es_duration_s": 2.928,
+    "en_duration_s": 2.352,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-14": {
+    "es": "code/audio/segments/seg-acaf4af9c12b.mp3",
+    "en": "code/audio/segments/seg-cff03fa384e8.mp3",
+    "es_duration_s": 2.76,
+    "en_duration_s": 2.712,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-15": {
+    "es": "code/audio/segments/seg-9fa55459a174.mp3",
+    "en": "code/audio/segments/seg-eb0b3b0fc257.mp3",
+    "es_duration_s": 4.728,
+    "en_duration_s": 4.752,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-16": {
+    "es": "code/audio/segments/seg-81928e9febe0.mp3",
+    "en": "code/audio/segments/seg-3521b1de1333.mp3",
+    "es_duration_s": 3.408,
+    "en_duration_s": 3.12,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-17": {
+    "es": "code/audio/segments/seg-a7a75fbc1831.mp3",
+    "en": "code/audio/segments/seg-222c9c883e4d.mp3",
+    "es_duration_s": 3.408,
+    "en_duration_s": 3.36,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-18": {
+    "es": "code/audio/segments/seg-29b16a856762.mp3",
+    "en": "code/audio/segments/seg-d4a43b5f482c.mp3",
+    "es_duration_s": 1.416,
+    "en_duration_s": 1.176,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-19": {
+    "es": "code/audio/segments/seg-ae5c5321cf28.mp3",
+    "en": "code/audio/segments/seg-63141f18ab43.mp3",
+    "es_duration_s": 3.816,
+    "en_duration_s": 3.36,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-20": {
+    "es": "code/audio/segments/seg-7070b6282440.mp3",
+    "en": "code/audio/segments/seg-e03e1b8e78f4.mp3",
+    "es_duration_s": 2.424,
+    "en_duration_s": 2.448,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-21": {
+    "es": "code/audio/segments/seg-1aed1728a731.mp3",
+    "en": "code/audio/segments/seg-8c37fb600a0c.mp3",
+    "es_duration_s": 1.92,
+    "en_duration_s": 1.68,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-22": {
+    "es": "code/audio/segments/seg-8b997a03e402.mp3",
+    "en": "code/audio/segments/seg-741358079668.mp3",
+    "es_duration_s": 4.68,
+    "en_duration_s": 3.408,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-23": {
+    "es": "code/audio/segments/seg-ecea4c7dcc37.mp3",
+    "en": "code/audio/segments/seg-e3c7e4e1d0b4.mp3",
+    "es_duration_s": 6.072,
+    "en_duration_s": 5.472,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-24": {
+    "es": "code/audio/segments/seg-2b316425c445.mp3",
+    "en": "code/audio/segments/seg-0d53b87bb561.mp3",
+    "es_duration_s": 3.912,
+    "en_duration_s": 3.624,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-25": {
+    "es": "code/audio/segments/seg-e7269e2f746f.mp3",
+    "en": "code/audio/segments/seg-00e2375532e3.mp3",
+    "es_duration_s": 9.768,
+    "en_duration_s": 8.496,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-26": {
+    "es": "code/audio/segments/seg-1303814b90f3.mp3",
+    "en": "code/audio/segments/seg-c007e0358614.mp3",
+    "es_duration_s": 7.848,
+    "en_duration_s": 6.456,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-27": {
+    "es": "code/audio/segments/seg-f7f1505704a7.mp3",
+    "en": "code/audio/segments/seg-8a5d78459cbe.mp3",
+    "es_duration_s": 3.36,
+    "en_duration_s": 3.384,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-28": {
+    "es": "code/audio/segments/seg-6e68f60648b7.mp3",
+    "en": "code/audio/segments/seg-9035b6b8c59b.mp3",
+    "es_duration_s": 3.192,
+    "en_duration_s": 4.128,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-29": {
+    "es": "code/audio/segments/seg-b64560bf409d.mp3",
+    "en": "code/audio/segments/seg-2f0815d3f163.mp3",
+    "es_duration_s": 3.96,
+    "en_duration_s": 3.696,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "08-getting-around-town-30": {
+    "es": "code/audio/segments/seg-603bf6392a7d.mp3",
+    "en": "code/audio/segments/seg-fbb58dee6c5b.mp3",
+    "es_duration_s": 1.848,
+    "en_duration_s": 1.848,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "08-getting-around-town-31": {
+    "es": "code/audio/segments/seg-c561107e6e17.mp3",
+    "en": "code/audio/segments/seg-f0ed84c54992.mp3",
+    "es_duration_s": 1.656,
+    "en_duration_s": 1.704,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-01": {
+    "es": "code/audio/segments/seg-08b6a2afdb71.mp3",
+    "en": "code/audio/segments/seg-8bc9515bc672.mp3",
+    "es_duration_s": 3.888,
+    "en_duration_s": 3.72,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-02": {
+    "es": "code/audio/segments/seg-64f39b257fff.mp3",
+    "en": "code/audio/segments/seg-1648060aebc7.mp3",
+    "es_duration_s": 4.32,
+    "en_duration_s": 3.984,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-03": {
+    "es": "code/audio/segments/seg-3d6a77a94ae8.mp3",
+    "en": "code/audio/segments/seg-8803dbac2f34.mp3",
+    "es_duration_s": 2.16,
+    "en_duration_s": 2.232,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-04": {
+    "es": "code/audio/segments/seg-7959a916dded.mp3",
+    "en": "code/audio/segments/seg-ffd09d868e6a.mp3",
+    "es_duration_s": 3.936,
+    "en_duration_s": 3.456,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-05": {
+    "es": "code/audio/segments/seg-bb31e81de6d2.mp3",
+    "en": "code/audio/segments/seg-3c78ee5e7edb.mp3",
+    "es_duration_s": 6.984,
+    "en_duration_s": 5.616,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-06": {
+    "es": "code/audio/segments/seg-18761dbc7ee3.mp3",
+    "en": "code/audio/segments/seg-6d9b55182710.mp3",
+    "es_duration_s": 9.768,
+    "en_duration_s": 8.64,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-07": {
+    "es": "code/audio/segments/seg-38cf893a9694.mp3",
+    "en": "code/audio/segments/seg-15b7d6b4f1c4.mp3",
+    "es_duration_s": 6.216,
+    "en_duration_s": 6.264,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-08": {
+    "es": "code/audio/segments/seg-5cc5c38c83db.mp3",
+    "en": "code/audio/segments/seg-2841814f6def.mp3",
+    "es_duration_s": 2.352,
+    "en_duration_s": 2.496,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-09": {
+    "es": "code/audio/segments/seg-4a0329956629.mp3",
+    "en": "code/audio/segments/seg-f46902e67e6c.mp3",
+    "es_duration_s": 2.136,
+    "en_duration_s": 1.968,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-10": {
+    "es": "code/audio/segments/seg-8d26494e22a5.mp3",
+    "en": "code/audio/segments/seg-f6f7318d8f5d.mp3",
+    "es_duration_s": 3.312,
+    "en_duration_s": 2.64,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-11": {
+    "es": "code/audio/segments/seg-9693331ddd7c.mp3",
+    "en": "code/audio/segments/seg-86d7ba9833b3.mp3",
+    "es_duration_s": 1.896,
+    "en_duration_s": 1.848,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-12": {
+    "es": "code/audio/segments/seg-ae1a25a61f83.mp3",
+    "en": "code/audio/segments/seg-81917e247ee2.mp3",
+    "es_duration_s": 2.064,
+    "en_duration_s": 1.32,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-13": {
+    "es": "code/audio/segments/seg-09aa76728ea4.mp3",
+    "en": "code/audio/segments/seg-14324269f8db.mp3",
+    "es_duration_s": 4.272,
+    "en_duration_s": 3.552,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-14": {
+    "es": "code/audio/segments/seg-105b88e23d7b.mp3",
+    "en": "code/audio/segments/seg-0515753ede4b.mp3",
+    "es_duration_s": 4.32,
+    "en_duration_s": 4.152,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-15": {
+    "es": "code/audio/segments/seg-3a2c82d955f5.mp3",
+    "en": "code/audio/segments/seg-8c3dd2c4797d.mp3",
+    "es_duration_s": 9.528,
+    "en_duration_s": 7.896,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-16": {
+    "es": "code/audio/segments/seg-605f4c817d69.mp3",
+    "en": "code/audio/segments/seg-5fec07fbfde5.mp3",
+    "es_duration_s": 2.592,
+    "en_duration_s": 2.808,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-17": {
+    "es": "code/audio/segments/seg-6876e8932cc9.mp3",
+    "en": "code/audio/segments/seg-367dcd9687f9.mp3",
+    "es_duration_s": 4.392,
+    "en_duration_s": 4.008,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-18": {
+    "es": "code/audio/segments/seg-839e6ef4099c.mp3",
+    "en": "code/audio/segments/seg-63ea39da8088.mp3",
+    "es_duration_s": 9.384,
+    "en_duration_s": 8.784,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-19": {
+    "es": "code/audio/segments/seg-cb1999e398bd.mp3",
+    "en": "code/audio/segments/seg-0bb7ce2c7a03.mp3",
+    "es_duration_s": 4.632,
+    "en_duration_s": 4.08,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-20": {
+    "es": "code/audio/segments/seg-8552b6541134.mp3",
+    "en": "code/audio/segments/seg-37d44772a100.mp3",
+    "es_duration_s": 8.136,
+    "en_duration_s": 8.568,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-21": {
+    "es": "code/audio/segments/seg-26d9c1ec590d.mp3",
+    "en": "code/audio/segments/seg-02e9807d9f39.mp3",
+    "es_duration_s": 1.752,
+    "en_duration_s": 1.944,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "09-checking-into-a-hotel-or-airbnb-22": {
+    "es": "code/audio/segments/seg-a0fbc8b120f7.mp3",
+    "en": "code/audio/segments/seg-2054ac5a9dd5.mp3",
+    "es_duration_s": 6.96,
+    "en_duration_s": 4.944,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "09-checking-into-a-hotel-or-airbnb-23": {
+    "es": "code/audio/segments/seg-8f794bc18a72.mp3",
+    "en": "code/audio/segments/seg-768c9eae862e.mp3",
+    "es_duration_s": 6.792,
+    "en_duration_s": 5.856,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-01": {
+    "es": "code/audio/segments/seg-7e031ae079aa.mp3",
+    "en": "code/audio/segments/seg-3d8611917fbe.mp3",
+    "es_duration_s": 6.312,
+    "en_duration_s": 6.096,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-02": {
+    "es": "code/audio/segments/seg-7e4147721e9f.mp3",
+    "en": "code/audio/segments/seg-ef19e23c3824.mp3",
+    "es_duration_s": 1.128,
+    "en_duration_s": 1.632,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-03": {
+    "es": "code/audio/segments/seg-5c68c18820a7.mp3",
+    "en": "code/audio/segments/seg-dd5b8b99d871.mp3",
+    "es_duration_s": 3.072,
+    "en_duration_s": 2.88,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-04": {
+    "es": "code/audio/segments/seg-86f78b59bea0.mp3",
+    "en": "code/audio/segments/seg-fce7fb038d55.mp3",
+    "es_duration_s": 2.52,
+    "en_duration_s": 2.064,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-05": {
+    "es": "code/audio/segments/seg-95d8c5b05c7a.mp3",
+    "en": "code/audio/segments/seg-25bf525b097b.mp3",
+    "es_duration_s": 4.896,
+    "en_duration_s": 4.248,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-06": {
+    "es": "code/audio/segments/seg-0018d7dab709.mp3",
+    "en": "code/audio/segments/seg-892b967ab20c.mp3",
+    "es_duration_s": 4.416,
+    "en_duration_s": 4.56,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-07": {
+    "es": "code/audio/segments/seg-650a560bde11.mp3",
+    "en": "code/audio/segments/seg-382e18165024.mp3",
+    "es_duration_s": 1.08,
+    "en_duration_s": 1.344,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-08": {
+    "es": "code/audio/segments/seg-af38ff152d22.mp3",
+    "en": "code/audio/segments/seg-e3f117014ac5.mp3",
+    "es_duration_s": 8.256,
+    "en_duration_s": 7.608,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-09": {
+    "es": "code/audio/segments/seg-45eea8239c88.mp3",
+    "en": "code/audio/segments/seg-715dfce92df2.mp3",
+    "es_duration_s": 3.168,
+    "en_duration_s": 3.336,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-10": {
+    "es": "code/audio/segments/seg-80ef41ed462d.mp3",
+    "en": "code/audio/segments/seg-b7bc5ebbb17e.mp3",
+    "es_duration_s": 6.408,
+    "en_duration_s": 5.16,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-11": {
+    "es": "code/audio/segments/seg-a850e39e9856.mp3",
+    "en": "code/audio/segments/seg-220c51cf315e.mp3",
+    "es_duration_s": 2.496,
+    "en_duration_s": 2.472,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-12": {
+    "es": "code/audio/segments/seg-40d2cc4e437f.mp3",
+    "en": "code/audio/segments/seg-cb79fabaff1d.mp3",
+    "es_duration_s": 5.832,
+    "en_duration_s": 6.312,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-13": {
+    "es": "code/audio/segments/seg-cd1a3e82a9f6.mp3",
+    "en": "code/audio/segments/seg-b3a6d604045b.mp3",
+    "es_duration_s": 3.336,
+    "en_duration_s": 3.024,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-14": {
+    "es": "code/audio/segments/seg-84bbd62d6d0a.mp3",
+    "en": "code/audio/segments/seg-13323d1b3c32.mp3",
+    "es_duration_s": 3.72,
+    "en_duration_s": 3.072,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-15": {
+    "es": "code/audio/segments/seg-d5b56180338e.mp3",
+    "en": "code/audio/segments/seg-8b5c93d2cd5a.mp3",
+    "es_duration_s": 2.472,
+    "en_duration_s": 2.688,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-16": {
+    "es": "code/audio/segments/seg-0430ec9ad15c.mp3",
+    "en": "code/audio/segments/seg-6e6f2ec1d697.mp3",
+    "es_duration_s": 6.144,
+    "en_duration_s": 5.4,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-17": {
+    "es": "code/audio/segments/seg-09f6d75ebbef.mp3",
+    "en": "code/audio/segments/seg-a2a0809bbbbf.mp3",
+    "es_duration_s": 4.776,
+    "en_duration_s": 4.272,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-18": {
+    "es": "code/audio/segments/seg-f6bb9e45642e.mp3",
+    "en": "code/audio/segments/seg-3376eea990bc.mp3",
+    "es_duration_s": 6.096,
+    "en_duration_s": 5.472,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-19": {
+    "es": "code/audio/segments/seg-e66143659074.mp3",
+    "en": "code/audio/segments/seg-b4122cd77e43.mp3",
+    "es_duration_s": 5.184,
+    "en_duration_s": 4.992,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-20": {
+    "es": "code/audio/segments/seg-904be593247a.mp3",
+    "en": "code/audio/segments/seg-bb18851059d5.mp3",
+    "es_duration_s": 5.376,
+    "en_duration_s": 4.992,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-21": {
+    "es": "code/audio/segments/seg-61868301f6c6.mp3",
+    "en": "code/audio/segments/seg-9c6a7e6f8a0c.mp3",
+    "es_duration_s": 3.984,
+    "en_duration_s": 3.456,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-22": {
+    "es": "code/audio/segments/seg-477c7d7f8438.mp3",
+    "en": "code/audio/segments/seg-80c759a20c36.mp3",
+    "es_duration_s": 2.712,
+    "en_duration_s": 2.208,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-23": {
+    "es": "code/audio/segments/seg-c84678749c63.mp3",
+    "en": "code/audio/segments/seg-10113b6f6003.mp3",
+    "es_duration_s": 4.848,
+    "en_duration_s": 4.992,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-24": {
+    "es": "code/audio/segments/seg-dacb0fc6e314.mp3",
+    "en": "code/audio/segments/seg-6076c76ed758.mp3",
+    "es_duration_s": 1.536,
+    "en_duration_s": 1.44,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-25": {
+    "es": "code/audio/segments/seg-0d4cc1a88697.mp3",
+    "en": "code/audio/segments/seg-744ccfaed516.mp3",
+    "es_duration_s": 3.168,
+    "en_duration_s": 2.976,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-26": {
+    "es": "code/audio/segments/seg-058d292e1c82.mp3",
+    "en": "code/audio/segments/seg-a0f3d1eb209c.mp3",
+    "es_duration_s": 3.768,
+    "en_duration_s": 4.152,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-27": {
+    "es": "code/audio/segments/seg-d5b2c62bc47b.mp3",
+    "en": "code/audio/segments/seg-579cfd1198a4.mp3",
+    "es_duration_s": 4.872,
+    "en_duration_s": 4.32,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "10-something-went-wrong-28": {
+    "es": "code/audio/segments/seg-676390753a56.mp3",
+    "en": "code/audio/segments/seg-f07d2323bc05.mp3",
+    "es_duration_s": 1.68,
+    "en_duration_s": 1.296,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "10-something-went-wrong-29": {
+    "es": "code/audio/segments/seg-109ac0836af2.mp3",
+    "en": "code/audio/segments/seg-ecf402471c39.mp3",
+    "es_duration_s": 3.36,
+    "en_duration_s": 3.552,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-01": {
+    "es": "code/audio/segments/seg-2d587f0151dc.mp3",
+    "en": "code/audio/segments/seg-bba10e3130de.mp3",
+    "es_duration_s": 3.192,
+    "en_duration_s": 2.784,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-02": {
+    "es": "code/audio/segments/seg-c30b733bfc10.mp3",
+    "en": "code/audio/segments/seg-8a4834a9b5d5.mp3",
+    "es_duration_s": 8.88,
+    "en_duration_s": 7.992,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-03": {
+    "es": "code/audio/segments/seg-dbd4117cd329.mp3",
+    "en": "code/audio/segments/seg-0918ba19e71d.mp3",
+    "es_duration_s": 2.52,
+    "en_duration_s": 2.304,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-04": {
+    "es": "code/audio/segments/seg-2ad150b83ce6.mp3",
+    "en": "code/audio/segments/seg-a1f7e4d4773a.mp3",
+    "es_duration_s": 3.888,
+    "en_duration_s": 2.952,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-05": {
+    "es": "code/audio/segments/seg-83ab83fc6742.mp3",
+    "en": "code/audio/segments/seg-d338dba930dc.mp3",
+    "es_duration_s": 3.312,
+    "en_duration_s": 3.864,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-06": {
+    "es": "code/audio/segments/seg-553b596984fc.mp3",
+    "en": "code/audio/segments/seg-7a349355a302.mp3",
+    "es_duration_s": 1.272,
+    "en_duration_s": 1.464,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-07": {
+    "es": "code/audio/segments/seg-2cc7ca38155a.mp3",
+    "en": "code/audio/segments/seg-b418a2befa22.mp3",
+    "es_duration_s": 1.776,
+    "en_duration_s": 1.56,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-08": {
+    "es": "code/audio/segments/seg-1938454aa988.mp3",
+    "en": "code/audio/segments/seg-3d9558a40610.mp3",
+    "es_duration_s": 4.656,
+    "en_duration_s": 5.16,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-09": {
+    "es": "code/audio/segments/seg-5fdc8e2bd9da.mp3",
+    "en": "code/audio/segments/seg-909779df0850.mp3",
+    "es_duration_s": 1.896,
+    "en_duration_s": 2.4,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-10": {
+    "es": "code/audio/segments/seg-848835fed79d.mp3",
+    "en": "code/audio/segments/seg-aa2fa711f783.mp3",
+    "es_duration_s": 3.744,
+    "en_duration_s": 3.552,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-11": {
+    "es": "code/audio/segments/seg-6772b9a208a4.mp3",
+    "en": "code/audio/segments/seg-4c705cd11328.mp3",
+    "es_duration_s": 8.304,
+    "en_duration_s": 10.344,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-12": {
+    "es": "code/audio/segments/seg-6f1cb0d36212.mp3",
+    "en": "code/audio/segments/seg-c76ae9f9cf22.mp3",
+    "es_duration_s": 1.368,
+    "en_duration_s": 1.992,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-13": {
+    "es": "code/audio/segments/seg-8c9075a93900.mp3",
+    "en": "code/audio/segments/seg-289c809d9640.mp3",
+    "es_duration_s": 5.232,
+    "en_duration_s": 5.784,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-14": {
+    "es": "code/audio/segments/seg-de742b1fdfdf.mp3",
+    "en": "code/audio/segments/seg-b3dd170b077d.mp3",
+    "es_duration_s": 6.96,
+    "en_duration_s": 6.36,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-15": {
+    "es": "code/audio/segments/seg-bf366fffaf42.mp3",
+    "en": "code/audio/segments/seg-a1a33da7affc.mp3",
+    "es_duration_s": 6.048,
+    "en_duration_s": 5.88,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-16": {
+    "es": "code/audio/segments/seg-82c859877e5f.mp3",
+    "en": "code/audio/segments/seg-9ecec117c18f.mp3",
+    "es_duration_s": 2.28,
+    "en_duration_s": 2.592,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-17": {
+    "es": "code/audio/segments/seg-e94eed7fd2d0.mp3",
+    "en": "code/audio/segments/seg-3c6172f41540.mp3",
+    "es_duration_s": 2.616,
+    "en_duration_s": 2.616,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-18": {
+    "es": "code/audio/segments/seg-ed2f6517e38b.mp3",
+    "en": "code/audio/segments/seg-401874b6889b.mp3",
+    "es_duration_s": 2.208,
+    "en_duration_s": 2.16,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-19": {
+    "es": "code/audio/segments/seg-aa38e3190f4d.mp3",
+    "en": "code/audio/segments/seg-6235bcc5dd8c.mp3",
+    "es_duration_s": 3.432,
+    "en_duration_s": 2.88,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-20": {
+    "es": "code/audio/segments/seg-34eea89efc54.mp3",
+    "en": "code/audio/segments/seg-9cde773cb3cd.mp3",
+    "es_duration_s": 1.2,
+    "en_duration_s": 1.08,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-21": {
+    "es": "code/audio/segments/seg-f2e0821ed17a.mp3",
+    "en": "code/audio/segments/seg-6c18f2deaef8.mp3",
+    "es_duration_s": 2.976,
+    "en_duration_s": 3.072,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-22": {
+    "es": "code/audio/segments/seg-15bab8b845f0.mp3",
+    "en": "code/audio/segments/seg-2a1ffd07fb2a.mp3",
+    "es_duration_s": 1.248,
+    "en_duration_s": 1.08,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-23": {
+    "es": "code/audio/segments/seg-0cfdfb9b62fd.mp3",
+    "en": "code/audio/segments/seg-0a4e5b84967d.mp3",
+    "es_duration_s": 4.488,
+    "en_duration_s": 4.008,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-24": {
+    "es": "code/audio/segments/seg-d38224bee827.mp3",
+    "en": "code/audio/segments/seg-ec3e0886fbd4.mp3",
+    "es_duration_s": 3.528,
+    "en_duration_s": 3.864,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-25": {
+    "es": "code/audio/segments/seg-c215936e26d3.mp3",
+    "en": "code/audio/segments/seg-203895bb6588.mp3",
+    "es_duration_s": 6.0,
+    "en_duration_s": 5.112,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-26": {
+    "es": "code/audio/segments/seg-11c75bc7f56d.mp3",
+    "en": "code/audio/segments/seg-6ad1d9f33e80.mp3",
+    "es_duration_s": 11.784,
+    "en_duration_s": 10.824,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-27": {
+    "es": "code/audio/segments/seg-cd1abd3ef6f7.mp3",
+    "en": "code/audio/segments/seg-10aa3d74cd0c.mp3",
+    "es_duration_s": 3.744,
+    "en_duration_s": 3.432,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-28": {
+    "es": "code/audio/segments/seg-6cdcdc89318f.mp3",
+    "en": "code/audio/segments/seg-13db9699a2a5.mp3",
+    "es_duration_s": 6.144,
+    "en_duration_s": 5.616,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-29": {
+    "es": "code/audio/segments/seg-af8c28b2e4e1.mp3",
+    "en": "code/audio/segments/seg-b97a1c128100.mp3",
+    "es_duration_s": 3.312,
+    "en_duration_s": 2.688,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-30": {
+    "es": "code/audio/segments/seg-72081e5d186c.mp3",
+    "en": "code/audio/segments/seg-f86cf3dc8c0d.mp3",
+    "es_duration_s": 8.688,
+    "en_duration_s": 7.824,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-31": {
+    "es": "code/audio/segments/seg-d19cab584d0e.mp3",
+    "en": "code/audio/segments/seg-50e7c91b3cae.mp3",
+    "es_duration_s": 1.032,
+    "en_duration_s": 1.32,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-32": {
+    "es": "code/audio/segments/seg-7e5ad0e45192.mp3",
+    "en": "code/audio/segments/seg-e5bb4446c8b3.mp3",
+    "es_duration_s": 7.368,
+    "en_duration_s": 7.44,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "11-visiting-a-pharmacy-or-doctor-33": {
+    "es": "code/audio/segments/seg-c4c9ba56f8cf.mp3",
+    "en": "code/audio/segments/seg-55a3a11920cf.mp3",
+    "es_duration_s": 4.728,
+    "en_duration_s": 4.536,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "11-visiting-a-pharmacy-or-doctor-34": {
+    "es": "code/audio/segments/seg-50f9513c8fde.mp3",
+    "en": "code/audio/segments/seg-ae759859fdd9.mp3",
+    "es_duration_s": 3.72,
+    "en_duration_s": 2.712,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-01": {
+    "es": "code/audio/segments/seg-d48fe0d90a87.mp3",
+    "en": "code/audio/segments/seg-d2c14aeb4fa6.mp3",
+    "es_duration_s": 3.456,
+    "en_duration_s": 2.88,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-02": {
+    "es": "code/audio/segments/seg-62eb488cb8db.mp3",
+    "en": "code/audio/segments/seg-74d561a6afa2.mp3",
+    "es_duration_s": 1.776,
+    "en_duration_s": 1.488,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-03": {
+    "es": "code/audio/segments/seg-b955d5724fa0.mp3",
+    "en": "code/audio/segments/seg-994ea1b2f9b4.mp3",
+    "es_duration_s": 1.152,
+    "en_duration_s": 1.224,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-04": {
+    "es": "code/audio/segments/seg-75ad1813ef04.mp3",
+    "en": "code/audio/segments/seg-f36457d8c792.mp3",
+    "es_duration_s": 1.752,
+    "en_duration_s": 1.392,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-05": {
+    "es": "code/audio/segments/seg-fa64b760af3d.mp3",
+    "en": "code/audio/segments/seg-c3f096855d21.mp3",
+    "es_duration_s": 4.872,
+    "en_duration_s": 5.496,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-06": {
+    "es": "code/audio/segments/seg-2ebf1f7067dc.mp3",
+    "en": "code/audio/segments/seg-fff1efb243c0.mp3",
+    "es_duration_s": 3.408,
+    "en_duration_s": 3.72,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-07": {
+    "es": "code/audio/segments/seg-3ef8e8767b7f.mp3",
+    "en": "code/audio/segments/seg-6f8b1abc04f3.mp3",
+    "es_duration_s": 1.224,
+    "en_duration_s": 0.816,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-08": {
+    "es": "code/audio/segments/seg-7d6195ab53b8.mp3",
+    "en": "code/audio/segments/seg-d6603ad35b97.mp3",
+    "es_duration_s": 3.12,
+    "en_duration_s": 3.168,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-09": {
+    "es": "code/audio/segments/seg-4348569caa0a.mp3",
+    "en": "code/audio/segments/seg-fa81ef4a49d9.mp3",
+    "es_duration_s": 4.44,
+    "en_duration_s": 4.272,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-10": {
+    "es": "code/audio/segments/seg-b5adaa08378c.mp3",
+    "en": "code/audio/segments/seg-919e8309bed1.mp3",
+    "es_duration_s": 1.416,
+    "en_duration_s": 1.632,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-11": {
+    "es": "code/audio/segments/seg-5cf4f50161de.mp3",
+    "en": "code/audio/segments/seg-e679ff00810b.mp3",
+    "es_duration_s": 6.6,
+    "en_duration_s": 5.904,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-12": {
+    "es": "code/audio/segments/seg-cb2188f212a2.mp3",
+    "en": "code/audio/segments/seg-890bc87b6e34.mp3",
+    "es_duration_s": 4.896,
+    "en_duration_s": 5.112,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-13": {
+    "es": "code/audio/segments/seg-e0c9f53de9e9.mp3",
+    "en": "code/audio/segments/seg-185eb74244ce.mp3",
+    "es_duration_s": 8.76,
+    "en_duration_s": 7.944,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-14": {
+    "es": "code/audio/segments/seg-f8e4a5a67cf6.mp3",
+    "en": "code/audio/segments/seg-0c1d38a1836e.mp3",
+    "es_duration_s": 3.048,
+    "en_duration_s": 2.832,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-15": {
+    "es": "code/audio/segments/seg-451af1f9156e.mp3",
+    "en": "code/audio/segments/seg-b08b65ab9c51.mp3",
+    "es_duration_s": 1.2,
+    "en_duration_s": 1.176,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-16": {
+    "es": "code/audio/segments/seg-6a53f87a1c23.mp3",
+    "en": "code/audio/segments/seg-c894b1ba03e5.mp3",
+    "es_duration_s": 4.944,
+    "en_duration_s": 4.128,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-17": {
+    "es": "code/audio/segments/seg-29f3b189e304.mp3",
+    "en": "code/audio/segments/seg-aa4535a81ee7.mp3",
+    "es_duration_s": 4.056,
+    "en_duration_s": 3.744,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-18": {
+    "es": "code/audio/segments/seg-90b102b1f0c7.mp3",
+    "en": "code/audio/segments/seg-4b237754c6b4.mp3",
+    "es_duration_s": 6.072,
+    "en_duration_s": 4.896,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-19": {
+    "es": "code/audio/segments/seg-25d90473ad8f.mp3",
+    "en": "code/audio/segments/seg-7dd0c9fa3953.mp3",
+    "es_duration_s": 4.08,
+    "en_duration_s": 3.432,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-20": {
+    "es": "code/audio/segments/seg-dcb98fe7c640.mp3",
+    "en": "code/audio/segments/seg-5115e861f0b1.mp3",
+    "es_duration_s": 2.064,
+    "en_duration_s": 1.872,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-21": {
+    "es": "code/audio/segments/seg-f0f3eeee0108.mp3",
+    "en": "code/audio/segments/seg-bd6e97e43770.mp3",
+    "es_duration_s": 3.912,
+    "en_duration_s": 3.36,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "12-shopping-at-a-market-22": {
+    "es": "code/audio/segments/seg-07e6f7f2fe36.mp3",
+    "en": "code/audio/segments/seg-074c8dbb7055.mp3",
+    "es_duration_s": 2.784,
+    "en_duration_s": 1.872,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "12-shopping-at-a-market-23": {
+    "es": "code/audio/segments/seg-3bb357399c61.mp3",
+    "en": "code/audio/segments/seg-8793f412626f.mp3",
+    "es_duration_s": 2.736,
+    "en_duration_s": 2.256,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-01": {
+    "es": "code/audio/segments/seg-2fe1b4070104.mp3",
+    "en": "code/audio/segments/seg-6a85c7778251.mp3",
+    "es_duration_s": 3.768,
+    "en_duration_s": 3.048,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-02": {
+    "es": "code/audio/segments/seg-45e51f1ae3cf.mp3",
+    "en": "code/audio/segments/seg-1a078a2aa45d.mp3",
+    "es_duration_s": 9.816,
+    "en_duration_s": 8.976,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-03": {
+    "es": "code/audio/segments/seg-27c6c88c263a.mp3",
+    "en": "code/audio/segments/seg-07dc86c2778a.mp3",
+    "es_duration_s": 2.808,
+    "en_duration_s": 3.072,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-04": {
+    "es": "code/audio/segments/seg-d401c23a188d.mp3",
+    "en": "code/audio/segments/seg-4e3ce7676cf3.mp3",
+    "es_duration_s": 11.376,
+    "en_duration_s": 9.864,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-05": {
+    "es": "code/audio/segments/seg-c70cab8a603b.mp3",
+    "en": "code/audio/segments/seg-803176c0fb09.mp3",
+    "es_duration_s": 2.328,
+    "en_duration_s": 1.968,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-06": {
+    "es": "code/audio/segments/seg-a72af5e59926.mp3",
+    "en": "code/audio/segments/seg-4c696f69ecf9.mp3",
+    "es_duration_s": 16.632,
+    "en_duration_s": 15.312,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-07": {
+    "es": "code/audio/segments/seg-0b297034cfa8.mp3",
+    "en": "code/audio/segments/seg-6e8a75774a80.mp3",
+    "es_duration_s": 2.352,
+    "en_duration_s": 2.04,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-08": {
+    "es": "code/audio/segments/seg-848bd5047774.mp3",
+    "en": "code/audio/segments/seg-737a6dc6e197.mp3",
+    "es_duration_s": 9.792,
+    "en_duration_s": 7.32,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-09": {
+    "es": "code/audio/segments/seg-b144210004fb.mp3",
+    "en": "code/audio/segments/seg-95339bf6a11e.mp3",
+    "es_duration_s": 2.064,
+    "en_duration_s": 2.16,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-10": {
+    "es": "code/audio/segments/seg-b9063409f5df.mp3",
+    "en": "code/audio/segments/seg-4a5cf511338f.mp3",
+    "es_duration_s": 9.144,
+    "en_duration_s": 8.4,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-11": {
+    "es": "code/audio/segments/seg-8d925973737f.mp3",
+    "en": "code/audio/segments/seg-5730e4eb1de8.mp3",
+    "es_duration_s": 2.328,
+    "en_duration_s": 2.496,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-12": {
+    "es": "code/audio/segments/seg-0649ed69a103.mp3",
+    "en": "code/audio/segments/seg-e8a7757778d0.mp3",
+    "es_duration_s": 8.688,
+    "en_duration_s": 8.472,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-13": {
+    "es": "code/audio/segments/seg-47946c341d98.mp3",
+    "en": "code/audio/segments/seg-bd09032fdf3f.mp3",
+    "es_duration_s": 2.712,
+    "en_duration_s": 3.024,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-14": {
+    "es": "code/audio/segments/seg-015e31b3b150.mp3",
+    "en": "code/audio/segments/seg-10a9674e9d15.mp3",
+    "es_duration_s": 2.784,
+    "en_duration_s": 2.976,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-15": {
+    "es": "code/audio/segments/seg-00b1e46d5986.mp3",
+    "en": "code/audio/segments/seg-8e8e9199ac6b.mp3",
+    "es_duration_s": 9.264,
+    "en_duration_s": 9.144,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-16": {
+    "es": "code/audio/segments/seg-cfb42e169dc6.mp3",
+    "en": "code/audio/segments/seg-18fcf7c6bc6b.mp3",
+    "es_duration_s": 1.68,
+    "en_duration_s": 1.464,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "13-telling-a-story-about-a-recent-trip-or-weekend-17": {
+    "es": "code/audio/segments/seg-8e6dd9f18c2e.mp3",
+    "en": "code/audio/segments/seg-00211aa84492.mp3",
+    "es_duration_s": 4.296,
+    "en_duration_s": 4.536,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-01": {
+    "es": "code/audio/segments/seg-9002fc0b8e95.mp3",
+    "en": "code/audio/segments/seg-fd3a5c5ef6a8.mp3",
+    "es_duration_s": 2.808,
+    "en_duration_s": 2.856,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-02": {
+    "es": "code/audio/segments/seg-a4f3c6e2119e.mp3",
+    "en": "code/audio/segments/seg-62db82365894.mp3",
+    "es_duration_s": 13.8,
+    "en_duration_s": 12.336,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-03": {
+    "es": "code/audio/segments/seg-ccd3ae037668.mp3",
+    "en": "code/audio/segments/seg-ef85eafa2548.mp3",
+    "es_duration_s": 1.44,
+    "en_duration_s": 1.68,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-04": {
+    "es": "code/audio/segments/seg-945ed78c0b52.mp3",
+    "en": "code/audio/segments/seg-21512534db7c.mp3",
+    "es_duration_s": 17.448,
+    "en_duration_s": 15.384,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-05": {
+    "es": "code/audio/segments/seg-8d4836bc0f91.mp3",
+    "en": "code/audio/segments/seg-42ee438aba00.mp3",
+    "es_duration_s": 2.064,
+    "en_duration_s": 2.112,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-06": {
+    "es": "code/audio/segments/seg-672b3e9352a3.mp3",
+    "en": "code/audio/segments/seg-3c4c7be7fb64.mp3",
+    "es_duration_s": 3.768,
+    "en_duration_s": 4.152,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-07": {
+    "es": "code/audio/segments/seg-01e68004cfef.mp3",
+    "en": "code/audio/segments/seg-229fa48640c4.mp3",
+    "es_duration_s": 2.424,
+    "en_duration_s": 2.232,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-08": {
+    "es": "code/audio/segments/seg-3f82d8388418.mp3",
+    "en": "code/audio/segments/seg-2309f39a8d79.mp3",
+    "es_duration_s": 14.544,
+    "en_duration_s": 11.568,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-09": {
+    "es": "code/audio/segments/seg-6bf2aacaf904.mp3",
+    "en": "code/audio/segments/seg-11533f037161.mp3",
+    "es_duration_s": 2.496,
+    "en_duration_s": 2.136,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-10": {
+    "es": "code/audio/segments/seg-21ecd913248b.mp3",
+    "en": "code/audio/segments/seg-9399e13baaa3.mp3",
+    "es_duration_s": 9.432,
+    "en_duration_s": 9.048,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-11": {
+    "es": "code/audio/segments/seg-3377fb0db3cf.mp3",
+    "en": "code/audio/segments/seg-602fb4fe1b78.mp3",
+    "es_duration_s": 1.752,
+    "en_duration_s": 1.704,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-12": {
+    "es": "code/audio/segments/seg-b85728e30be2.mp3",
+    "en": "code/audio/segments/seg-281705b1b043.mp3",
+    "es_duration_s": 11.112,
+    "en_duration_s": 8.928,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-13": {
+    "es": "code/audio/segments/seg-e362262f1311.mp3",
+    "en": "code/audio/segments/seg-5a294657bd49.mp3",
+    "es_duration_s": 1.896,
+    "en_duration_s": 2.064,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-14": {
+    "es": "code/audio/segments/seg-2aa541ed958f.mp3",
+    "en": "code/audio/segments/seg-a2a98881741c.mp3",
+    "es_duration_s": 6.072,
+    "en_duration_s": 5.088,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-15": {
+    "es": "code/audio/segments/seg-ade168bcf219.mp3",
+    "en": "code/audio/segments/seg-614d56ae76d1.mp3",
+    "es_duration_s": 17.52,
+    "en_duration_s": 16.512,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-16": {
+    "es": "code/audio/segments/seg-5695b4bcd78e.mp3",
+    "en": "code/audio/segments/seg-17eb5314b02d.mp3",
+    "es_duration_s": 1.2,
+    "en_duration_s": 1.296,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-17": {
+    "es": "code/audio/segments/seg-8fc5d9727ebe.mp3",
+    "en": "code/audio/segments/seg-ec43c75e8197.mp3",
+    "es_duration_s": 3.864,
+    "en_duration_s": 2.856,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-18": {
+    "es": "code/audio/segments/seg-c134d987411b.mp3",
+    "en": "code/audio/segments/seg-88330fec4d73.mp3",
+    "es_duration_s": 2.856,
+    "en_duration_s": 2.904,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-19": {
+    "es": "code/audio/segments/seg-0874d861f34e.mp3",
+    "en": "code/audio/segments/seg-6e0eeb06303e.mp3",
+    "es_duration_s": 16.992,
+    "en_duration_s": 16.824,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-20": {
+    "es": "code/audio/segments/seg-183d8c8ddf4e.mp3",
+    "en": "code/audio/segments/seg-085239a8bb40.mp3",
+    "es_duration_s": 3.048,
+    "en_duration_s": 2.88,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-21": {
+    "es": "code/audio/segments/seg-505eb683fd11.mp3",
+    "en": "code/audio/segments/seg-882933dd4df2.mp3",
+    "es_duration_s": 2.52,
+    "en_duration_s": 2.184,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-22": {
+    "es": "code/audio/segments/seg-cb4853d871ab.mp3",
+    "en": "code/audio/segments/seg-70d7fc401c85.mp3",
+    "es_duration_s": 14.136,
+    "en_duration_s": 11.88,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "14-talking-about-your-hobbies-in-depth-23": {
+    "es": "code/audio/segments/seg-175bcbfad9ca.mp3",
+    "en": "code/audio/segments/seg-260aa6959897.mp3",
+    "es_duration_s": 3.336,
+    "en_duration_s": 3.12,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "14-talking-about-your-hobbies-in-depth-24": {
+    "es": "code/audio/segments/seg-6b7813727730.mp3",
+    "en": "code/audio/segments/seg-24ee63e0081e.mp3",
+    "es_duration_s": 1.248,
+    "en_duration_s": 0.792,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "15-giving-your-opinion-on-a-common-topic-01": {
+    "es": "code/audio/segments/seg-4e41cedab4f7.mp3",
+    "en": "code/audio/segments/seg-c3349529e3cc.mp3",
+    "es_duration_s": 6.984,
+    "en_duration_s": 6.792,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "15-giving-your-opinion-on-a-common-topic-02": {
+    "es": "code/audio/segments/seg-08bef8193e6f.mp3",
+    "en": "code/audio/segments/seg-8cf4a950fd4b.mp3",
+    "es_duration_s": 10.608,
+    "en_duration_s": 9.84,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "15-giving-your-opinion-on-a-common-topic-03": {
+    "es": "code/audio/segments/seg-00b718c94608.mp3",
+    "en": "code/audio/segments/seg-66d2622673f1.mp3",
+    "es_duration_s": 17.712,
+    "en_duration_s": 16.392,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "15-giving-your-opinion-on-a-common-topic-04": {
+    "es": "code/audio/segments/seg-cc36cb2f3486.mp3",
+    "en": "code/audio/segments/seg-edb52fa21813.mp3",
+    "es_duration_s": 1.32,
+    "en_duration_s": 1.104,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "15-giving-your-opinion-on-a-common-topic-05": {
+    "es": "code/audio/segments/seg-a103c0a69c11.mp3",
+    "en": "code/audio/segments/seg-84bac9fe92a6.mp3",
+    "es_duration_s": 22.728,
+    "en_duration_s": 19.44,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "15-giving-your-opinion-on-a-common-topic-06": {
+    "es": "code/audio/segments/seg-bedccda02229.mp3",
+    "en": "code/audio/segments/seg-24e8a257df17.mp3",
+    "es_duration_s": 4.56,
+    "en_duration_s": 3.432,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "15-giving-your-opinion-on-a-common-topic-07": {
+    "es": "code/audio/segments/seg-2fcd1d4aa164.mp3",
+    "en": "code/audio/segments/seg-c035c5af4279.mp3",
+    "es_duration_s": 16.872,
+    "en_duration_s": 14.856,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "15-giving-your-opinion-on-a-common-topic-08": {
+    "es": "code/audio/segments/seg-d9cb6c7d1bc1.mp3",
+    "en": "code/audio/segments/seg-b2e8a9e07a9f.mp3",
+    "es_duration_s": 1.8,
+    "en_duration_s": 1.68,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "15-giving-your-opinion-on-a-common-topic-09": {
+    "es": "code/audio/segments/seg-1d79c1b592dd.mp3",
+    "en": "code/audio/segments/seg-36e7f44130fb.mp3",
+    "es_duration_s": 13.368,
+    "en_duration_s": 13.2,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "15-giving-your-opinion-on-a-common-topic-10": {
+    "es": "code/audio/segments/seg-bfe117fe54d2.mp3",
+    "en": "code/audio/segments/seg-bbe0cfce127a.mp3",
+    "es_duration_s": 2.472,
+    "en_duration_s": 2.184,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "15-giving-your-opinion-on-a-common-topic-11": {
+    "es": "code/audio/segments/seg-79d7ecf3614f.mp3",
+    "en": "code/audio/segments/seg-0817cbb76593.mp3",
+    "es_duration_s": 16.008,
+    "en_duration_s": 14.112,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-01": {
+    "es": "code/audio/segments/seg-d089e3053c49.mp3",
+    "en": "code/audio/segments/seg-581300e236b0.mp3",
+    "es_duration_s": 2.568,
+    "en_duration_s": 2.88,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-02": {
+    "es": "code/audio/segments/seg-2db8f24656e8.mp3",
+    "en": "code/audio/segments/seg-115688700e61.mp3",
+    "es_duration_s": 8.16,
+    "en_duration_s": 8.544,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-03": {
+    "es": "code/audio/segments/seg-95a34605997d.mp3",
+    "en": "code/audio/segments/seg-1443ba13d227.mp3",
+    "es_duration_s": 2.592,
+    "en_duration_s": 2.784,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-04": {
+    "es": "code/audio/segments/seg-e8df4fddcd01.mp3",
+    "en": "code/audio/segments/seg-1590885f510e.mp3",
+    "es_duration_s": 2.64,
+    "en_duration_s": 2.4,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-05": {
+    "es": "code/audio/segments/seg-c0c4fb25445c.mp3",
+    "en": "code/audio/segments/seg-27b6196b1322.mp3",
+    "es_duration_s": 6.6,
+    "en_duration_s": 6.504,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-06": {
+    "es": "code/audio/segments/seg-2d0aad25e703.mp3",
+    "en": "code/audio/segments/seg-ad7b52841a98.mp3",
+    "es_duration_s": 3.864,
+    "en_duration_s": 3.576,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-07": {
+    "es": "code/audio/segments/seg-ca442b7770f6.mp3",
+    "en": "code/audio/segments/seg-64e785de5f2d.mp3",
+    "es_duration_s": 4.704,
+    "en_duration_s": 4.056,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-08": {
+    "es": "code/audio/segments/seg-391a848e0922.mp3",
+    "en": "code/audio/segments/seg-979a3925ff9a.mp3",
+    "es_duration_s": 3.36,
+    "en_duration_s": 2.976,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-09": {
+    "es": "code/audio/segments/seg-8403c34d4f09.mp3",
+    "en": "code/audio/segments/seg-7c0f316c1105.mp3",
+    "es_duration_s": 2.88,
+    "en_duration_s": 2.376,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-10": {
+    "es": "code/audio/segments/seg-a21b2db319ea.mp3",
+    "en": "code/audio/segments/seg-3ad2a5380edd.mp3",
+    "es_duration_s": 4.44,
+    "en_duration_s": 4.128,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-11": {
+    "es": "code/audio/segments/seg-e11fc2f341a0.mp3",
+    "en": "code/audio/segments/seg-66a87c3ff771.mp3",
+    "es_duration_s": 2.256,
+    "en_duration_s": 2.52,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-12": {
+    "es": "code/audio/segments/seg-0b284fd09892.mp3",
+    "en": "code/audio/segments/seg-9796f2de44a0.mp3",
+    "es_duration_s": 7.848,
+    "en_duration_s": 8.184,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-13": {
+    "es": "code/audio/segments/seg-d2bf30e1d796.mp3",
+    "en": "code/audio/segments/seg-54363af66eb5.mp3",
+    "es_duration_s": 3.864,
+    "en_duration_s": 3.816,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-14": {
+    "es": "code/audio/segments/seg-6f39b79c15e3.mp3",
+    "en": "code/audio/segments/seg-9f60148a3162.mp3",
+    "es_duration_s": 5.256,
+    "en_duration_s": 5.592,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-15": {
+    "es": "code/audio/segments/seg-51df636c472d.mp3",
+    "en": "code/audio/segments/seg-695021a43728.mp3",
+    "es_duration_s": 5.472,
+    "en_duration_s": 4.488,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-16": {
+    "es": "code/audio/segments/seg-68e7f254879d.mp3",
+    "en": "code/audio/segments/seg-e3919c524437.mp3",
+    "es_duration_s": 2.856,
+    "en_duration_s": 2.112,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-17": {
+    "es": "code/audio/segments/seg-ac45c6e6b0bd.mp3",
+    "en": "code/audio/segments/seg-54e456b19f22.mp3",
+    "es_duration_s": 7.392,
+    "en_duration_s": 6.096,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-18": {
+    "es": "code/audio/segments/seg-ccd0abd77bbd.mp3",
+    "en": "code/audio/segments/seg-b72d3a80a2f5.mp3",
+    "es_duration_s": 3.648,
+    "en_duration_s": 3.456,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-19": {
+    "es": "code/audio/segments/seg-60836a146d12.mp3",
+    "en": "code/audio/segments/seg-b095eb28eed8.mp3",
+    "es_duration_s": 3.048,
+    "en_duration_s": 2.616,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-20": {
+    "es": "code/audio/segments/seg-9b3007f6bc03.mp3",
+    "en": "code/audio/segments/seg-52dc4d12c85b.mp3",
+    "es_duration_s": 7.296,
+    "en_duration_s": 6.168,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-21": {
+    "es": "code/audio/segments/seg-2984c45d036a.mp3",
+    "en": "code/audio/segments/seg-01027172b43a.mp3",
+    "es_duration_s": 3.6,
+    "en_duration_s": 3.504,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "16-making-plans-with-someone-22": {
+    "es": "code/audio/segments/seg-52d248e1ef3c.mp3",
+    "en": "code/audio/segments/seg-cad158a771df.mp3",
+    "es_duration_s": 2.832,
+    "en_duration_s": 2.448,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-23": {
+    "es": "code/audio/segments/seg-3b8535ca87fd.mp3",
+    "en": "code/audio/segments/seg-954ed1915163.mp3",
+    "es_duration_s": 7.608,
+    "en_duration_s": 8.424,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "16-making-plans-with-someone-24": {
+    "es": "code/audio/segments/seg-778af37b73a8.mp3",
+    "en": "code/audio/segments/seg-3bc20e7ca059.mp3",
+    "es_duration_s": 3.36,
+    "en_duration_s": 2.64,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-01": {
+    "es": "code/audio/segments/seg-f7b374f6d8ed.mp3",
+    "en": "code/audio/segments/seg-658d53bc13e6.mp3",
+    "es_duration_s": 5.568,
+    "en_duration_s": 4.536,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-02": {
+    "es": "code/audio/segments/seg-8838a01e4e7c.mp3",
+    "en": "code/audio/segments/seg-209b66fee427.mp3",
+    "es_duration_s": 22.608,
+    "en_duration_s": 19.512,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-03": {
+    "es": "code/audio/segments/seg-4c228f489792.mp3",
+    "en": "code/audio/segments/seg-9a96bfa97704.mp3",
+    "es_duration_s": 1.008,
+    "en_duration_s": 0.96,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-04": {
+    "es": "code/audio/segments/seg-5569535ea737.mp3",
+    "en": "code/audio/segments/seg-0ed4f283b776.mp3",
+    "es_duration_s": 4.848,
+    "en_duration_s": 4.536,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-05": {
+    "es": "code/audio/segments/seg-baca05c48561.mp3",
+    "en": "code/audio/segments/seg-26ef1dfff517.mp3",
+    "es_duration_s": 3.456,
+    "en_duration_s": 2.712,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-06": {
+    "es": "code/audio/segments/seg-a5bfc35eb6da.mp3",
+    "en": "code/audio/segments/seg-5fc8ccfb561d.mp3",
+    "es_duration_s": 20.304,
+    "en_duration_s": 17.64,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-07": {
+    "es": "code/audio/segments/seg-313d8fe8bd09.mp3",
+    "en": "code/audio/segments/seg-520e1806d850.mp3",
+    "es_duration_s": 2.112,
+    "en_duration_s": 2.328,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-08": {
+    "es": "code/audio/segments/seg-087b9c3e1743.mp3",
+    "en": "code/audio/segments/seg-75e4276c9e51.mp3",
+    "es_duration_s": 8.64,
+    "en_duration_s": 8.328,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-09": {
+    "es": "code/audio/segments/seg-138c0950ea61.mp3",
+    "en": "code/audio/segments/seg-7ba400d48603.mp3",
+    "es_duration_s": 2.904,
+    "en_duration_s": 2.928,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-10": {
+    "es": "code/audio/segments/seg-58cdebc6800d.mp3",
+    "en": "code/audio/segments/seg-0f28c1994693.mp3",
+    "es_duration_s": 6.912,
+    "en_duration_s": 6.288,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-11": {
+    "es": "code/audio/segments/seg-0f96d1bf9d52.mp3",
+    "en": "code/audio/segments/seg-a50ec6b191f4.mp3",
+    "es_duration_s": 2.28,
+    "en_duration_s": 1.824,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-12": {
+    "es": "code/audio/segments/seg-109605710aa9.mp3",
+    "en": "code/audio/segments/seg-2af2791f1b5f.mp3",
+    "es_duration_s": 19.44,
+    "en_duration_s": 19.344,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-13": {
+    "es": "code/audio/segments/seg-56cc51bda5c2.mp3",
+    "en": "code/audio/segments/seg-5c1cf8135138.mp3",
+    "es_duration_s": 8.568,
+    "en_duration_s": 7.56,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-14": {
+    "es": "code/audio/segments/seg-118463eb9890.mp3",
+    "en": "code/audio/segments/seg-37c08fa3a4c6.mp3",
+    "es_duration_s": 10.56,
+    "en_duration_s": 8.568,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-15": {
+    "es": "code/audio/segments/seg-d413b9e7dc99.mp3",
+    "en": "code/audio/segments/seg-3717d9eac5dc.mp3",
+    "es_duration_s": 1.2,
+    "en_duration_s": 1.176,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-16": {
+    "es": "code/audio/segments/seg-deb2cef2f6c9.mp3",
+    "en": "code/audio/segments/seg-288befce1018.mp3",
+    "es_duration_s": 3.384,
+    "en_duration_s": 3.144,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-17": {
+    "es": "code/audio/segments/seg-dc1bc7997854.mp3",
+    "en": "code/audio/segments/seg-b12233923954.mp3",
+    "es_duration_s": 15.936,
+    "en_duration_s": 14.088,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "17-hypotheticals-and-dreams-18": {
+    "es": "code/audio/segments/seg-03ab2a24ca91.mp3",
+    "en": "code/audio/segments/seg-27821939656e.mp3",
+    "es_duration_s": 2.136,
+    "en_duration_s": 1.992,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "17-hypotheticals-and-dreams-19": {
+    "es": "code/audio/segments/seg-0af21ec4b273.mp3",
+    "en": "code/audio/segments/seg-7f22e4e163a9.mp3",
+    "es_duration_s": 4.176,
+    "en_duration_s": 4.368,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "18-work-01": {
+    "es": "code/audio/segments/seg-a76aa901b447.mp3",
+    "en": "code/audio/segments/seg-7cec1b26baa1.mp3",
+    "es_duration_s": 1.512,
+    "en_duration_s": 1.8,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "18-work-02": {
+    "es": "code/audio/segments/seg-44f9e2186a2b.mp3",
+    "en": "code/audio/segments/seg-0559d1592856.mp3",
+    "es_duration_s": 10.872,
+    "en_duration_s": 8.952,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "18-work-03": {
+    "es": "code/audio/segments/seg-0961da8ede68.mp3",
+    "en": "code/audio/segments/seg-562fb48ede1f.mp3",
+    "es_duration_s": 2.592,
+    "en_duration_s": 2.4,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "18-work-04": {
+    "es": "code/audio/segments/seg-a98aa9ee0b06.mp3",
+    "en": "code/audio/segments/seg-895e336455af.mp3",
+    "es_duration_s": 6.384,
+    "en_duration_s": 6.024,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "18-work-05": {
+    "es": "code/audio/segments/seg-efa8c1458f6c.mp3",
+    "en": "code/audio/segments/seg-db999df24779.mp3",
+    "es_duration_s": 2.952,
+    "en_duration_s": 1.872,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "18-work-06": {
+    "es": "code/audio/segments/seg-fc6209d55480.mp3",
+    "en": "code/audio/segments/seg-a3793091613b.mp3",
+    "es_duration_s": 14.856,
+    "en_duration_s": 12.624,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "18-work-07": {
+    "es": "code/audio/segments/seg-7f8233ba3d7b.mp3",
+    "en": "code/audio/segments/seg-d01291c2abef.mp3",
+    "es_duration_s": 1.872,
+    "en_duration_s": 2.352,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "18-work-08": {
+    "es": "code/audio/segments/seg-18de9b5e8feb.mp3",
+    "en": "code/audio/segments/seg-c6f1925f373a.mp3",
+    "es_duration_s": 14.712,
+    "en_duration_s": 11.568,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "18-work-09": {
+    "es": "code/audio/segments/seg-4a252c94e5c9.mp3",
+    "en": "code/audio/segments/seg-6d659b8f9e23.mp3",
+    "es_duration_s": 3.168,
+    "en_duration_s": 2.712,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "18-work-10": {
+    "es": "code/audio/segments/seg-51c2a6c701d6.mp3",
+    "en": "code/audio/segments/seg-b73e4f06d082.mp3",
+    "es_duration_s": 21.456,
+    "en_duration_s": 20.28,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "18-work-11": {
+    "es": "code/audio/segments/seg-b74c0074ce18.mp3",
+    "en": "code/audio/segments/seg-bd9dab5b06c5.mp3",
+    "es_duration_s": 3.336,
+    "en_duration_s": 3.144,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "18-work-12": {
+    "es": "code/audio/segments/seg-32b90a9fa190.mp3",
+    "en": "code/audio/segments/seg-e23bd2219048.mp3",
+    "es_duration_s": 15.864,
+    "en_duration_s": 14.64,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "19-daily-routine-01": {
+    "es": "code/audio/segments/seg-a912675bc897.mp3",
+    "en": "code/audio/segments/seg-d2be2df3b9da.mp3",
+    "es_duration_s": 2.76,
+    "en_duration_s": 2.448,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "19-daily-routine-02": {
+    "es": "code/audio/segments/seg-df27ed5e6cac.mp3",
+    "en": "code/audio/segments/seg-164e29210c1e.mp3",
+    "es_duration_s": 8.688,
+    "en_duration_s": 5.904,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "19-daily-routine-03": {
+    "es": "code/audio/segments/seg-e5b9a4b740f5.mp3",
+    "en": "code/audio/segments/seg-d4da25f5d730.mp3",
+    "es_duration_s": 2.736,
+    "en_duration_s": 1.992,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "19-daily-routine-04": {
+    "es": "code/audio/segments/seg-b4ba474c6007.mp3",
+    "en": "code/audio/segments/seg-629e58b00c84.mp3",
+    "es_duration_s": 10.632,
+    "en_duration_s": 8.184,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "19-daily-routine-05": {
+    "es": "code/audio/segments/seg-11ce1812579c.mp3",
+    "en": "code/audio/segments/seg-fdb39a4cd3d0.mp3",
+    "es_duration_s": 1.944,
+    "en_duration_s": 2.04,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "19-daily-routine-06": {
+    "es": "code/audio/segments/seg-93fca5aaa2e0.mp3",
+    "en": "code/audio/segments/seg-e3d6b571de20.mp3",
+    "es_duration_s": 15.504,
+    "en_duration_s": 14.736,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "19-daily-routine-07": {
+    "es": "code/audio/segments/seg-163b54733011.mp3",
+    "en": "code/audio/segments/seg-747694913b7b.mp3",
+    "es_duration_s": 1.704,
+    "en_duration_s": 2.184,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "19-daily-routine-08": {
+    "es": "code/audio/segments/seg-07c06599251d.mp3",
+    "en": "code/audio/segments/seg-99450c78a861.mp3",
+    "es_duration_s": 9.0,
+    "en_duration_s": 8.544,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "19-daily-routine-09": {
+    "es": "code/audio/segments/seg-34c02e319c1e.mp3",
+    "en": "code/audio/segments/seg-2b895b3dd2c0.mp3",
+    "es_duration_s": 2.544,
+    "en_duration_s": 2.16,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "19-daily-routine-10": {
+    "es": "code/audio/segments/seg-b616d07daf72.mp3",
+    "en": "code/audio/segments/seg-e540830fa291.mp3",
+    "es_duration_s": 7.992,
+    "en_duration_s": 7.032,
+    "voice_es": "es-US-Neural2-C"
+  },
+  "19-daily-routine-11": {
+    "es": "code/audio/segments/seg-7a6499b8c58c.mp3",
+    "en": "code/audio/segments/seg-17f187e417a9.mp3",
+    "es_duration_s": 1.752,
+    "en_duration_s": 1.68,
+    "voice_es": "es-US-Neural2-B"
+  },
+  "19-daily-routine-12": {
+    "es": "code/audio/segments/seg-ffd6f3780837.mp3",
+    "en": "code/audio/segments/seg-507cd7a9d279.mp3",
+    "es_duration_s": 10.944,
+    "en_duration_s": 9.864,
+    "voice_es": "es-US-Neural2-C"
+  }
+}
