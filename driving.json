@@ -1,0 +1,139 @@
+{
+ "file": "islands/_all/audio/00-all-islands-driving.mp3?v=01ce19176b",
+ "duration": 6027.05,
+ "islands": [
+  {
+   "num": 1,
+   "name": "Getting Coffee",
+   "slug": "getting-coffee",
+   "start": 0.0,
+   "file": "islands/getting-coffee/audio/01-getting-coffee-driving.mp3?v=700ce981e7"
+  },
+  {
+   "num": 2,
+   "name": "ordering at a restaurant",
+   "slug": "ordering-at-a-restaurant",
+   "start": 192.58,
+   "file": "islands/ordering-at-a-restaurant/audio/02-ordering-at-a-restaurant-driving.mp3?v=561d1a7d83"
+  },
+  {
+   "num": 3,
+   "name": "going to the bank",
+   "slug": "going-to-the-bank",
+   "start": 386.57,
+   "file": "islands/going-to-the-bank/audio/03-going-to-the-bank-driving.mp3?v=adbe629a49"
+  },
+  {
+   "num": 4,
+   "name": "going to the immigration office",
+   "slug": "going-to-the-immigration-office",
+   "start": 545.74,
+   "file": "islands/going-to-the-immigration-office/audio/04-going-to-the-immigration-office-driving.mp3?v=b4bbdf8af2"
+  },
+  {
+   "num": 5,
+   "name": "meeting someone new for the first time",
+   "slug": "meeting-someone-new-for-the-first-time",
+   "start": 770.06,
+   "file": "islands/meeting-someone-new-for-the-first-time/audio/05-meeting-someone-new-for-the-first-time-driving.mp3?v=881e045c2b"
+  },
+  {
+   "num": 6,
+   "name": "asking for a food recommendation",
+   "slug": "asking-for-a-food-recommendation",
+   "start": 1379.98,
+   "file": "islands/asking-for-a-food-recommendation/audio/06-asking-for-a-food-recommendation-driving.mp3?v=62ec1640e1"
+  },
+  {
+   "num": 7,
+   "name": "ask about cool things to see",
+   "slug": "ask-about-cool-things-to-see",
+   "start": 1859.11,
+   "file": "islands/ask-about-cool-things-to-see/audio/07-ask-about-cool-things-to-see-driving.mp3?v=83fe13464f"
+  },
+  {
+   "num": 8,
+   "name": "Getting around town",
+   "slug": "getting-around-town",
+   "start": 2239.22,
+   "file": "islands/getting-around-town/audio/08-getting-around-town-driving.mp3?v=cd1f0ec452"
+  },
+  {
+   "num": 9,
+   "name": "Checking into a hotel or Airbnb",
+   "slug": "checking-into-a-hotel-or-airbnb",
+   "start": 2533.85,
+   "file": "islands/checking-into-a-hotel-or-airbnb/audio/09-checking-into-a-hotel-or-airbnb-driving.mp3?v=a2fadcc880"
+  },
+  {
+   "num": 10,
+   "name": "Something went wrong",
+   "slug": "something-went-wrong",
+   "start": 2771.54,
+   "file": "islands/something-went-wrong/audio/10-something-went-wrong-driving.mp3?v=02abe51a0f"
+  },
+  {
+   "num": 11,
+   "name": "Visiting a pharmacy or doctor",
+   "slug": "visiting-a-pharmacy-or-doctor",
+   "start": 3083.47,
+   "file": "islands/visiting-a-pharmacy-or-doctor/audio/11-visiting-a-pharmacy-or-doctor-driving.mp3?v=85841ae771"
+  },
+  {
+   "num": 12,
+   "name": "Shopping at a market",
+   "slug": "shopping-at-a-market",
+   "start": 3434.95,
+   "file": "islands/shopping-at-a-market/audio/12-shopping-at-a-market-driving.mp3?v=0243aa5ad8"
+  },
+  {
+   "num": 13,
+   "name": "Telling a story about a recent trip or weekend",
+   "slug": "telling-a-story-about-a-recent-trip-or-weekend",
+   "start": 3647.33,
+   "file": "islands/telling-a-story-about-a-recent-trip-or-weekend/audio/13-telling-a-story-about-a-recent-trip-or-weekend-driving.mp3?v=b648cfd355"
+  },
+  {
+   "num": 14,
+   "name": "Talking about your hobbies in depth",
+   "slug": "talking-about-your-hobbies-in-depth",
+   "start": 3955.22,
+   "file": "islands/talking-about-your-hobbies-in-depth/audio/14-talking-about-your-hobbies-in-depth-driving.mp3?v=bcdf6484ff"
+  },
+  {
+   "num": 15,
+   "name": "Giving your opinion on a common topic",
+   "slug": "giving-your-opinion-on-a-common-topic",
+   "start": 4437.89,
+   "file": "islands/giving-your-opinion-on-a-common-topic/audio/15-giving-your-opinion-on-a-common-topic-driving.mp3?v=cbb008b3fb"
+  },
+  {
+   "num": 16,
+   "name": "Making plans with someone",
+   "slug": "making-plans-with-someone",
+   "start": 4794.91,
+   "file": "islands/making-plans-with-someone/audio/16-making-plans-with-someone-driving.mp3?v=a0f8d24362"
+  },
+  {
+   "num": 17,
+   "name": "Hypotheticals and dreams",
+   "slug": "hypotheticals-and-dreams",
+   "start": 5037.62,
+   "file": "islands/hypotheticals-and-dreams/audio/17-hypotheticals-and-dreams-driving.mp3?v=3632c4206d"
+  },
+  {
+   "num": 18,
+   "name": "Work",
+   "slug": "work",
+   "start": 5480.78,
+   "file": "islands/work/audio/18-work-driving.mp3?v=2747b81f04"
+  },
+  {
+   "num": 19,
+   "name": "Daily Routine",
+   "slug": "daily-routine",
+   "start": 5787.6,
+   "file": "islands/daily-routine/audio/19-daily-routine-driving.mp3?v=5cf600585e"
+  }
+ ]
+}

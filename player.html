@@ -138,6 +138,8 @@
   .driving-item:active { background: var(--bg3); }
   .driving-name { font-size: 16px; }
   .driving-dur  { font-size: 12px; color: var(--dim2); }
+  .driving-item.all { flex-direction: column; align-items: flex-start; gap: 4px; margin-bottom: 6px; }
+  .driving-item.all .driving-name { font-weight: 600; }
 
   /* ── Rating buttons (post-section) ── */
   #rating-panel {
@@ -315,12 +317,21 @@ let pauseTime = 0;
 
 let gapFactor = 1.0;
 let srsProgress = {};
+let drivingAll = null;          // driving.json: one continuous MP3 of every island
+let drivingAllActive = false;
+let lastPosSave = 0;
+let lastAllIsland = -1;
 
 // ── Init ──────────────────────────────────────────────────────────────────
 try { gapFactor = parseFloat(localStorage.getItem('gap_factor') || '1.0'); } catch(e){}
 try { srsProgress = JSON.parse(localStorage.getItem('srs_progress') || '{}'); } catch(e){}
 document.getElementById('gap-factor').value = gapFactor;
 document.getElementById('gap-factor-val').textContent = gapFactor.toFixed(2).replace(/\.?0+$/, '') + '×';
+
+fetch('driving.json', { cache: 'no-store' })
+  .then(r => r.ok ? r.json() : null)
+  .then(d => { drivingAll = d; if (currentMode === 'driving') renderDriving(); })
+  .catch(() => {});
 
 fetch('playlist.json')
   .then(r => r.json())
@@ -676,6 +687,24 @@ function renderDriving() {
   const isl = islandList.find(i => i.name === selIsland);
   if (!isl) return;
 
+  // "All islands": one continuous file, plays every island start to finish
+  if (drivingAll) {
+    const all = document.createElement('div');
+    all.className = 'driving-item all' + (drivingAllActive ? ' active' : '');
+    const t = document.createElement('div');
+    t.className = 'driving-name';
+    t.textContent = `All islands · ${Math.round(drivingAll.duration / 60)} min`;
+    const sub = document.createElement('div');
+    sub.className = 'driving-dur';
+    sub.id = 'driving-all-now';
+    const saved = savedAllPos();
+    sub.textContent = drivingAllActive ? nowLabel(audio.currentTime)
+      : (saved > 5 ? `Resume at ${fmtTime(saved)} · ${nowLabel(saved)}` : 'Start to finish, no tapping');
+    all.appendChild(t); all.appendChild(sub);
+    all.onclick = () => playAllIslands();
+    main.appendChild(all);
+  }
+
   // Show all islands in driving list
   for (const il of islandList) {
     const item = document.createElement('div');
@@ -699,14 +728,78 @@ function renderDriving() {
     main.appendChild(item);
   }
 
-  document.getElementById('play-btn').textContent = '▶';
+  document.getElementById('play-btn').textContent = isPlaying ? '⏸' : '▶';
   document.getElementById('play-btn').className = 'play-btn driving';
-  document.getElementById('prev-btn').disabled = true;
-  document.getElementById('next-btn').disabled = true;
-  document.getElementById('progress-fill').style.width = '0%';
+  document.getElementById('prev-btn').disabled = !drivingAllActive;
+  document.getElementById('next-btn').disabled = !drivingAllActive;
+  if (!drivingAllActive) document.getElementById('progress-fill').style.width = '0%';
+}
+
+// ── Driving: all islands in one file ─────────────────────────────────────
+function savedAllPos() {
+  try { return parseFloat(localStorage.getItem('driving_all_pos') || '0') || 0; } catch(e) { return 0; }
+}
+function saveAllPos(t) {
+  try { localStorage.setItem('driving_all_pos', String(t)); } catch(e) {}
+}
+function fmtTime(sec) {
+  sec = Math.max(0, Math.floor(sec));
+  const h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60;
+  return (h ? h + ':' + String(m).padStart(2, '0') : m) + ':' + String(s).padStart(2, '0');
+}
+function allIslandIdx(t) {
+  const list = drivingAll ? drivingAll.islands : [];
+  let i = 0;
+  while (i + 1 < list.length && list[i + 1].start <= t + 0.25) i++;
+  return i;
+}
+function nowLabel(t) {
+  if (!drivingAll || !drivingAll.islands.length) return '';
+  const isl = drivingAll.islands[allIslandIdx(t)];
+  return `${String(isl.num).padStart(2, '0')}  ${isl.name}`;
+}
+function playAllIslands() {
+  if (!drivingAll) return;
+  stopPlayback();
+  drivingAllActive = true;
+  lastAllIsland = -1;
+  const resumeAt = savedAllPos();
+  audio.src = drivingAll.file;
+  audio.load();
+  audio.addEventListener('loadedmetadata', () => {
+    if (resumeAt > 5 && resumeAt < (audio.duration || drivingAll.duration) - 5) audio.currentTime = resumeAt;
+  }, { once: true });
+  isPlaying = true;
+  audio.play().catch(() => {});
+  renderDriving();
+  updateAllMediaSession();
+}
+function jumpAllIsland(dir) {
+  if (!drivingAllActive || !drivingAll) return;
+  const list = drivingAll.islands;
+  let i = allIslandIdx(audio.currentTime);
+  if (dir < 0 && audio.currentTime - list[i].start > 5) {
+    // first press goes back to the start of the current island
+  } else {
+    i = Math.max(0, Math.min(list.length - 1, i + dir));
+  }
+  audio.currentTime = list[i].start;
+  saveAllPos(list[i].start);
+}
+function updateAllMediaSession() {
+  if (!('mediaSession' in navigator) || !drivingAll) return;
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: nowLabel(audio.currentTime) || 'All islands',
+    artist: 'All islands',
+    album: 'Spanish Islands · Driving',
+  });
+  navigator.mediaSession.setActionHandler('previoustrack', () => jumpAllIsland(-1));
+  navigator.mediaSession.setActionHandler('nexttrack', () => jumpAllIsland(1));
 }
 
 function drivingPath(isl) {
+  const v = drivingAll && drivingAll.islands.find(i => i.slug === isl.slug);
+  if (v && v.file) return v.file;
   const num = String(isl.num).padStart(2, '0');
   return `islands/${isl.slug}/audio/${num}-${isl.slug}-driving.mp3`;
 }
@@ -786,6 +879,13 @@ function scheduleNext(delaySec, idx) {
 }
 
 audio.addEventListener('ended', () => {
+  if (drivingAllActive) {
+    saveAllPos(0);
+    isPlaying = false;
+    document.getElementById('play-btn').textContent = '▶';
+    renderDriving();
+    return;
+  }
   if (!isPlaying) return;
   const entry = currentEntry();
   if (!entry) return;
@@ -795,6 +895,19 @@ audio.addEventListener('ended', () => {
 });
 
 audio.addEventListener('timeupdate', () => {
+  if (drivingAllActive) {
+    const t = audio.currentTime, dur = audio.duration || drivingAll.duration;
+    document.getElementById('progress-fill').style.width = (100 * t / dur) + '%';
+    if (Math.abs(t - lastPosSave) > 5) { saveAllPos(t); lastPosSave = t; }
+    const i = allIslandIdx(t);
+    if (i !== lastAllIsland) {
+      lastAllIsland = i;
+      const el = document.getElementById('driving-all-now');
+      if (el) el.textContent = nowLabel(t);
+      updateAllMediaSession();
+    }
+    return;
+  }
   const entry = currentEntry();
   if (!entry || entry.segments.length === 0) return;
   updateProgress(segIdx, entry.segments.length);
@@ -805,13 +918,18 @@ function togglePlay() {
   if (currentMode === 'driving') {
     if (isPlaying) {
       audio.pause();
+      if (drivingAllActive) saveAllPos(audio.currentTime);
       isPlaying = false;
       document.getElementById('play-btn').textContent = '▶';
     } else {
       isPlaying = true;
       document.getElementById('play-btn').textContent = '⏸';
       const isl = islandList.find(i => i.name === selIsland);
-      if (isl && !audio.src.includes(isl.slug)) {
+      if (drivingAllActive && !audio.src) {
+        playAllIslands();
+        return;
+      }
+      if (!drivingAllActive && isl && !audio.src.includes(isl.slug)) {
         audio.src = drivingPath(isl);
         audio.load();
       }
@@ -862,6 +980,8 @@ function resumePlayback() {
 }
 
 function stopPlayback() {
+  if (drivingAllActive && audio.currentTime > 0) saveAllPos(audio.currentTime);
+  drivingAllActive = false;
   pausePlayback();
   segIdx = 0;
   pauseTime = 0;
@@ -912,6 +1032,7 @@ function hasNextSection() {
 }
 
 function prevSection() {
+  if (drivingAllActive) return jumpAllIsland(-1);
   const secs = allSectionsForIsland();
   const idx = secs.indexOf(selSection);
   if (idx > 0) {
@@ -922,6 +1043,7 @@ function prevSection() {
 }
 
 function nextSection() {
+  if (drivingAllActive) return jumpAllIsland(1);
   if (isReviewMix) return; // review mix advances via rate()
   const secs = allSectionsForIsland();
   const idx = secs.indexOf(selSection);

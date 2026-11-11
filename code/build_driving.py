@@ -25,6 +25,11 @@ Usage:
   python3 build_driving.py                    # rebuild changed islands
   python3 build_driving.py --island "Getting Coffee"   # one island only
   python3 build_driving.py --force            # rebuild all
+  python3 build_driving.py --all-only         # just rejoin the all-islands MP3
+
+Also joins every island into one continuous file:
+  ../islands/_all/audio/00-all-islands-driving.mp3  (+ ../driving.json with
+  each island's start time, used by the player's "All islands" item)
 """
 
 import base64
@@ -269,6 +274,84 @@ def build_island(island, manifest, api_key, force=False):
     print(f"    → {out_path}  ({size_kb} KB)")
 
 
+ALL_DIR      = os.path.join("..", "islands", "_all", "audio")
+ALL_MP3      = os.path.join(ALL_DIR, "00-all-islands-driving.mp3")
+ALL_JSON     = os.path.join("..", "driving.json")
+ISLAND_GAP_S = 2.0
+
+
+def island_mp3(island):
+    slug, num = island["island_slug"], island["island_num"]
+    return os.path.join("..", "islands", slug, "audio", f"{num:02d}-{slug}-driving.mp3")
+
+
+def file_version(path):
+    """Short content hash, used as ?v= so the app's offline cache picks up rebuilt files."""
+    h = hashlib.sha1()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()[:10]
+
+
+def build_all(islands, force=False):
+    """Join every island's driving MP3 (in island order) into one continuous file,
+    and write driving.json with each island's start time for the player."""
+    islands = sorted(islands, key=lambda i: i["island_num"])
+    present = [i for i in islands if os.path.exists(island_mp3(i))]
+    missing = [i["island"] for i in islands if i not in present]
+    if missing:
+        print(f"  WARNING: no driving MP3 yet for: {', '.join(missing)}")
+    if not present:
+        print("  No island MP3s to join.")
+        return
+
+    newest = max(os.path.getmtime(island_mp3(i)) for i in present)
+    if (not force and os.path.exists(ALL_MP3) and os.path.exists(ALL_JSON)
+            and os.path.getmtime(ALL_MP3) >= newest):
+        print("  All-islands MP3: up to date, skipping")
+        return
+
+    print(f"  Building all-islands MP3 from {len(present)} islands ...")
+    os.makedirs(ALL_DIR, exist_ok=True)
+    chapters, t = [], 0.0
+    with tempfile.TemporaryDirectory() as tmpdir:
+        gap = make_silence(ISLAND_GAP_S, tmpdir)
+        gap_dur = measure_duration(gap)
+        parts = []
+        for n, isl in enumerate(present):
+            src = normalize_to_24k(os.path.abspath(island_mp3(isl)), tmpdir)
+            chapters.append({"num": isl["island_num"], "name": isl["island"],
+                             "slug": isl["island_slug"], "start": round(t, 2)})
+            parts.append(src)
+            t += measure_duration(src)
+            if n < len(present) - 1:
+                parts.append(gap)
+                t += gap_dur
+        raw = os.path.join(tmpdir, "raw.mp3")
+        concat_mp3s(parts, raw)
+        # Re-encode once so the file has one clean header (correct duration/seeking on iOS)
+        subprocess.run([
+            "ffmpeg", "-y", "-i", raw,
+            "-ar", str(SAMPLE_RATE), "-ac", "1",
+            "-codec:a", "libmp3lame", "-q:a", "4",
+            "-metadata", "title=All islands (Driving)",
+            "-metadata", "album=Spanish Islands — Driving",
+            "-metadata", "track=0",
+            ALL_MP3,
+        ], check=True, capture_output=True)
+
+    total = measure_duration(ALL_MP3)
+    for ch, isl in zip(chapters, present):
+        ch["file"] = os.path.relpath(island_mp3(isl), "..") + "?v=" + file_version(island_mp3(isl))
+    with open(ALL_JSON, "w", encoding="utf-8") as f:
+        json.dump({"file": "islands/_all/audio/00-all-islands-driving.mp3?v=" + file_version(ALL_MP3),
+                   "duration": round(total, 2), "islands": chapters},
+                  f, ensure_ascii=False, indent=1)
+    size_mb = os.path.getsize(ALL_MP3) / 1e6
+    print(f"    → {ALL_MP3}  ({total/60:.0f} min, {size_mb:.1f} MB)")
+
+
 def main():
     args = sys.argv[1:]
     force = "--force" in args
@@ -296,6 +379,10 @@ def main():
             print(f"ERROR: Island '{target_island}' not found in {ISLANDS_JSON}")
             sys.exit(1)
 
+    if "--all-only" in args:
+        build_all(islands, force=force)
+        return
+
     api_key = load_api_key()
 
     print(f"Building driving MP3s for {len(islands)} island(s)...")
@@ -310,6 +397,13 @@ def main():
             print(f"  ERROR: {e}")
             errors.append(island["island"])
         time.sleep(0.05)
+
+    if not target_island:
+        try:
+            build_all(islands, force=force)
+        except Exception as e:
+            print(f"  ERROR building all-islands MP3: {e}")
+            errors.append("(all islands)")
 
     print(f"\nDone. {len(islands) - len(errors)} succeeded, {len(errors)} failed.")
     if errors:

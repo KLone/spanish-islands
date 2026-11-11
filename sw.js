@@ -5,9 +5,9 @@
 //    One failed download never blocks an update; missing files are fetched
 //    (and cached) when played, and retried on the next update.
 
-const SHELL_CACHE = 'island-shell-v10';
+const SHELL_CACHE = 'island-shell-v11';
 const AUDIO_CACHE = 'island-audio';
-const SHELL_FILES = ['player.html', 'playlist.json', 'manifest.json', 'icon.svg'];
+const SHELL_FILES = ['player.html', 'playlist.json', 'driving.json', 'manifest.json', 'icon.svg'];
 
 async function precacheAudio() {
   const res = await fetch('playlist.json', { cache: 'no-store' });
@@ -16,6 +16,19 @@ async function precacheAudio() {
   playlist.forEach(entry =>
     (entry.segments || []).forEach(seg => { if (seg.audio) files.add(seg.audio); })
   );
+  // Driving MP3s (versioned with ?v=, so a rebuilt file replaces the old one)
+  try {
+    const d = await (await fetch('driving.json', { cache: 'no-store' })).json();
+    const driving = [d.file, ...(d.islands || []).map(i => i.file)].filter(Boolean);
+    const cache = await caches.open(AUDIO_CACHE);
+    const wanted = new Set(driving.map(f => new URL(f, self.registration.scope).href));
+    for (const req of await cache.keys()) {
+      const u = new URL(req.url);
+      if (u.search && !wanted.has(u.href)) await cache.delete(req);   // stale version
+    }
+    driving.forEach(f => files.add(f));
+  } catch (e) { /* no driving.json yet */ }
+
   const cache = await caches.open(AUDIO_CACHE);
   const list = [...files];
   for (let i = 0; i < list.length; i += 6) {
@@ -78,8 +91,8 @@ self.addEventListener('fetch', event => {
 
   // Audio and everything else: cache first, then network (and keep a copy)
   event.respondWith(
-    caches.match(req, { ignoreSearch: true }).then(cached => {
-      if (cached) return cached;
+    caches.match(req).then(cached => {
+      if (cached) return req.headers.has('range') ? rangeResponse(req, cached) : cached;
       return fetch(req).then(res => {
         if (res.ok && res.status === 200 && url.pathname.includes('/audio/')) {
           const copy = res.clone();
@@ -90,3 +103,27 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
+// iOS Safari plays <audio> with Range requests and needs a 206 back,
+// so slice the cached file to the requested byte range.
+async function rangeResponse(req, cached) {
+  const blob = await cached.blob();   // slicing a Blob doesn't copy the whole file
+  const m = /bytes=(\d*)-(\d*)/.exec(req.headers.get('range') || '');
+  const size = blob.size;
+  let start = m && m[1] ? parseInt(m[1], 10) : 0;
+  let end = m && m[2] ? parseInt(m[2], 10) : size - 1;
+  if (m && !m[1] && m[2]) { start = size - parseInt(m[2], 10); end = size - 1; }
+  end = Math.min(end, size - 1);
+  if (start >= size || start > end) {
+    return new Response(null, { status: 416, headers: { 'Content-Range': `bytes */${size}` } });
+  }
+  return new Response(blob.slice(start, end + 1), {
+    status: 206,
+    headers: {
+      'Content-Type': cached.headers.get('Content-Type') || 'audio/mpeg',
+      'Content-Range': `bytes ${start}-${end}/${size}`,
+      'Content-Length': String(end - start + 1),
+      'Accept-Ranges': 'bytes',
+    },
+  });
+}
