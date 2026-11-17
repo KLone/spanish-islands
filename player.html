@@ -379,6 +379,10 @@ function populateIslandSelect() {
   opt0.value = '__review__';
   opt0.textContent = '★ Review Mix';
   sel.appendChild(opt0);
+  const optAll = document.createElement('option');
+  optAll.value = '__all_islands__';
+  optAll.textContent = '▶▶ All Islands';
+  sel.appendChild(optAll);
   for (const isl of islandList) {
     const opt = document.createElement('option');
     opt.value = isl.name;
@@ -405,6 +409,12 @@ function populateSectionSelect(islandName) {
 function selectIsland(name, skipRender) {
   if (name === '__review__') {
     startReviewMix();
+    return;
+  }
+  if (name === '__all_islands__') {
+    setMode('driving');
+    document.getElementById('island-sel').value = '__all_islands__';
+    setTimeout(() => playAllIslands(), 50);
     return;
   }
   isReviewMix = false;

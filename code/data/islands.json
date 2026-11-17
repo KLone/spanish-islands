@@ -221,9 +221,9 @@
             "line_id": "01-getting-coffee-21",
             "line": 21,
             "speaker": "Barista",
-            "spanish": "Son ocho cincuenta. ¿Efectivo o tarjeta?",
+            "spanish": "Son ciento cincuenta y cinco pesos. ¿Efectivo o tarjeta?",
             "english": "That's $8.50. Cash or card?",
-            "region": "PA",
+            "region": "MX",
             "notes": "Price slot: dollars in Panama, pesos in Mexico.",
             "is_stage_direction": false
           },
@@ -231,8 +231,8 @@
             "line_id": "01-getting-coffee-22",
             "line": 22,
             "speaker": "Kirk",
-            "spanish": "Con tarjeta.",
-            "english": "Card.",
+            "spanish": "Con tarjeta. Ay, ¿dónde está mi cartera? ¿Se me quedó en el carro?… No, aquí está.",
+            "english": "Card. Oh, where's my wallet? Did I leave it in the car?… No, here it is.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -473,9 +473,9 @@
             "line_id": "02-ordering-at-a-restaurant-18",
             "line": 18,
             "speaker": "Kirk",
-            "spanish": "Muchas gracias. Y, ¿nos puede traer unas servilletas extra y dos carrizos para las bebidas?",
+            "spanish": "Muchas gracias. Y, ¿nos podría traer unas servilletas extra y dos popotes para las bebidas?",
             "english": "Thank you very much. And could you bring us some extra napkins and two straws for the drinks?",
-            "region": "PA",
+            "region": "MX",
             "notes": "Straws: carrizo in Panama, popote in Mexico and Texas.",
             "is_stage_direction": false
           },
@@ -585,9 +585,9 @@
             "line_id": "03-going-to-the-bank-06",
             "line": 6,
             "speaker": "Kirk",
-            "spanish": "Gracias. También necesito un cheque de gerencia por mil dólares.",
+            "spanish": "Gracias. También necesito un cheque de caja por mil dólares.",
             "english": "Thank you. I also need a cashier's check for a thousand dollars.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Cashier's check: cheque de gerencia in Panama, cheque de caja in Mexico.",
             "is_stage_direction": false
           },
@@ -625,8 +625,8 @@
             "line_id": "03-going-to-the-bank-10",
             "line": 10,
             "speaker": "Kirk",
-            "spanish": "Sí, está bien.",
-            "english": "Yes, that's fine.",
+            "spanish": "Sí, cárguelo a mi cuenta, por favor.",
+            "english": "Yes, charge it to my account, please.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -690,8 +690,8 @@
             "line_id": "03-going-to-the-bank-16",
             "line": 16,
             "speaker": "Kirk",
-            "spanish": "Me imagino. Bueno, muchas gracias por su ayuda.",
-            "english": "I can imagine. Well, thank you very much for your help.",
+            "spanish": "Me imagino. Ojalá que se calme un poco en la tarde. Bueno, muchas gracias por su ayuda.",
+            "english": "I can imagine. Hopefully it calms down a bit this afternoon. Well, thank you very much for your help.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -767,9 +767,9 @@
             "line_id": "04-going-to-the-immigration-office-05",
             "line": 5,
             "speaker": "Kirk",
-            "spanish": "Buenos días. Tengo una cita a las nueve. Necesito renovar mi carné de residente.",
+            "spanish": "Buenos días. Tengo una cita a las nueve. Necesito renovar mi tarjeta de residente.",
             "english": "Good morning. I have an appointment at nine. I need to renew my residency card.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Neutral fallback: permiso de residencia.",
             "is_stage_direction": false
           },
@@ -777,9 +777,9 @@
             "line_id": "04-going-to-the-immigration-office-06",
             "line": 6,
             "speaker": "Recepcionista",
-            "spanish": "¿Me permite su pasaporte y su carné actual?",
+            "spanish": "¿Me permite su pasaporte y su tarjeta actual?",
             "english": "May I have your passport and your current card?",
-            "region": "PA",
+            "region": "MX",
             "notes": "",
             "is_stage_direction": false
           },
@@ -952,9 +952,9 @@
             "line_id": "04-going-to-the-immigration-office-23",
             "line": 23,
             "speaker": "Funcionaria",
-            "spanish": "Listo. Pase a la sala de espera otra vez. Le van a llamar por su nombre para entregarle el carné.",
+            "spanish": "Listo. Pase a la sala de espera otra vez. Le van a llamar por su nombre para entregarle la tarjeta.",
             "english": "All set. Go back to the waiting room. They'll call you by name to give you your card.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Gender changes: el carné, la tarjeta.",
             "is_stage_direction": false
           },
@@ -962,8 +962,8 @@
             "line_id": "04-going-to-the-immigration-office-24",
             "line": 24,
             "speaker": "Kirk",
-            "spanish": "¿Más o menos cuánto tiempo tarda?",
-            "english": "About how long does it take?",
+            "spanish": "¿Más o menos cuánto tiempo tarda? Se supone que me lo entregan hoy mismo, ¿verdad?",
+            "english": "Roughly how long does it take? It's supposed to be ready today, right?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1013,9 +1013,9 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-01",
             "line": 1,
-            "speaker": "Andrea",
-            "spanish": "Hola, mucho gusto. Soy Andrea.",
-            "english": "Hi, nice to meet you. I'm Andrea.",
+            "speaker": "Marcos",
+            "spanish": "Hola, mucho gusto. Soy Marcos.",
+            "english": "Hi, nice to meet you. I'm Marcos.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1024,8 +1024,8 @@
             "line_id": "05-meeting-someone-new-for-the-first-time-02",
             "line": 2,
             "speaker": "Kirk",
-            "spanish": "Mucho gusto, Andrea. Me llamo Kirk, pero en español todos me dicen Luis.",
-            "english": "Nice to meet you, Andrea. My name is Kirk, but in Spanish everyone calls me Luis.",
+            "spanish": "Mucho gusto, Marcos. Me llamo Kirk, pero en español todos me dicen Luis.",
+            "english": "Nice to meet you, Marcos. My name is Kirk, but in Spanish everyone calls me Luis.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1033,8 +1033,8 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-03",
             "line": 3,
-            "speaker": "Andrea",
-            "spanish": "¡Qué interesante! Encantada, Luis.",
+            "speaker": "Marcos",
+            "spanish": "¡Qué interesante! Encantado, Luis.",
             "english": "How interesting! Nice to meet you, Luis.",
             "region": "",
             "notes": "",
@@ -1048,7 +1048,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-04",
             "line": 4,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y de dónde es usted?",
             "english": "And where are you from?",
             "region": "",
@@ -1068,7 +1068,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-06",
             "line": 6,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Sí, nací aquí en la ciudad.",
             "english": "Yes, I was born here in the city.",
             "region": "",
@@ -1079,8 +1079,8 @@
             "line_id": "05-meeting-someone-new-for-the-first-time-07",
             "line": 7,
             "speaker": "Kirk",
-            "spanish": "¡Qué bien! Entonces me puede recomendar lugares.",
-            "english": "Great! Then you can recommend places to me.",
+            "spanish": "¡Qué bien! Entonces me podría recomendar algunos lugares.",
+            "english": "Great! Then you could recommend some places to me.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1093,7 +1093,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-08",
             "line": 8,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y qué lo trae por Panamá? ¿Está de vacaciones?",
             "english": "And what brings you to Panama? Are you on vacation?",
             "region": "",
@@ -1113,7 +1113,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-10",
             "line": 10,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y qué ha visto hasta ahora?",
             "english": "And what have you seen so far?",
             "region": "",
@@ -1138,7 +1138,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-12",
             "line": 12,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Vino solo?",
             "english": "Did you come alone?",
             "region": "",
@@ -1158,7 +1158,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-14",
             "line": 14,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Sí, mis papás y mi hermano viven aquí también.",
             "english": "Yes, my parents and my brother live here too.",
             "region": "",
@@ -1173,7 +1173,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-15",
             "line": 15,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y a qué se dedica?",
             "english": "And what do you do for a living?",
             "region": "",
@@ -1198,7 +1198,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-17",
             "line": 17,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y piensa pasar más tiempo en Panamá?",
             "english": "And are you planning to spend more time in Panama?",
             "region": "",
@@ -1218,7 +1218,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-19",
             "line": 19,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y por qué Panamá?",
             "english": "And why Panama?",
             "region": "",
@@ -1243,7 +1243,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-21",
             "line": 21,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Habla muy bien español! ¿Dónde aprendió?",
             "english": "You speak Spanish very well! Where did you learn?",
             "region": "",
@@ -1263,7 +1263,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-23",
             "line": 23,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "No hay problema.",
             "english": "No problem.",
             "region": "",
@@ -1278,7 +1278,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-24",
             "line": 24,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y qué le gusta hacer en su tiempo libre?",
             "english": "And what do you like to do in your free time?",
             "region": "",
@@ -1303,7 +1303,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-26",
             "line": 26,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Bueno, Luis, me tengo que ir.",
             "english": "Well, Luis, I have to go.",
             "region": "",
@@ -1314,8 +1314,8 @@
             "line_id": "05-meeting-someone-new-for-the-first-time-27",
             "line": 27,
             "speaker": "Kirk",
-            "spanish": "Fue un placer conocerla, Andrea. ¿Tiene WhatsApp? Así seguimos en contacto.",
-            "english": "It was a pleasure to meet you, Andrea. Do you have WhatsApp? That way we can stay in touch.",
+            "spanish": "Fue un placer conocerlo, Marcos. Ojalá que nos veamos otra vez antes de que me vaya. ¿Tiene WhatsApp? Así seguimos en contacto.",
+            "english": "It was a pleasure meeting you, Marcos. I hope we see each other again before I leave. Do you have WhatsApp? That way we can stay in touch.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1323,7 +1323,7 @@
           {
             "line_id": "05-meeting-someone-new-for-the-first-time-28",
             "line": 28,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Sí, claro. Y nos podemos tutear, ¿no?",
             "english": "Yes, of course. And we can use tú with each other, right?",
             "region": "",
@@ -1491,9 +1491,9 @@
             "line_id": "06-asking-for-a-food-recommendation-14",
             "line": 14,
             "speaker": "Kirk",
-            "spanish": "Ahora, mi hija tiene dos alergias graves. No puede comer gluten, y no puede comer nueces ni maní. ¿Qué me recomienda para ella?",
+            "spanish": "Ahora, mi hija tiene dos alergias graves. No puede comer gluten, y no puede comer nueces ni cacahuates. ¿Qué me recomienda para ella?",
             "english": "Now, my daughter has two serious allergies. She can't eat gluten, and she can't eat nuts or peanuts. What do you recommend for her?",
-            "region": "PA",
+            "region": "MX",
             "notes": "Key allergy line. Peanuts: maní in Panama, cacahuate in Mexico.",
             "is_stage_direction": false
           },
@@ -1531,8 +1531,8 @@
             "line_id": "06-asking-for-a-food-recommendation-18",
             "line": 18,
             "speaker": "Kirk",
-            "spanish": "¿Y se puede preparar todo aparte, no en la misma plancha que los panqueques? Es una alergia seria.",
-            "english": "And can everything be made separately, not on the same griddle as the pancakes? It's a serious allergy.",
+            "spanish": "¿Y se podría preparar todo aparte, no en la misma plancha que los panqueques? Es importante que no tenga contacto con el gluten.",
+            "english": "And could everything be prepared separately, not on the same griddle as the pancakes? It's important that it doesn't touch any gluten.",
             "region": "",
             "notes": "Cross-contamination request.",
             "is_stage_direction": false
@@ -1569,13 +1569,13 @@
             "spanish": "¿Y para cenar? ¿Qué lugares son populares por aquí?",
             "english": "And for dinner? What places are popular around here?",
             "region": "",
-            "notes": "Stage direction: con Andrea",
+            "notes": "Stage direction: con Marcos",
             "is_stage_direction": true
           },
           {
             "line_id": "06-asking-for-a-food-recommendation-22",
             "line": 22,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Qué tipo de comida les gusta?",
             "english": "What kind of food do you like?",
             "region": "",
@@ -1595,7 +1595,7 @@
           {
             "line_id": "06-asking-for-a-food-recommendation-24",
             "line": 24,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Entonces tienen que ir a una parrillada. Hay una muy buena cerca de aquí. Y si quieren probar algo típico, pidan un sancocho.",
             "english": "Then you have to go to a grill restaurant. There's a very good one near here. And if you want to try something typical, order a sancocho.",
             "region": "",
@@ -1615,7 +1615,7 @@
           {
             "line_id": "06-asking-for-a-food-recommendation-26",
             "line": 26,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Es una sopa de pollo con ñame, yuca y culantro. Es el plato nacional.",
             "english": "It's a chicken soup with yam, yuca and culantro. It's the national dish.",
             "region": "",
@@ -1635,7 +1635,7 @@
           {
             "line_id": "06-asking-for-a-food-recommendation-28",
             "line": 28,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Los fines de semana, sí. Entre semana, normalmente no.",
             "english": "On weekends, yes. During the week, usually not.",
             "region": "",
@@ -1646,8 +1646,8 @@
             "line_id": "06-asking-for-a-food-recommendation-29",
             "line": 29,
             "speaker": "Kirk",
-            "spanish": "Perfecto. Gracias por la recomendación.",
-            "english": "Perfect. Thanks for the recommendation.",
+            "spanish": "Perfecto. Entonces vamos entre semana, para que no tengamos que esperar. Gracias por la recomendación.",
+            "english": "Perfect. Then we'll go on a weekday so we don't have to wait. Thanks for the recommendation.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1691,9 +1691,9 @@
             "line_id": "06-asking-for-a-food-recommendation-33",
             "line": 33,
             "speaker": "Kirk",
-            "spanish": "Antes de pedir, una pregunta importante. Mi hija es alérgica al gluten y a las nueces. No puede comer nueces, ni maní, ni nada que tenga nueces. Es una alergia grave.",
+            "spanish": "Antes de pedir, una pregunta importante. Mi hija es alérgica al gluten y a las nueces. No puede comer nueces, ni cacahuates, ni nada que tenga nueces. Es una alergia grave.",
             "english": "Before we order, an important question. My daughter is allergic to gluten and to nuts. She can't eat nuts, or peanuts, or anything that has nuts. It's a serious allergy.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Key allergy line. Peanuts: maní in Panama, cacahuate in Mexico.",
             "is_stage_direction": false
           },
@@ -1751,9 +1751,9 @@
             "line_id": "06-asking-for-a-food-recommendation-39",
             "line": 39,
             "speaker": "Kirk",
-            "spanish": "Perfecto, un sancocho para ella también. ¿Puede confirmar con la cocina que nada lleve nueces ni maní?",
-            "english": "Perfect, a sancocho for her too. Can you confirm with the kitchen that nothing has nuts or peanuts?",
-            "region": "PA",
+            "spanish": "Perfecto, un sancocho para ella también. ¿Puede confirmar con la cocina que nada lleve nueces ni cacahuates?",
+            "english": "Perfect, a sancocho for her too. Could you check with the kitchen that nothing has nuts or peanuts? I don't want anything to happen to her.",
+            "region": "MX",
             "notes": "Peanuts: maní in Panama, cacahuate in Mexico.",
             "is_stage_direction": false
           },
@@ -1793,16 +1793,16 @@
             "line_id": "07-ask-about-cool-things-to-see-01",
             "line": 1,
             "speaker": "Kirk",
-            "spanish": "Andrea, ¿qué nos recomiendas ver en la ciudad? Nos gusta mucho la arquitectura.",
-            "english": "Andrea, what do you recommend we see in the city? We really like architecture.",
+            "spanish": "Marcos, ¿qué nos recomiendas ver en la ciudad? Nos gusta mucho la arquitectura.",
+            "english": "Marcos, what do you recommend we see in the city? We really like architecture.",
             "region": "",
-            "notes": "Uses tú with Andrea; with a stranger use usted: ¿qué nos recomienda?",
+            "notes": "Uses tú with Marcos; with a stranger use usted: ¿qué nos recomienda?",
             "is_stage_direction": false
           },
           {
             "line_id": "07-ask-about-cool-things-to-see-02",
             "line": 2,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Entonces el Casco Viejo es obligatorio. Tiene iglesias antiguas, plazas y casas con balcones de la época francesa.",
             "english": "Then Casco Viejo is a must. It has old churches, plazas and houses with balconies from the French era.",
             "region": "",
@@ -1813,8 +1813,8 @@
             "line_id": "07-ask-about-cool-things-to-see-03",
             "line": 3,
             "speaker": "Kirk",
-            "spanish": "Ya fuimos, pero solo un rato. ¿Hay algo que no nos podemos perder?",
-            "english": "We already went, but only for a little while. Is there anything we can't miss?",
+            "spanish": "Ya fuimos, pero solo un rato. ¿Hay algo que no nos podamos perder?",
+            "english": "We already went, but only for a little while. Is there anything we shouldn't miss?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -1822,7 +1822,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-04",
             "line": 4,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "La Catedral, la Plaza de Francia y el Paseo de las Bóvedas. Desde ahí se ven los rascacielos de la ciudad moderna.",
             "english": "The Cathedral, the Plaza de Francia and the Paseo de las Bóvedas. From there you can see the skyscrapers of the modern city.",
             "region": "",
@@ -1842,7 +1842,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-06",
             "line": 6,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "El Biomuseo. Lo diseñó Frank Gehry y es de muchos colores. Lo vas a reconocer enseguida.",
             "english": "The Biomuseo. Frank Gehry designed it and it's very colorful. You'll recognize it right away.",
             "region": "",
@@ -1867,7 +1867,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-08",
             "line": 8,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "El Museo del Canal, en el Casco Viejo. Explica toda la historia de la construcción del Canal.",
             "english": "The Canal Museum, in Casco Viejo. It explains the whole history of building the Canal.",
             "region": "",
@@ -1887,7 +1887,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-10",
             "line": 10,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Panamá Viejo. Son las ruinas de la primera ciudad, fundada en 1519. Un pirata la destruyó en 1671.",
             "english": "Panamá Viejo. It's the ruins of the first city, founded in 1519. A pirate destroyed it in 1671.",
             "region": "",
@@ -1907,7 +1907,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-12",
             "line": 12,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Unas dos horas. Hay un museo pequeño y puedes subir a la torre de la catedral vieja.",
             "english": "About two hours. There's a small museum and you can climb the tower of the old cathedral.",
             "region": "",
@@ -1927,7 +1927,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-14",
             "line": 14,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "A las esclusas de Miraflores. Si tienes suerte, ves pasar un barco.",
             "english": "To the Miraflores locks. If you're lucky, you'll see a ship go through.",
             "region": "",
@@ -1947,7 +1947,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-16",
             "line": 16,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Depende del día. Mejor pregunta en la entrada.",
             "english": "It depends on the day. Better ask at the entrance.",
             "region": "",
@@ -1972,7 +1972,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-18",
             "line": 18,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "En el Casco Viejo hay muchos. Algunos tienen terraza en la azotea, con vista al mar.",
             "english": "There are lots in Casco Viejo. Some have a rooftop terrace with a view of the sea.",
             "region": "",
@@ -1992,7 +1992,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-20",
             "line": 20,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Buenísimo! El café geisha de Boquete es uno de los más caros del mundo.",
             "english": "Excellent! Geisha coffee from Boquete is one of the most expensive in the world.",
             "region": "",
@@ -2027,7 +2027,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-23",
             "line": 23,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Sí, el Parque Natural Metropolitano está dentro de la ciudad. Tiene senderos y un mirador con una vista increíble.",
             "english": "Yes, the Metropolitan Natural Park is inside the city. It has trails and a lookout with an incredible view.",
             "region": "",
@@ -2047,7 +2047,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-25",
             "line": 25,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "No, es fácil. Como una hora para subir. Si quieres algo más largo, está el Parque Nacional Soberanía, cerca del Canal. Hay muchos pájaros y a veces monos.",
             "english": "No, it's easy. About an hour to go up. If you want something longer, there's Soberanía National Park, near the Canal. There are lots of birds and sometimes monkeys.",
             "region": "",
@@ -2058,8 +2058,8 @@
             "line_id": "07-ask-about-cool-things-to-see-26",
             "line": 26,
             "speaker": "Kirk",
-            "spanish": "¿Es seguro ir solos, o es mejor ir con un guía?",
-            "english": "Is it safe to go on our own, or is it better to go with a guide?",
+            "spanish": "¿Es seguro ir solos, o es mejor que vayamos con un guía?",
+            "english": "Is it safe to go on our own, or is it better for us to go with a guide?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2067,7 +2067,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-27",
             "line": 27,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Al Metropolitano pueden ir solos. Para Soberanía es mejor con guía, sobre todo si quieren ver animales.",
             "english": "You can go to the Metropolitano on your own. For Soberanía it's better with a guide, especially if you want to see animals.",
             "region": "",
@@ -2078,7 +2078,7 @@
             "line_id": "07-ask-about-cool-things-to-see-28",
             "line": 28,
             "speaker": "Kirk",
-            "spanish": "¿Y qué debemos llevar?",
+            "spanish": "¿Y qué deberíamos llevar?",
             "english": "And what should we bring?",
             "region": "",
             "notes": "",
@@ -2087,7 +2087,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-29",
             "line": 29,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Mucha agua, repelente y zapatos cómodos. Y vayan temprano, porque después hace mucho calor.",
             "english": "Lots of water, repellent and comfortable shoes. And go early, because later it gets very hot.",
             "region": "",
@@ -2112,7 +2112,7 @@
           {
             "line_id": "07-ask-about-cool-things-to-see-31",
             "line": 31,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Por la mañana, el Metropolitano. Después, almuerzo y café en el Casco Viejo. Y al atardecer, el Paseo de las Bóvedas.",
             "english": "In the morning, the Metropolitano. Then lunch and coffee in Casco Viejo. And at sunset, the Paseo de las Bóvedas.",
             "region": "",
@@ -2123,8 +2123,8 @@
             "line_id": "07-ask-about-cool-things-to-see-32",
             "line": 32,
             "speaker": "Kirk",
-            "spanish": "Perfecto. Muchísimas gracias, Andrea. Te debo una.",
-            "english": "Perfect. Thanks so much, Andrea. I owe you one.",
+            "spanish": "Perfecto. Muchísimas gracias, Marcos. Te debo una.",
+            "english": "Perfect. Thanks so much, Marcos. I owe you one.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2165,8 +2165,8 @@
             "line_id": "08-getting-around-town-03",
             "line": 3,
             "speaker": "Kirk",
-            "spanish": "¿Tres cuadras derecho y después a la izquierda?",
-            "english": "Three blocks straight and then left?",
+            "spanish": "Perdón, ¿me lo puede repetir más despacio? ¿Tres cuadras derecho y después a la izquierda?",
+            "english": "Sorry, could you repeat that more slowly? Three blocks straight and then left?",
             "region": "",
             "notes": "Repeat directions back to confirm.",
             "is_stage_direction": false
@@ -2300,8 +2300,8 @@
             "line_id": "08-getting-around-town-16",
             "line": 16,
             "speaker": "Kirk",
-            "spanish": "¿Me puede dejar en la entrada del hotel, por favor?",
-            "english": "Can you drop me at the hotel entrance, please?",
+            "spanish": "¿Me podría dejar en la entrada del hotel, por favor?",
+            "english": "Could you drop me off at the hotel entrance, please?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2335,8 +2335,8 @@
             "line_id": "08-getting-around-town-19",
             "line": 19,
             "speaker": "Kirk",
-            "spanish": "¿Ocho? Me dijeron que son como cinco o seis.",
-            "english": "Eight? I was told it's around five or six.",
+            "spanish": "¿Ocho? Se supone que son como cinco o seis.",
+            "english": "Eight? It's supposed to be about five or six.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2492,8 +2492,8 @@
             "line_id": "09-checking-into-a-hotel-or-airbnb-02",
             "line": 2,
             "speaker": "Kirk",
-            "spanish": "Sí, a nombre de Kirk Lewis. Para tres noches.",
-            "english": "Yes, under the name Kirk Lewis. For three nights.",
+            "spanish": "Sí, a nombre de Kirk Lewis. Para tres noches. Acabamos de llegar del aeropuerto.",
+            "english": "Yes, under Kirk Lewis. For three nights. We just got in from the airport.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2512,9 +2512,9 @@
             "line_id": "09-checking-into-a-hotel-or-airbnb-04",
             "line": 4,
             "speaker": "Kirk",
-            "spanish": "Ele, e, doble ve, i, ese.",
+            "spanish": "Ele, e, doble u, i, ese.",
             "english": "L, E, W, I, S.",
-            "region": "PA",
+            "region": "MX",
             "notes": "EH-leh, eh, DOH-bleh veh, ee, EH-seh. W is doble ve in much of Latin America; doble u is common in Mexico.",
             "is_stage_direction": false
           },
@@ -2532,8 +2532,8 @@
             "line_id": "09-checking-into-a-hotel-or-airbnb-06",
             "line": 6,
             "speaker": "Kirk",
-            "spanish": "Aquí tiene. Una pregunta: tenemos el sueño muy ligero. ¿Nos puede dar una habitación tranquila, lejos del elevador y de la calle?",
-            "english": "Here you go. A question: we're very light sleepers. Could you give us a quiet room, away from the elevator and the street?",
+            "spanish": "Aquí tiene. Una pregunta: tenemos el sueño muy ligero. ¿Nos podría dar una habitación tranquila, que esté lejos del elevador y de la calle?",
+            "english": "Here you go. A question: we're very light sleepers. Could you give us a quiet room, one that's away from the elevator and the street?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2652,8 +2652,8 @@
             "line_id": "09-checking-into-a-hotel-or-airbnb-17",
             "line": 17,
             "speaker": "Kirk",
-            "spanish": "Vamos a salir a las diez. Después de esa hora está bien.",
-            "english": "We're going out at ten. Any time after that is fine.",
+            "spanish": "Vamos a salir a las diez. Cuando nos vayamos, pueden entrar.",
+            "english": "We're leaving at ten. Once we've gone, you can come in.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2687,8 +2687,8 @@
             "line_id": "09-checking-into-a-hotel-or-airbnb-20",
             "line": 20,
             "speaker": "Kirk",
-            "spanish": "Disculpe, vino el técnico, pero el aire sigue sin funcionar. Y además encontramos cucarachas en el baño.",
-            "english": "Excuse me, the technician came, but the air still isn't working. And on top of that we found cockroaches in the bathroom.",
+            "spanish": "Disculpe, vino el técnico, pero no pudo arreglar el aire. Y además encontramos cucarachas en el baño.",
+            "english": "Excuse me, the technician came, but he couldn't fix the air conditioning. And on top of that, we found cockroaches in the bathroom.",
             "region": "",
             "notes": "Stage direction: más tarde",
             "is_stage_direction": true
@@ -2707,8 +2707,8 @@
             "line_id": "09-checking-into-a-hotel-or-airbnb-22",
             "line": 22,
             "speaker": "Kirk",
-            "spanish": "Nos gustaría cambiar de habitación, por favor. Pero recuerde que necesitamos una habitación tranquila.",
-            "english": "We'd like to change rooms, please. But remember we need a quiet room.",
+            "spanish": "Nos gustaría cambiar de habitación, por favor. Pero recuerde que necesitamos una que sea tranquila.",
+            "english": "We'd like to change rooms, please. But remember that we need one that's quiet.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2739,8 +2739,8 @@
             "line_id": "10-something-went-wrong-01",
             "line": 1,
             "speaker": "Kirk",
-            "spanish": "Disculpe, estuvimos aquí hace una hora, en esa mesa. Creo que dejé mi celular.",
-            "english": "Excuse me, we were here an hour ago, at that table. I think I left my phone.",
+            "spanish": "Disculpe, estuvimos aquí hace una hora, en esa mesa. Creo que se me quedó el celular.",
+            "english": "Excuse me, we were here an hour ago, at that table. I think I left my phone behind.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2814,8 +2814,8 @@
             "line_id": "10-something-went-wrong-08",
             "line": 8,
             "speaker": "Kirk",
-            "spanish": "Pedí la res sin aderezo para mi hija, pero esto tiene salsa. Ella es alérgica, así que no puede comer esto.",
-            "english": "I ordered the beef with no dressing for my daughter, but this has sauce. She's allergic, so she can't eat this.",
+            "spanish": "Pedí la res sin aderezo para mi hija, pero esto tiene salsa. Ella es alérgica, así que no puede comer esto. Si no me hubiera dado cuenta, podría haber sido muy grave.",
+            "english": "I ordered the beef with no dressing for my daughter, but this has sauce. She's allergic, so she can't eat this. If I hadn't noticed, it could have been very serious.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2859,8 +2859,8 @@
             "line_id": "10-something-went-wrong-12",
             "line": 12,
             "speaker": "Kirk",
-            "spanish": "Disculpe, perdí el bus de las tres para Coronado. ¿A qué hora sale el próximo?",
-            "english": "Excuse me, I missed the three o'clock bus to Coronado. What time does the next one leave?",
+            "spanish": "Disculpe, se me fue el bus de las tres para Coronado. Debí haber salido más temprano. ¿A qué hora sale el próximo?",
+            "english": "Excuse me, I missed the three o'clock bus to Coronado. I should have left earlier. What time does the next one leave?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2924,8 +2924,8 @@
             "line_id": "10-something-went-wrong-18",
             "line": 18,
             "speaker": "Kirk",
-            "spanish": "¿Dos horas? Tenemos una conexión en Houston. ¿Vamos a alcanzar el otro vuelo?",
-            "english": "Two hours? We have a connection in Houston. Are we going to make the other flight?",
+            "spanish": "¿Dos horas? Tenemos una conexión en Houston. No creo que alcancemos el otro vuelo, ¿verdad?",
+            "english": "Two hours? We have a connection in Houston. I don't think we'll make the other flight, will we?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2949,8 +2949,8 @@
             "line_id": "10-something-went-wrong-20",
             "line": 20,
             "speaker": "Kirk",
-            "spanish": "Buenas noches. Perdimos nuestra conexión porque el primer vuelo llegó tarde.",
-            "english": "Good evening. We missed our connection because the first flight arrived late.",
+            "spanish": "Buenas noches. Perdimos nuestra conexión porque el primer vuelo llegó tarde. Se suponía que llegábamos a las seis.",
+            "english": "Good evening. We missed our connection because the first flight arrived late. We were supposed to get in at six.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -2969,8 +2969,8 @@
             "line_id": "10-something-went-wrong-22",
             "line": 22,
             "speaker": "Kirk",
-            "spanish": "¿Nos puede poner en el próximo vuelo?",
-            "english": "Can you put us on the next flight?",
+            "spanish": "¿Nos podría poner en el próximo vuelo?",
+            "english": "Could you put us on the next flight?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3091,8 +3091,8 @@
             "line_id": "11-visiting-a-pharmacy-or-doctor-04",
             "line": 4,
             "speaker": "Kirk",
-            "spanish": "Desde hace tres días. Creo que es por el polvo.",
-            "english": "For three days. I think it's the dust.",
+            "spanish": "Desde hace tres días. A lo mejor es por el polvo.",
+            "english": "For three days. Maybe it's the dust.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3111,8 +3111,8 @@
             "line_id": "11-visiting-a-pharmacy-or-doctor-06",
             "line": 6,
             "speaker": "Kirk",
-            "spanish": "¿Cómo la tomo?",
-            "english": "How do I take it?",
+            "spanish": "Perdón, ¿cómo se dice? ¿Lo-ra-ta-di-na? ¿Y cómo la tomo?",
+            "english": "Sorry, how do you say it? Lo-ra-ta-di-na? And how do I take it?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3201,8 +3201,8 @@
             "line_id": "11-visiting-a-pharmacy-or-doctor-14",
             "line": 14,
             "speaker": "Kirk",
-            "spanish": "Una última cosa. Me corté el dedo con un cuchillo. No es profunda, pero sangra un poco.",
-            "english": "One last thing. I cut my finger with a knife. It's not deep, but it's bleeding a little.",
+            "spanish": "Una última cosa. Me acabo de cortar el dedo con un cuchillo. La herida no es profunda, pero sangra un poco. Debería haber tenido más cuidado.",
+            "english": "One last thing. I just cut my finger with a knife. The cut isn't deep, but it's bleeding a little. I should have been more careful.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3241,8 +3241,8 @@
             "line_id": "11-visiting-a-pharmacy-or-doctor-18",
             "line": 18,
             "speaker": "Kirk",
-            "spanish": "¿Y cuándo debo ir al médico?",
-            "english": "And when should I see a doctor?",
+            "spanish": "¿Y cuándo debería ir al médico?",
+            "english": "And when should I go to the doctor?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3346,9 +3346,9 @@
             "line_id": "11-visiting-a-pharmacy-or-doctor-28",
             "line": 28,
             "speaker": "Doctora",
-            "spanish": "Sí, mejor con comida. Y para la fiebre y el dolor puede tomar acetaminofén.",
+            "spanish": "Sí, mejor con comida. Y para la fiebre y el dolor puede tomar paracetamol.",
             "english": "Yes, better with food. And for the fever and pain you can take acetaminophen.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Tylenol's ingredient: acetaminofén in Panama, paracetamol in Mexico.",
             "is_stage_direction": false
           },
@@ -3473,8 +3473,8 @@
             "line_id": "12-shopping-at-a-market-05",
             "line": 5,
             "speaker": "Kirk",
-            "spanish": "Si le compro dos piñas y seis mangos, ¿me hace un descuentito?",
-            "english": "If I buy two pineapples and six mangoes, will you give me a little discount?",
+            "spanish": "Mi esposa me dijo que pidiera descuento. Si le compro dos piñas y seis mangos, ¿me hace un descuentito?",
+            "english": "My wife told me to ask for a discount. If I buy two pineapples and six mangoes, will you give me a little discount?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3573,9 +3573,9 @@
             "line_id": "12-shopping-at-a-market-14",
             "line": 14,
             "speaker": "Kirk",
-            "spanish": "Deme una libra de tomates, por favor.",
+            "spanish": "Deme medio kilo de tomates, por favor.",
             "english": "Give me a pound of tomatoes, please.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Panama markets sell by the pound; Mexico by the kilo.",
             "is_stage_direction": false
           },
@@ -3593,9 +3593,9 @@
             "line_id": "12-shopping-at-a-market-16",
             "line": 16,
             "speaker": "Kirk",
-            "spanish": "Sí, media libra de queso blanco y una docena de huevos.",
+            "spanish": "Sí, un cuarto de queso fresco y un kilo de huevos.",
             "english": "Yes, half a pound of white cheese and a dozen eggs.",
-            "region": "PA",
+            "region": "MX",
             "notes": "In Mexico eggs are often sold by the kilo.",
             "is_stage_direction": false
           }
@@ -3608,8 +3608,8 @@
             "line_id": "12-shopping-at-a-market-17",
             "line": 17,
             "speaker": "Kirk",
-            "spanish": "¿Cuáles aguacates están mejores? Los queremos para hoy.",
-            "english": "Which avocados are better? We want them for today.",
+            "spanish": "Necesito unos aguacates que estén listos para hoy. ¿Cuáles me recomienda?",
+            "english": "I need some avocados that are ready for today. Which ones do you recommend?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3648,8 +3648,8 @@
             "line_id": "12-shopping-at-a-market-21",
             "line": 21,
             "speaker": "Kirk",
-            "spanish": "Perfecto, entonces de esos. ¿Cuánto le debo?",
-            "english": "Perfect, then those. How much do I owe you?",
+            "spanish": "Perfecto, entonces me llevo esos. ¿Me los pone en una bolsa? ¿Cuánto le debo?",
+            "english": "Perfect, I'll take those then. Could you put them in a bag for me? How much do I owe you?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3689,11 +3689,11 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-01",
             "line": 1,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Luis, ¿cuál ha sido tu viaje favorito últimamente?",
             "english": "Luis, what's been your favorite trip lately?",
             "region": "",
-            "notes": "Uses tú with Andrea.",
+            "notes": "Uses tú with Marcos.",
             "is_stage_direction": false
           },
           {
@@ -3709,7 +3709,7 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-03",
             "line": 3,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Qué lindo! ¿Cuántos días estuvieron?",
             "english": "How lovely! How many days were you there?",
             "region": "",
@@ -3734,7 +3734,7 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-05",
             "line": 5,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y qué fue lo que más les gustó?",
             "english": "And what did you like most?",
             "region": "",
@@ -3745,8 +3745,8 @@
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-06",
             "line": 6,
             "speaker": "Kirk",
-            "spanish": "Era época de Navidad y todo el parque estaba decorado. Era precioso. Pero lo mejor fue la nieve. Al final de la noche, en la calle principal, hacen caer nieve artificial. ¡Fue increíble! Mi esposa todavía habla de eso.",
-            "english": "It was Christmas season and the whole park was decorated. It was beautiful. But the best part was the snow. At the end of the night, on Main Street, they make artificial snow fall. It was amazing! My wife still talks about it.",
+            "spanish": "Era época de Navidad y todo el parque estaba decorado. Era precioso. Pero lo mejor fue la nieve. Al final de la noche, en la calle principal, hacen caer nieve artificial. ¡Fue increíble! Mi esposa todavía habla de eso. Lo único que no pudimos hacer fue ver los fuegos artificiales, porque llovió esa noche.",
+            "english": "It was Christmastime and the whole park was decorated. It was beautiful. But the best part was the snow. At the end of the night, on Main Street, they make artificial snow fall. It was amazing! My wife still talks about it. The only thing we couldn't do was see the fireworks, because it rained that night.",
             "region": "",
             "notes": "Imperfect for the scene (era, estaba), preterite for the highlight (fue).",
             "is_stage_direction": false
@@ -3754,7 +3754,7 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-07",
             "line": 7,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Qué bonito! ¿Y la comida?",
             "english": "How nice! And the food?",
             "region": "",
@@ -3779,7 +3779,7 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-09",
             "line": 9,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Parece un viaje perfecto.",
             "english": "Sounds like a perfect trip.",
             "region": "",
@@ -3790,8 +3790,8 @@
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-10",
             "line": 10,
             "speaker": "Kirk",
-            "spanish": "Sí, fue perfecto… hasta el final. El último día, mi esposa se enfermó. Por suerte, no fue al principio del viaje.",
-            "english": "Yes, it was perfect… until the end. On the last day, my wife got sick. Luckily, it wasn't at the start of the trip.",
+            "spanish": "Sí, fue perfecto… hasta el final. El último día, mi esposa se enfermó. Por suerte, no fue al principio del viaje. Si se hubiera enfermado el primer día, habríamos tenido que regresar.",
+            "english": "Yes, it was perfect… until the end. On the last day, my wife got sick. Luckily, it wasn't at the start of the trip. If she had gotten sick on the first day, we would have had to go home.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3799,7 +3799,7 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-11",
             "line": 11,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Ay, no! ¿Qué tenía?",
             "english": "Oh, no! What did she have?",
             "region": "",
@@ -3810,8 +3810,8 @@
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-12",
             "line": 12,
             "speaker": "Kirk",
-            "spanish": "No sabíamos qué tenía hasta que llegamos a casa. Resultó que era COVID. Pasó como tres días en cama hasta que se recuperó.",
-            "english": "We didn't know what she had until we got home. It turned out it was COVID. She spent about three days in bed until she recovered.",
+            "spanish": "No sabíamos qué tenía hasta que llegamos a casa. Resultó que era COVID. Pasó como tres días en cama hasta que se recuperó. Podría haber sido peor.",
+            "english": "We didn't know what she had until we got home. It turned out to be COVID. She spent about three days in bed until she recovered. It could have been worse.",
             "region": "",
             "notes": "Key tense pair: no sabíamos (ongoing state) … hasta que llegamos (the moment it changed).",
             "is_stage_direction": false
@@ -3819,9 +3819,9 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-13",
             "line": 13,
-            "speaker": "Andrea",
-            "spanish": "¡Qué mala suerte! ¿Y ya está bien?",
-            "english": "What bad luck! And is she OK now?",
+            "speaker": "Marcos",
+            "spanish": "¡Qué pena que se haya enfermado! ¿Y ya está bien?",
+            "english": "What a shame she got sick! Is she okay now?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3854,7 +3854,7 @@
           {
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-16",
             "line": 16,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Eso es lo importante.",
             "english": "That's what matters.",
             "region": "",
@@ -3865,8 +3865,8 @@
             "line_id": "13-telling-a-story-about-a-recent-trip-or-weekend-17",
             "line": 17,
             "speaker": "Kirk",
-            "spanish": "Exacto. A pesar de todo, fue un viaje inolvidable.",
-            "english": "Exactly. Despite everything, it was an unforgettable trip.",
+            "spanish": "Exacto. A pesar de todo, fue un viaje inolvidable. Ojalá podamos volver algún día.",
+            "english": "Exactly. Despite everything, it was an unforgettable trip. I hope we can go back someday.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3886,11 +3886,11 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-01",
             "line": 1,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Luis, ¿qué haces en tu tiempo libre?",
             "english": "Luis, what do you do in your free time?",
             "region": "",
-            "notes": "Uses tú with Andrea.",
+            "notes": "Uses tú with Marcos.",
             "is_stage_direction": false
           },
           {
@@ -3911,7 +3911,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-03",
             "line": 3,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Qué te gusta leer?",
             "english": "What do you like to read?",
             "region": "",
@@ -3931,7 +3931,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-05",
             "line": 5,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y casi siempre adivinas?",
             "english": "And do you usually guess right?",
             "region": "",
@@ -3942,8 +3942,8 @@
             "line_id": "14-talking-about-your-hobbies-in-depth-06",
             "line": 6,
             "speaker": "Kirk",
-            "spanish": "¡A veces sí y a veces no! Eso es lo divertido.",
-            "english": "Sometimes yes and sometimes no! That's the fun part.",
+            "spanish": "¡A veces sí y a veces no! Eso es lo divertido. Si te gustan los misterios, yo que tú, empezaría con Agatha Christie.",
+            "english": "Sometimes yes and sometimes no! That's the fun part. If you like mysteries, if I were you, I'd start with Agatha Christie.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3956,7 +3956,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-07",
             "line": 7,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Qué tipo de música te gusta?",
             "english": "What kind of music do you like?",
             "region": "",
@@ -3967,8 +3967,8 @@
             "line_id": "14-talking-about-your-hobbies-in-depth-08",
             "line": 8,
             "speaker": "Kirk",
-            "spanish": "De todo un poco: R&B, pop, jazz, lofi, bandas sonoras de películas, algo de country y hip hop de la vieja escuela. Además, estoy armando una colección de CDs.",
-            "english": "A bit of everything: R&B, pop, jazz, lofi, movie scores, some country and old-school hip hop. Plus, I'm building a CD collection.",
+            "spanish": "Depende de mi estado de ánimo, pero de todo un poco: R&B, pop, jazz, lofi, bandas sonoras de películas, algo de country y hip hop de la vieja escuela. Además, llevo varios años armando una colección de CDs.",
+            "english": "It depends on my mood, but a bit of everything: R&B, pop, jazz, lo-fi, movie soundtracks, some country and old-school hip hop. Also, I've been building a CD collection for several years.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -3976,7 +3976,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-09",
             "line": 9,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿CDs? ¡Qué clásico!",
             "english": "CDs? How classic!",
             "region": "",
@@ -4001,7 +4001,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-11",
             "line": 11,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y te gusta el cine?",
             "english": "And do you like movies?",
             "region": "",
@@ -4026,7 +4026,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-13",
             "line": 13,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y haces algún deporte?",
             "english": "And do you play any sports?",
             "region": "",
@@ -4061,7 +4061,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-16",
             "line": 16,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Qué variedad!",
             "english": "What variety!",
             "region": "",
@@ -4086,7 +4086,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-18",
             "line": 18,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y cuando viajas, qué te gusta hacer?",
             "english": "And when you travel, what do you like to do?",
             "region": "",
@@ -4106,7 +4106,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-20",
             "line": 20,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Entonces te va a encantar el Casco Viejo!",
             "english": "Then you're going to love Casco Viejo!",
             "region": "",
@@ -4121,7 +4121,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-21",
             "line": 21,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Hay algo que te gustaría aprender?",
             "english": "Is there anything you'd like to learn?",
             "region": "",
@@ -4132,8 +4132,8 @@
             "line_id": "14-talking-about-your-hobbies-in-depth-22",
             "line": 22,
             "speaker": "Kirk",
-            "spanish": "Sí. Me gustaría aprender a reparar aparatos electrónicos y hacer mis propios inventos, como robots o aparatos para automatizar la casa. Si tuviera más tiempo, ¡ya estaría construyendo robots!",
-            "english": "Yes. I'd like to learn to repair electronics and make my own inventions, like robots or home automation devices. If I had more time, I'd already be building robots!",
+            "spanish": "Sí. Me gustaría aprender a reparar aparatos electrónicos y hacer mis propios inventos, como robots o aparatos para automatizar la casa. Si tuviera más tiempo, ¡ya estaría construyendo robots! Tal vez lo haga cuando me jubile.",
+            "english": "Yes. I'd like to learn to repair electronics and make my own inventions, like robots or devices to automate the house. If I had more time, I'd already be building robots! Maybe I'll do it when I retire.",
             "region": "",
             "notes": "Imperfect subjunctive + conditional (B2).",
             "is_stage_direction": false
@@ -4141,7 +4141,7 @@
           {
             "line_id": "14-talking-about-your-hobbies-in-depth-23",
             "line": 23,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Cuando hagas tu primer robot, me lo enseñas.",
             "english": "When you make your first robot, show it to me.",
             "region": "",
@@ -4173,11 +4173,11 @@
           {
             "line_id": "15-giving-your-opinion-on-a-common-topic-01",
             "line": 1,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Luis, ¿y por qué escogiste Panamá y no México? Muchos estadounidenses se van a México.",
             "english": "Luis, so why did you choose Panama and not Mexico? Lots of Americans go to Mexico.",
             "region": "",
-            "notes": "Topic: Mexico vs. Panama for retirement. Uses tú with Andrea.",
+            "notes": "Topic: Mexico vs. Panama for retirement. Uses tú with Marcos.",
             "is_stage_direction": false
           },
           {
@@ -4208,7 +4208,7 @@
           {
             "line_id": "15-giving-your-opinion-on-a-common-topic-04",
             "line": 4,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Eso es verdad.",
             "english": "That's true.",
             "region": "",
@@ -4238,7 +4238,7 @@
           {
             "line_id": "15-giving-your-opinion-on-a-common-topic-06",
             "line": 6,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Pero Panamá es pequeño. ¿No te va a hacer falta todo eso?",
             "english": "But Panama is small. Won't you miss all that?",
             "region": "",
@@ -4249,8 +4249,8 @@
             "line_id": "15-giving-your-opinion-on-a-common-topic-07",
             "line": 7,
             "speaker": "Kirk",
-            "spanish": "Puede que tengas razón. Es cierto que Panamá solo tiene una ciudad grande y que es demasiado pequeño para tener todo lo que tiene México. Pero el aeropuerto de Tocumen es muy bueno, así que si quiero ir a un evento, puedo tomar un vuelo fácilmente.",
-            "english": "You may be right. It's true that Panama only has one big city and that it's too small to have everything Mexico has. But Tocumen airport is very good, so if I want to go to an event, I can easily catch a flight.",
+            "spanish": "Puede que tengas razón. Es cierto que Panamá solo tiene una ciudad grande y que es demasiado pequeño para tener todo lo que tiene México. Pero no creo que me haga tanta falta, porque el aeropuerto de Tocumen es muy bueno, así que si quiero ir a un evento, puedo tomar un vuelo fácilmente.",
+            "english": "You may be right. It's true that Panama only has one big city and that it's too small to have everything Mexico has. But I don't think I'll miss it that much, because Tocumen airport is very good, so if I want to go to an event, I can easily catch a flight.",
             "region": "",
             "notes": "Puede que + subjunctive.",
             "is_stage_direction": false
@@ -4263,7 +4263,7 @@
           {
             "line_id": "15-giving-your-opinion-on-a-common-topic-08",
             "line": 8,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y el costo de vida?",
             "english": "And the cost of living?",
             "region": "",
@@ -4288,7 +4288,7 @@
           {
             "line_id": "15-giving-your-opinion-on-a-common-topic-10",
             "line": 10,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Entonces, ¿no tienes dudas?",
             "english": "So, you have no doubts?",
             "region": "",
@@ -4299,8 +4299,8 @@
             "line_id": "15-giving-your-opinion-on-a-common-topic-11",
             "line": 11,
             "speaker": "Kirk",
-            "spanish": "En definitiva, los dos países son buenas opciones. Pero al fin y al cabo, para mí lo más importante es sentirme seguro y poder disfrutar de la naturaleza. Por eso, entre México y Panamá, me quedo con Panamá.",
-            "english": "In short, both countries are good options. But at the end of the day, what matters most to me is feeling safe and being able to enjoy nature. That's why, between Mexico and Panama, I'll take Panama.",
+            "spanish": "Dudo que cambie de opinión. En definitiva, los dos países son buenas opciones. Pero al fin y al cabo, para mí lo más importante es sentirme seguro y poder disfrutar de la naturaleza. Por eso, entre México y Panamá, me quedo con Panamá.",
+            "english": "I doubt I'll change my mind. All in all, both countries are good options. But at the end of the day, what matters most to me is feeling safe and being able to enjoy nature. That's why, between Mexico and Panama, I'll go with Panama.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -4331,9 +4331,9 @@
             "line_id": "16-making-plans-with-someone-02",
             "line": 2,
             "speaker": "Kirk",
-            "spanish": "Buenas tardes, Gabriela. Le habla Kirk Lewis. Vi el anuncio del apartamento en Coronado y me gustaría verlo.",
+            "spanish": "Buenas tardes, Gabriela. Le habla Kirk Lewis. Vi el anuncio del departamento en Coronado y me gustaría verlo.",
             "english": "Good afternoon, Gabriela. This is Kirk Lewis. I saw the listing for the apartment in Coronado and I'd like to see it.",
-            "region": "PA",
+            "region": "MX",
             "notes": "Apartamento in Panama, departamento in Mexico.",
             "is_stage_direction": false
           },
@@ -4371,8 +4371,8 @@
             "line_id": "16-making-plans-with-someone-06",
             "line": 6,
             "speaker": "Kirk",
-            "spanish": "A las tres no puedo, lo siento. ¿Y el domingo?",
-            "english": "I can't at three, sorry. What about Sunday?",
+            "spanish": "A las tres no puedo, lo siento. ¿Podría ser el domingo?",
+            "english": "I can't at three, sorry. Could it be Sunday?",
             "region": "",
             "notes": "Declining politely.",
             "is_stage_direction": false
@@ -4411,8 +4411,8 @@
             "line_id": "16-making-plans-with-someone-10",
             "line": 10,
             "speaker": "Kirk",
-            "spanish": "Sí, mejor. ¿Me puede mandar la dirección por WhatsApp?",
-            "english": "Yes, that's better. Can you send me the address on WhatsApp?",
+            "spanish": "Sí, mejor. ¿Me podría mandar la dirección por WhatsApp?",
+            "english": "Yes, that's better. Could you send me the address on WhatsApp?",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -4430,22 +4430,22 @@
         ]
       },
       {
-        "section": "2. Invitar a Andrea",
+        "section": "2. Invitar a Marcos",
         "lines": [
           {
             "line_id": "16-making-plans-with-someone-12",
             "line": 12,
             "speaker": "Kirk",
-            "spanish": "Andrea, el lunes voy a ver un apartamento en Coronado. ¿Te gustaría acompañarme? Tú conoces mejor la zona.",
-            "english": "Andrea, on Monday I'm going to see an apartment in Coronado. Would you like to come with me? You know the area better.",
-            "region": "PA",
-            "notes": "Uses tú with Andrea.",
+            "spanish": "Marcos, el lunes voy a ver un departamento en Coronado. ¿Te gustaría acompañarme? Tú conoces mejor la zona.",
+            "english": "Marcos, on Monday I'm going to see an apartment in Coronado. Would you like to come with me? You know the area better.",
+            "region": "MX",
+            "notes": "Uses tú with Marcos.",
             "is_stage_direction": false
           },
           {
             "line_id": "16-making-plans-with-someone-13",
             "line": 13,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Me encantaría! Pero el lunes trabajo hasta las doce.",
             "english": "I'd love to! But on Monday I work until twelve.",
             "region": "",
@@ -4456,8 +4456,8 @@
             "line_id": "16-making-plans-with-someone-14",
             "line": 14,
             "speaker": "Kirk",
-            "spanish": "¡Qué pena! ¿Y si almorzamos juntos después? Te cuento cómo me fue.",
-            "english": "What a shame! How about we have lunch together afterward? I'll tell you how it went.",
+            "spanish": "¡Qué pena! ¿Y si almorzamos juntos después? Podríamos vernos cuando salgas del trabajo, y te cuento cómo me fue.",
+            "english": "What a shame! How about we have lunch together afterward? We could meet when you get off work, and I'll tell you how it went.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -4465,7 +4465,7 @@
           {
             "line_id": "16-making-plans-with-someone-15",
             "line": 15,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Dale! ¿Qué te parece si nos vemos a la una en el restaurante de la playa?",
             "english": "Sure! How about we meet at one at the restaurant on the beach?",
             "region": "",
@@ -4476,8 +4476,8 @@
             "line_id": "16-making-plans-with-someone-16",
             "line": 16,
             "speaker": "Kirk",
-            "spanish": "Perfecto. Nos vemos a la una.",
-            "english": "Perfect. See you at one.",
+            "spanish": "Perfecto. Nos vemos a la una. Cuando llegues, me escribes.",
+            "english": "Perfect. See you at one. Text me when you get there.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -4551,16 +4551,16 @@
             "line_id": "16-making-plans-with-someone-23",
             "line": 23,
             "speaker": "Kirk",
-            "spanish": "Andrea, cambio de planes: la cita ahora es el martes. Mejor almorzamos el martes, ¿no?",
-            "english": "Andrea, change of plans: the appointment is now on Tuesday. Let's have lunch on Tuesday instead, OK?",
+            "spanish": "Marcos, cambio de planes: la agente me pidió que cambiáramos la cita al martes. Es mejor que almorcemos el martes, ¿no te parece?",
+            "english": "Marcos, change of plans: the agent asked me to move the appointment to Tuesday. It's better if we have lunch on Tuesday, don't you think?",
             "region": "",
-            "notes": "Stage direction: después, a Andrea",
+            "notes": "Stage direction: después, a Marcos",
             "is_stage_direction": true
           },
           {
             "line_id": "16-making-plans-with-someone-24",
             "line": 24,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Sí, mejor el martes. ¡Nos vemos!",
             "english": "Yes, Tuesday's better. See you!",
             "region": "",
@@ -4582,11 +4582,11 @@
           {
             "line_id": "17-hypotheticals-and-dreams-01",
             "line": 1,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Luis, si pudieras vivir en cualquier parte del mundo, ¿dónde vivirías?",
             "english": "Luis, if you could live anywhere in the world, where would you live?",
             "region": "",
-            "notes": "Si + imperfect subjunctive + conditional. Uses tú with Andrea.",
+            "notes": "Si + imperfect subjunctive + conditional. Uses tú with Marcos.",
             "is_stage_direction": false
           },
           {
@@ -4602,7 +4602,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-03",
             "line": 3,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y Asia?",
             "english": "And Asia?",
             "region": "",
@@ -4627,7 +4627,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-05",
             "line": 5,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Hay alguna forma de vida que te llame la atención?",
             "english": "Is there a way of life that appeals to you?",
             "region": "",
@@ -4647,7 +4647,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-07",
             "line": 7,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Por qué te interesa tanto?",
             "english": "Why does it interest you so much?",
             "region": "",
@@ -4672,7 +4672,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-09",
             "line": 9,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y dónde te ves dentro de cinco años?",
             "english": "And where do you see yourself in five years?",
             "region": "",
@@ -4692,7 +4692,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-11",
             "line": 11,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y si te ganaras la lotería?",
             "english": "And if you won the lottery?",
             "region": "",
@@ -4728,16 +4728,16 @@
             "line_id": "17-hypotheticals-and-dreams-14",
             "line": 14,
             "speaker": "Kirk",
-            "spanish": "Otra cosa que me gustaría tener otra vez es una piscina. Teníamos una en Arizona, pero nos mudamos de esa casa antes de poder disfrutarla de verdad.",
-            "english": "Another thing I'd like to have again is a pool. We had one in Arizona, but we moved out of that house before we could really enjoy it.",
-            "region": "PA",
+            "spanish": "Otra cosa que me gustaría tener otra vez es una alberca. Teníamos una en Arizona, pero nos mudamos de esa casa antes de poder disfrutarla de verdad.",
+            "english": "Another thing I'd like to have again is a pool. We had one in Arizona, but we moved out of that house before we could really enjoy it. If I had known we were going to move so soon, I would have used it a lot more.",
+            "region": "MX",
             "notes": "Piscina in Panama, alberca in Mexico.",
             "is_stage_direction": false
           },
           {
             "line_id": "17-hypotheticals-and-dreams-15",
             "line": 15,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¡Qué lástima!",
             "english": "What a shame!",
             "region": "",
@@ -4752,7 +4752,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-16",
             "line": 16,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Y hay algo que te gustaría cambiar de ti mismo?",
             "english": "And is there anything you'd like to change about yourself?",
             "region": "",
@@ -4772,7 +4772,7 @@
           {
             "line_id": "17-hypotheticals-and-dreams-18",
             "line": 18,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "Eso nos pasa a todos.",
             "english": "That happens to all of us.",
             "region": "",
@@ -4804,7 +4804,7 @@
           {
             "line_id": "18-work-01",
             "line": 1,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿A qué te dedicas?",
             "english": "What do you do for work?",
             "region": "",
@@ -4829,7 +4829,7 @@
           {
             "line_id": "18-work-03",
             "line": 3,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Cuánto tiempo llevas en tu empresa?",
             "english": "How long have you been with your company?",
             "region": "",
@@ -4854,7 +4854,7 @@
           {
             "line_id": "18-work-05",
             "line": 5,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Cómo llegaste al mundo de la tecnología?",
             "english": "How did you get into tech?",
             "region": "",
@@ -4879,7 +4879,7 @@
           {
             "line_id": "18-work-07",
             "line": 7,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Cómo es tu día a día?",
             "english": "What does your day-to-day look like?",
             "region": "",
@@ -4904,7 +4904,7 @@
           {
             "line_id": "18-work-09",
             "line": 9,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Qué hace a un buen arquitecto de soluciones?",
             "english": "What makes a good solutions architect?",
             "region": "",
@@ -4929,7 +4929,7 @@
           {
             "line_id": "18-work-11",
             "line": 11,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Qué piensas del impacto de la IA en tu campo?",
             "english": "What do you think about AI's impact on your field?",
             "region": "",
@@ -4961,7 +4961,7 @@
           {
             "line_id": "19-daily-routine-01",
             "line": 1,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿A qué hora te despiertas normalmente?",
             "english": "What time do you usually wake up?",
             "region": "",
@@ -4986,7 +4986,7 @@
           {
             "line_id": "19-daily-routine-03",
             "line": 3,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Tienes una rutina por las mañanas?",
             "english": "Do you have a morning routine?",
             "region": "",
@@ -5011,7 +5011,7 @@
           {
             "line_id": "19-daily-routine-05",
             "line": 5,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Qué comes durante el día?",
             "english": "What do you eat during the day?",
             "region": "",
@@ -5036,7 +5036,7 @@
           {
             "line_id": "19-daily-routine-07",
             "line": 7,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Cómo sueles entrenar?",
             "english": "How do you usually work out?",
             "region": "",
@@ -5047,8 +5047,8 @@
             "line_id": "19-daily-routine-08",
             "line": 8,
             "speaker": "Kirk",
-            "spanish": "Hago pesas o cardio, pero no los dos el mismo día. Entreno después de las 5, cuando termina el día de trabajo.",
-            "english": "I do either resistance training or cardio, but not both on the same day. I work out after 5 when the work day is done.",
+            "spanish": "Depende de cómo me sienta: hago pesas o cardio, pero nunca los dos el mismo día. Entreno después de las 5, cuando termina el día de trabajo.",
+            "english": "It depends on how I feel: I do weights or cardio, but never both on the same day. I train after 5, when the workday ends.",
             "region": "",
             "notes": "",
             "is_stage_direction": false
@@ -5061,7 +5061,7 @@
           {
             "line_id": "19-daily-routine-09",
             "line": 9,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Cómo te relajas por las noches?",
             "english": "How do you wind down at night?",
             "region": "",
@@ -5086,7 +5086,7 @@
           {
             "line_id": "19-daily-routine-11",
             "line": 11,
-            "speaker": "Andrea",
+            "speaker": "Marcos",
             "spanish": "¿Trabajas desde casa?",
             "english": "Do you work from home?",
             "region": "",
@@ -5099,6 +5099,959 @@
             "speaker": "Kirk",
             "spanish": "Sí, trabajo en remoto. Me voy a mi escritorio en mi oficina en casa, me conecto, y trabajo con clientes o en proyectos internos hasta como las 5.",
             "english": "Yeah, I work remotely. I go to my desk in my home office, log in, and work with clients or on internal projects until about 5.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "island_num": 20,
+    "island": "Giving advice to a friend",
+    "island_slug": "giving-advice-to-a-friend",
+    "sections": [
+      {
+        "section": "La noticia",
+        "lines": [
+          {
+            "line_id": "20-giving-advice-to-a-friend-01",
+            "line": 1,
+            "speaker": "Rodrigo",
+            "spanish": "Luis, ¿te acuerdas que te dije que me iban a trasladar? Pues ya es oficial: me mudo a Panamá en marzo.",
+            "english": "Luis, remember I told you they might transfer me? Well, it's official: I'm moving to Panama in March.",
+            "region": "",
+            "notes": "Rodrigo is a friend from Monterrey. Uses tú.",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-02",
+            "line": 2,
+            "speaker": "Kirk",
+            "spanish": "¡No me digas! ¡Qué bueno que por fin se haya decidido! ¿Y cómo te sientes?",
+            "english": "No way! Great that it finally got decided! How do you feel?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-03",
+            "line": 3,
+            "speaker": "Rodrigo",
+            "spanish": "Emocionado, pero un poco perdido. No conozco a nadie allá. ¿Qué me aconsejas?",
+            "english": "Excited, but a bit lost. I don't know anyone there. What do you advise?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-04",
+            "line": 4,
+            "speaker": "Kirk",
+            "spanish": "Lo primero: no firmes nada antes de llegar. Te recomiendo que alquiles algo por un mes y que conozcas varios barrios.",
+            "english": "First thing: don't sign anything before you get there. I recommend you rent something for a month and get to know several neighborhoods.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Dónde vivir",
+        "lines": [
+          {
+            "line_id": "20-giving-advice-to-a-friend-05",
+            "line": 5,
+            "speaker": "Rodrigo",
+            "spanish": "¿Y qué zona me recomiendas? Voy a trabajar en Costa del Este.",
+            "english": "And which area do you recommend? I'm going to work in Costa del Este.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-06",
+            "line": 6,
+            "speaker": "Kirk",
+            "spanish": "Entonces, yo que tú, buscaría algo cerca del trabajo. El tráfico en la ciudad es terrible, y no vas a querer pasar dos horas al día en el carro.",
+            "english": "Then, if I were you, I'd look for something near work. Traffic in the city is terrible, and you won't want to spend two hours a day in the car.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-07",
+            "line": 7,
+            "speaker": "Rodrigo",
+            "spanish": "¿Y si prefiero vivir en el Casco Viejo? Me encanta el ambiente.",
+            "english": "And what if I'd rather live in Casco Viejo? I love the atmosphere.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-08",
+            "line": 8,
+            "speaker": "Kirk",
+            "spanish": "Puedes, pero depende de lo que busques. Es mejor que lo visites un fin de semana primero. Es bonito, pero de noche hay mucho ruido.",
+            "english": "You can, but it depends on what you're looking for. It's better if you visit on a weekend first. It's pretty, but at night it's very noisy.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Trámites",
+        "lines": [
+          {
+            "line_id": "20-giving-advice-to-a-friend-09",
+            "line": 9,
+            "speaker": "Rodrigo",
+            "spanish": "¿Y con los papeles? ¿Qué tengo que hacer?",
+            "english": "And the paperwork? What do I have to do?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-10",
+            "line": 10,
+            "speaker": "Kirk",
+            "spanish": "Deberías hablar con un abogado de migración antes de mudarte. Pídele a tu empresa que te ayude con eso; muchas empresas lo pagan.",
+            "english": "You should talk to an immigration lawyer before you move. Ask your company to help you with that; lots of companies pay for it.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-11",
+            "line": 11,
+            "speaker": "Rodrigo",
+            "spanish": "Buena idea. ¿Algo más?",
+            "english": "Good idea. Anything else?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-12",
+            "line": 12,
+            "speaker": "Kirk",
+            "spanish": "Sí: trae todos tus documentos apostillados. Si yo hubiera sabido eso, me habría ahorrado dos viajes.",
+            "english": "Yes: bring all your documents apostilled. If I'd known that, I would have saved myself two trips.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Consejos prácticos",
+        "lines": [
+          {
+            "line_id": "20-giving-advice-to-a-friend-13",
+            "line": 13,
+            "speaker": "Rodrigo",
+            "spanish": "¿Y el carro? ¿Me lo llevo o compro uno allá?",
+            "english": "And the car? Do I take it with me or buy one there?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-14",
+            "line": 14,
+            "speaker": "Kirk",
+            "spanish": "Yo no me lo llevaría. Traerlo cuesta mucho y los trámites tardan. Mejor compra uno usado cuando llegues.",
+            "english": "I wouldn't take it. Bringing it costs a lot and the paperwork takes forever. Better to buy a used one when you get there.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-15",
+            "line": 15,
+            "speaker": "Rodrigo",
+            "spanish": "¿Y para abrir una cuenta de banco? Me dijeron que es complicado.",
+            "english": "And opening a bank account? I was told it's complicated.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-16",
+            "line": 16,
+            "speaker": "Kirk",
+            "spanish": "Sí, piden muchas cartas de referencia. No esperes a llegar para pedirlas: pídeselas a tu banco de aquí desde ya, para que las tengas listas cuando llegues.",
+            "english": "Yes, they ask for a lot of reference letters. Don't wait until you get there to request them: ask your bank here for them right now, so you have them ready when you arrive.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-17",
+            "line": 17,
+            "speaker": "Rodrigo",
+            "spanish": "Uf, cuántas cosas.",
+            "english": "Phew, so many things.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-18",
+            "line": 18,
+            "speaker": "Kirk",
+            "spanish": "Tranquilo. Lo importante es que no tengas prisa. Y algo más: aprende a manejar con paciencia. ¡Allá todo el mundo toca el claxon!",
+            "english": "Relax. The important thing is not to rush. And one more thing: learn to drive patiently. Everybody honks there!",
+            "region": "MX",
+            "notes": "Honk: pitar in Panama, tocar el claxon in Mexico.",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Despedida",
+        "lines": [
+          {
+            "line_id": "20-giving-advice-to-a-friend-19",
+            "line": 19,
+            "speaker": "Rodrigo",
+            "spanish": "Gracias, Luis. No sé qué haría sin ti.",
+            "english": "Thanks, Luis. I don't know what I'd do without you.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-20",
+            "line": 20,
+            "speaker": "Kirk",
+            "spanish": "Para eso estamos. Cuando llegues, avísame y te presento a unos amigos. Y si necesitas algo, lo que sea, me llamas.",
+            "english": "That's what friends are for. When you get there, let me know and I'll introduce you to some friends. And if you need anything, anything at all, call me.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "20-giving-advice-to-a-friend-21",
+            "line": 21,
+            "speaker": "Rodrigo",
+            "spanish": "¡Trato hecho!",
+            "english": "Deal!",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "island_num": 21,
+    "island": "Reacting to family news",
+    "island_slug": "reacting-to-family-news",
+    "sections": [
+      {
+        "section": "Buenas noticias",
+        "lines": [
+          {
+            "line_id": "21-reacting-to-family-news-01",
+            "line": 1,
+            "speaker": "Hija",
+            "spanish": "¡Hola, papá! ¿Tienes un minuto? Tengo muchas noticias.",
+            "english": "Hi, Dad! Do you have a minute? I have lots of news.",
+            "region": "",
+            "notes": "Stage direction: por teléfono",
+            "is_stage_direction": true
+          },
+          {
+            "line_id": "21-reacting-to-family-news-02",
+            "line": 2,
+            "speaker": "Kirk",
+            "spanish": "¡Hola, mi amor! Claro, acabo de terminar de trabajar. Cuéntame.",
+            "english": "Hi, sweetheart! Sure, I just finished work. Tell me.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-03",
+            "line": 3,
+            "speaker": "Hija",
+            "spanish": "Primero, la buena: ¡me dieron el ascenso!",
+            "english": "First, the good one: I got the promotion!",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-04",
+            "line": 4,
+            "speaker": "Kirk",
+            "spanish": "¡No me digas! ¡Felicidades! Me alegra mucho que por fin te lo hayan dado. Te lo merecías.",
+            "english": "No way! Congratulations! I'm so glad they finally gave it to you. You deserved it.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-05",
+            "line": 5,
+            "speaker": "Hija",
+            "spanish": "Gracias. Empiezo el lunes. Voy a tener un equipo de seis personas.",
+            "english": "Thanks. I start Monday. I'm going to have a team of six people.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-06",
+            "line": 6,
+            "speaker": "Kirk",
+            "spanish": "¡Qué bien! Espero que te paguen bien, porque eso es mucha responsabilidad.",
+            "english": "Great! I hope they pay you well, because that's a lot of responsibility.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-07",
+            "line": 7,
+            "speaker": "Hija",
+            "spanish": "Sí, me subieron bastante el sueldo.",
+            "english": "Yes, they raised my salary quite a bit.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Malas noticias",
+        "lines": [
+          {
+            "line_id": "21-reacting-to-family-news-08",
+            "line": 8,
+            "speaker": "Hija",
+            "spanish": "Ahora la mala: a mi perro, Max, lo tuvieron que operar de la pata.",
+            "english": "Now the bad one: my dog Max had to have surgery on his leg.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-09",
+            "line": 9,
+            "speaker": "Kirk",
+            "spanish": "¡Ay, no! Siento mucho que esté pasando por eso. ¿Cómo está?",
+            "english": "Oh no! I'm so sorry he's going through that. How is he?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-10",
+            "line": 10,
+            "speaker": "Hija",
+            "spanish": "Mejor. El veterinario dice que en un mes va a estar bien.",
+            "english": "Better. The vet says he'll be fine in a month.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-11",
+            "line": 11,
+            "speaker": "Kirk",
+            "spanish": "Qué bueno que no fue nada más grave. Ojalá que se recupere rápido.",
+            "english": "Good thing it wasn't anything more serious. I hope he recovers quickly.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-12",
+            "line": 12,
+            "speaker": "Hija",
+            "spanish": "Lo malo es que la operación costó un montón.",
+            "english": "The bad part is the surgery cost a ton.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-13",
+            "line": 13,
+            "speaker": "Kirk",
+            "spanish": "Me imagino. Si necesitas ayuda con eso, dime. No quiero que te preocupes por el dinero. Y yo que tú, le preguntaría al veterinario si aceptan pagos.",
+            "english": "I can imagine. If you need help with that, tell me. I don't want you to worry about the money. And if I were you, I'd ask the vet if they take payment plans.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Una sorpresa",
+        "lines": [
+          {
+            "line_id": "21-reacting-to-family-news-14",
+            "line": 14,
+            "speaker": "Hija",
+            "spanish": "Gracias, papá. Y la última: ¡voy a ir a visitarlos en Navidad!",
+            "english": "Thanks, Dad. And the last one: I'm coming to visit you for Christmas!",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-15",
+            "line": 15,
+            "speaker": "Kirk",
+            "spanish": "¿En serio? ¡No puedo creer que por fin vengas! Tu mamá se va a poner feliz.",
+            "english": "Really? I can't believe you're finally coming! Your mom is going to be so happy.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-16",
+            "line": 16,
+            "speaker": "Hija",
+            "spanish": "Pero no le digas todavía. Quiero que sea sorpresa.",
+            "english": "But don't tell her yet. I want it to be a surprise.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-17",
+            "line": 17,
+            "speaker": "Kirk",
+            "spanish": "No te preocupes, no le digo nada… aunque ya sabes que a veces se me escapan las cosas. ¿Cuándo llegas?",
+            "english": "Don't worry, I won't say a thing… although you know things sometimes slip out. When do you arrive?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-18",
+            "line": 18,
+            "speaker": "Hija",
+            "spanish": "El veintiuno, si no cambian el vuelo.",
+            "english": "On the twenty-first, if they don't change the flight.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-19",
+            "line": 19,
+            "speaker": "Kirk",
+            "spanish": "Perfecto. Avísame cuando compres el boleto y te recojo en el aeropuerto.",
+            "english": "Perfect. Let me know when you buy the ticket and I'll pick you up at the airport.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Despedida",
+        "lines": [
+          {
+            "line_id": "21-reacting-to-family-news-20",
+            "line": 20,
+            "speaker": "Hija",
+            "spanish": "Bueno, te dejo. Tengo que ir por Max.",
+            "english": "Well, I'll let you go. I have to go pick up Max.",
+            "region": "MX",
+            "notes": "Go pick up: ir a buscar works everywhere; ir por is very Mexican.",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-21",
+            "line": 21,
+            "speaker": "Kirk",
+            "spanish": "Bueno. Dale un abrazo de mi parte. Me alegra que me hayas llamado, mi amor. Cuídate mucho.",
+            "english": "OK. Give him a hug from me. I'm glad you called, sweetheart. Take good care of yourself.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "21-reacting-to-family-news-22",
+            "line": 22,
+            "speaker": "Hija",
+            "spanish": "¡Tú también, papá! Te quiero.",
+            "english": "You too, Dad! Love you.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "island_num": 22,
+    "island": "Regrets and what-ifs",
+    "island_slug": "regrets-and-what-ifs",
+    "sections": [
+      {
+        "section": "La carrera",
+        "lines": [
+          {
+            "line_id": "22-regrets-and-what-ifs-01",
+            "line": 1,
+            "speaker": "Marcos",
+            "spanish": "Luis, ¿alguna vez piensas en lo que habría pasado si no hubieras entrado al ejército?",
+            "english": "Luis, do you ever think about what would have happened if you hadn't joined the army?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-02",
+            "line": 2,
+            "speaker": "Kirk",
+            "spanish": "A veces. Si no hubiera entrado al ejército, probablemente nunca habría descubierto la tecnología.",
+            "english": "Sometimes. If I hadn't joined the army, I probably never would have discovered technology.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-03",
+            "line": 3,
+            "speaker": "Marcos",
+            "spanish": "¿Y te arrepientes de algo?",
+            "english": "And do you regret anything?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-04",
+            "line": 4,
+            "speaker": "Kirk",
+            "spanish": "De una cosa: debí haber estudiado programación más joven. Si hubiera empezado a los veinte, ahora sabría mucho más.",
+            "english": "One thing: I should have studied programming when I was younger. If I'd started at twenty, I'd know much more now.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-05",
+            "line": 5,
+            "speaker": "Marcos",
+            "spanish": "Pero te ha ido muy bien.",
+            "english": "But you've done really well.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-06",
+            "line": 6,
+            "speaker": "Kirk",
+            "spanish": "Sí, no me quejo. Pero hubo una oportunidad que dejé pasar. Hace años, un amigo me invitó a trabajar en una startup.",
+            "english": "Yes, I can't complain. But there was one opportunity I let slip. Years ago, a friend invited me to work at a startup.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-07",
+            "line": 7,
+            "speaker": "Marcos",
+            "spanish": "¿Y qué pasó?",
+            "english": "And what happened?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-08",
+            "line": 8,
+            "speaker": "Kirk",
+            "spanish": "Le dije que no. No pude dejar un trabajo seguro; me daba mucho miedo. Dos años después, la compraron por mil millones de dólares.",
+            "english": "I said no. I couldn't leave a secure job; it scared me too much. Two years later, it was bought for a billion dollars.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-09",
+            "line": 9,
+            "speaker": "Marcos",
+            "spanish": "¡No puede ser!",
+            "english": "No way!",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-10",
+            "line": 10,
+            "speaker": "Kirk",
+            "spanish": "Sí. Si hubiera aceptado, a lo mejor ya estaría jubilado. Pero también podría haber fracasado. Nunca se sabe.",
+            "english": "Yes. If I had accepted, maybe I'd already be retired. But it also could have failed. You never know.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "El dinero",
+        "lines": [
+          {
+            "line_id": "22-regrets-and-what-ifs-11",
+            "line": 11,
+            "speaker": "Marcos",
+            "spanish": "¿Y con el dinero? ¿Hay algo que te gustaría haber hecho diferente?",
+            "english": "And with money? Is there anything you wish you'd done differently?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-12",
+            "line": 12,
+            "speaker": "Kirk",
+            "spanish": "¡Uf, muchas cosas! En 2013, un compañero de trabajo me dijo que comprara bitcoin. Costaba como cien dólares.",
+            "english": "Oof, lots of things! In 2013, a coworker told me to buy bitcoin. It cost about a hundred dollars.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-13",
+            "line": 13,
+            "speaker": "Marcos",
+            "spanish": "¿Y no compraste?",
+            "english": "And you didn't buy any?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-14",
+            "line": 14,
+            "speaker": "Kirk",
+            "spanish": "Compré un poquito, pero lo vendí cuando subió a doscientos. Pensé que era un genio. Si me hubiera esperado, habría ganado una fortuna.",
+            "english": "I bought a little, but I sold it when it went up to two hundred. I thought I was a genius. If I'd waited, I would have made a fortune.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-15",
+            "line": 15,
+            "speaker": "Marcos",
+            "spanish": "¡Ay, Luis!",
+            "english": "Oh, Luis!",
+            "region": "",
+            "notes": "Stage direction: se ríe",
+            "is_stage_direction": true
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-16",
+            "line": 16,
+            "speaker": "Kirk",
+            "spanish": "Y eso no es lo peor. También debería haber empezado a ahorrar para la jubilación mucho antes. Ojalá alguien me lo hubiera explicado a los veinticinco.",
+            "english": "And that's not the worst part. I also should have started saving for retirement much earlier. I wish someone had explained it to me at twenty-five.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-17",
+            "line": 17,
+            "speaker": "Marcos",
+            "spanish": "Bueno, nadie nos enseña eso en la escuela.",
+            "english": "Well, nobody teaches us that in school.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-18",
+            "line": 18,
+            "speaker": "Kirk",
+            "spanish": "Exacto. Por eso, cuando mi hija empezó a trabajar, le dije que ahorrara desde el primer sueldo.",
+            "english": "Exactly. That's why, when my daughter started working, I told her to save from her very first paycheck.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Sin arrepentimientos",
+        "lines": [
+          {
+            "line_id": "22-regrets-and-what-ifs-19",
+            "line": 19,
+            "speaker": "Marcos",
+            "spanish": "¿Y hay algo de lo que no te arrepientas para nada?",
+            "english": "And is there anything you don't regret at all?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-20",
+            "line": 20,
+            "speaker": "Kirk",
+            "spanish": "Sí: de haberme casado con mi esposa y de haber empezado a aprender español. Si no lo hubiera hecho, no estaríamos teniendo esta conversación.",
+            "english": "Yes: marrying my wife, and starting to learn Spanish. If I hadn't, we wouldn't be having this conversation.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-21",
+            "line": 21,
+            "speaker": "Marcos",
+            "spanish": "¡Menos mal!",
+            "english": "Thank goodness!",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "22-regrets-and-what-ifs-22",
+            "line": 22,
+            "speaker": "Kirk",
+            "spanish": "Al final, todo pasa por algo. Lo importante es aprender de los errores.",
+            "english": "In the end, everything happens for a reason. What matters is learning from your mistakes.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "island_num": 23,
+    "island": "Weighing a decision",
+    "island_slug": "weighing-a-decision",
+    "sections": [
+      {
+        "section": "Después de la visita",
+        "lines": [
+          {
+            "line_id": "23-weighing-a-decision-01",
+            "line": 1,
+            "speaker": "Marcos",
+            "spanish": "¿Y? ¿Qué te pareció el apartamento?",
+            "english": "So? What did you think of the apartment?",
+            "region": "",
+            "notes": "Follows Making plans with someone: the apartment in Coronado.",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-02",
+            "line": 2,
+            "speaker": "Kirk",
+            "spanish": "No sé qué pensar. Me gustó, pero no estoy seguro de que sea el lugar ideal.",
+            "english": "I don't know what to think. I liked it, but I'm not sure it's the right place.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-03",
+            "line": 3,
+            "speaker": "Marcos",
+            "spanish": "¿Por qué? ¿Qué no te convenció?",
+            "english": "Why? What didn't convince you?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-04",
+            "line": 4,
+            "speaker": "Kirk",
+            "spanish": "La vista es increíble, pero el edificio es viejo. Dudo que tenga buen mantenimiento.",
+            "english": "The view is incredible, but the building is old. I doubt it's well maintained.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-05",
+            "line": 5,
+            "speaker": "Marcos",
+            "spanish": "Puede que sí. Muchos edificios viejos en Coronado están muy bien cuidados.",
+            "english": "It might be. Lots of old buildings in Coronado are very well kept.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-06",
+            "line": 6,
+            "speaker": "Kirk",
+            "spanish": "Tal vez tengas razón. Supongo que le puedo preguntar a la administración.",
+            "english": "Maybe you're right. I suppose I can ask the building management.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "Las dudas",
+        "lines": [
+          {
+            "line_id": "23-weighing-a-decision-07",
+            "line": 7,
+            "speaker": "Marcos",
+            "spanish": "¿Y el precio?",
+            "english": "And the price?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-08",
+            "line": 8,
+            "speaker": "Kirk",
+            "spanish": "Es razonable, pero no sé si incluye la cuota de mantenimiento. Si no la incluye, a lo mejor ya no es tan buen negocio.",
+            "english": "It's reasonable, but I don't know if it includes the maintenance fee. If it doesn't, maybe it's not such a good deal anymore.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-09",
+            "line": 9,
+            "speaker": "Marcos",
+            "spanish": "¿Y la zona? ¿Te gustó?",
+            "english": "And the area? Did you like it?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-10",
+            "line": 10,
+            "speaker": "Kirk",
+            "spanish": "Sí, pero no creo que haya mucho que hacer en temporada baja. ¿Tú crees que es muy tranquilo entre semana?",
+            "english": "Yes, but I don't think there's much to do in the low season. Do you think it's very quiet during the week?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-11",
+            "line": 11,
+            "speaker": "Marcos",
+            "spanish": "Depende de lo que busques. Entre semana es muy tranquilo, pero los fines de semana se llena.",
+            "english": "It depends on what you're looking for. During the week it's very quiet, but on weekends it fills up.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-12",
+            "line": 12,
+            "speaker": "Kirk",
+            "spanish": "Para mí, tranquilo está bien. Lo que me preocupa es que esté lejos del hospital.",
+            "english": "For me, quiet is fine. What worries me is that it might be far from the hospital.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-13",
+            "line": 13,
+            "speaker": "Marcos",
+            "spanish": "Es posible que haya una clínica cerca. Habría que averiguar.",
+            "english": "There might be a clinic nearby. We'd have to find out.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          }
+        ]
+      },
+      {
+        "section": "La decisión",
+        "lines": [
+          {
+            "line_id": "23-weighing-a-decision-14",
+            "line": 14,
+            "speaker": "Marcos",
+            "spanish": "Entonces, ¿lo vas a alquilar?",
+            "english": "So, are you going to rent it?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-15",
+            "line": 15,
+            "speaker": "Kirk",
+            "spanish": "Todavía no lo sé. Quizás vea otro par de apartamentos antes de decidir.",
+            "english": "I still don't know. Maybe I'll see another couple of apartments before I decide.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-16",
+            "line": 16,
+            "speaker": "Marcos",
+            "spanish": "Me parece bien. No hay prisa.",
+            "english": "Sounds good. There's no rush.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-17",
+            "line": 17,
+            "speaker": "Kirk",
+            "spanish": "Exacto. Y capaz que encuentro algo mejor y más barato. ¿Quién sabe?",
+            "english": "Exactly. And maybe I'll find something better and cheaper. Who knows?",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-18",
+            "line": 18,
+            "speaker": "Marcos",
+            "spanish": "Si quieres, te acompaño a verlos.",
+            "english": "If you want, I'll come with you to see them.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-19",
+            "line": 19,
+            "speaker": "Kirk",
+            "spanish": "¿En serio? Me encantaría. Mientras tanto, le voy a pedir a Gabriela que me mande el contrato para leerlo con calma.",
+            "english": "Really? I'd love that. In the meantime, I'm going to ask Gabriela to send me the contract so I can read it carefully.",
+            "region": "",
+            "notes": "",
+            "is_stage_direction": false
+          },
+          {
+            "line_id": "23-weighing-a-decision-20",
+            "line": 20,
+            "speaker": "Marcos",
+            "spanish": "¡Buena idea! Por si acaso, revisa bien la parte del depósito.",
+            "english": "Good idea! Just in case, check the deposit section carefully.",
             "region": "",
             "notes": "",
             "is_stage_direction": false

@@ -5,7 +5,7 @@
 //    One failed download never blocks an update; missing files are fetched
 //    (and cached) when played, and retried on the next update.
 
-const SHELL_CACHE = 'island-shell-v11';
+const SHELL_CACHE = 'island-shell-v12';
 const AUDIO_CACHE = 'island-audio';
 const SHELL_FILES = ['player.html', 'playlist.json', 'driving.json', 'manifest.json', 'icon.svg'];
 
