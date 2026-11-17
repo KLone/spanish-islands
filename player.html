@@ -775,12 +775,15 @@ function playAllIslands() {
   lastAllIsland = -1;
   const resumeAt = savedAllPos();
   audio.src = drivingAll.file;
-  audio.load();
-  audio.addEventListener('loadedmetadata', () => {
-    if (resumeAt > 5 && resumeAt < (audio.duration || drivingAll.duration) - 5) audio.currentTime = resumeAt;
+  // Don't call audio.load() — iOS rejects play() when called immediately after
+  // load() on a large file. Setting src is enough; canplay fires when ready.
+  audio.addEventListener('canplay', () => {
+    if (resumeAt > 5 && resumeAt < (audio.duration || drivingAll.duration) - 5) {
+      audio.currentTime = resumeAt;
+    }
+    audio.play().catch(() => {});
   }, { once: true });
   isPlaying = true;
-  audio.play().catch(() => {});
   renderDriving();
   updateAllMediaSession();
 }
